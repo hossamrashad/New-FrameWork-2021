@@ -6,7 +6,7 @@ $(document).ready(function () {
   new WOW().init();
   // nice scroll
   $(function () {
-    $("html, body").niceScroll({
+    $("html").niceScroll({
       cursorcolor: "#ecf0f1",
       cursorwidth: "12px",
       cursorborder: "3px solid #34495e",
