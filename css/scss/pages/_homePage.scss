@@ -1,0 +1,33 @@
+.parent-overlay {
+  background-color: #eee;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  @include prefixer(animation, fadeInOut 2s infinite linear, webkit);
+  @include prefixer(box-shadow, 10px 10px 100px rgb(0, 0, 0), webkit moz o ms);
+  .overlay {
+    @include overlay;
+    //@include transition(0.5s);
+
+    @include hover {
+      background-color: rgba($text-color, 0.5);
+      @include prefixer(box-shadow, 10px 10px 10px #ccc, webkit moz o ms);
+    }
+  }
+}
+@include KeyFrame(fadeInOut) {
+  0% {
+    opacity: 0.5;
+    background-color: aqua;
+  }
+  50% {
+    opacity: 1;
+    background-color: chocolate;
+  }
+  100% {
+    opacity: 0.5;
+    background-color: darkgreen;
+  }
+}

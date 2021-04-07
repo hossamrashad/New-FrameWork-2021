@@ -1,0 +1,21 @@
+// @media(max-width:767px){};   xs   || mobile
+// @media(min-width:768px){};   sm
+// @media(max-width:991 px){};  md
+// @media(min-width:992px){};   md
+// @media(min-width:1200px){};  lg
+
+p {
+  @include xsmedia {
+    //color: #f00;
+  }
+
+  @include smmedia {
+    //color: rgb(47, 0, 255);
+  }
+  @include mdmedia {
+    //color: rgb(0, 255, 149);
+  }
+  @include lgmedia {
+    //color: rgb(251, 255, 0);
+  }
+}

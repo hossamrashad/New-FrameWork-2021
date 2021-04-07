@@ -1,0 +1,52 @@
+.jq-snake {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 5px solid #fff;
+    text-align: center;
+
+    .disc {
+      position: absolute;
+      color: #fff;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+    }
+  }
+}
+// Start hoverZoomLink
+.css-hover-zoom-scale {
+  overflow: hidden;
+}
+
+.css-hover-zoom-scale img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.css-hover-zoom-scale img:hover {
+  transform: scale(1.3);
+}
+
+// End hoverZoomLink
+
+// for wol dir ltr
+
+.owl-stage-outer {
+  direction: ltr !important;
+}

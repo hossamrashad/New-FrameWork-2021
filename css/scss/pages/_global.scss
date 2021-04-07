@@ -1,0 +1,24 @@
+// global for all pages
+body {
+  font: {
+    family: cairo;
+    size: 16px;
+  }
+}
+ul,
+ol {
+  // global ul + li style
+  @include horizontal-list;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  @include hover {
+    text-decoration: none;
+    outline: none;
+  }
+  &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+}

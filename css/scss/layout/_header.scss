@@ -1,0 +1,41 @@
+// navbar bootstrap
+.navbar {
+  // like logo
+  .navbar-brand {
+    a {
+    }
+  }
+  // dropdown menu for mobail
+  .navbar-toggler {
+    // span = img
+    .navbar-toggler-icon {
+    }
+  }
+  // div = container for ul
+  .navbar-collapse {
+    // ul link
+    .navbar-nav {
+      // li
+      .nav-item {
+        // a
+        .nav-link {
+        }
+      }
+      // li
+      .nav-item.active {
+        // a
+        .nav-link {
+        }
+      }
+      // li dropdown
+      .dropdown {
+        // div dropdown
+        .dropdown-menu {
+          // a item
+          .dropdown-item {
+          }
+        }
+      }
+    }
+  }
+}
