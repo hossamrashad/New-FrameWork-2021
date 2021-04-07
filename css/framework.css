@@ -2318,4 +2318,8 @@ a:focus {
 .owl-stage-outer {
   direction: ltr !important;
 }
+
+body {
+  height: 1000px;
+}
 /*# sourceMappingURL=framework.css.map */

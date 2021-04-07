@@ -6,7 +6,13 @@ $(document).ready(function () {
   new WOW().init();
   // nice scroll
   $(function () {
-    $("body").niceScroll();
+    $("html, body").niceScroll({
+      cursorcolor: "#ecf0f1",
+      cursorwidth: "12px",
+      cursorborder: "3px solid #34495e",
+      cursorborderradius: "10px",
+      scrollspeed: "60",
+    });
   });
   // owl
   $(".owl-carousel").owlCarousel({
@@ -186,4 +192,20 @@ $(document).ready(function () {
 // snake
 $(".jq-snake").snakeify({
   speed: 200,
+});
+
+// typed js
+$(function () {
+  "use strict";
+
+  var typed = new Typed(".cayan", {
+    // Waits 1000ms after typing "First"
+    strings: ["First ^1000 sentence.", "Second sentence.", "yes"],
+    typeSpeed: 100,
+    loop: true,
+    startDelay: 1000,
+    backDelay: 1000,
+    cursorChar: "|",
+    showCursor: true,
+  });
 });
