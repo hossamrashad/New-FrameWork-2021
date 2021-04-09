@@ -61,17 +61,17 @@ $(document).ready(function () {
   // fixed menu
   $(document).ready(function () {
     "use strict";
-    $(".fixed-menu .fa-bars").on("click", function () {
-      $(this).parent(".fixed-menu").toggleClass("is-visible");
-      if ($(this).parent(".fixed-menu").hasClass("is-visible")) {
-        $(this).parent(".fixed-menu").animate(
+    $(".fixed-menu-normal .fa-bars").on("click", function () {
+      $(this).parent(".fixed-menu-normal").toggleClass("is-visible");
+      if ($(this).parent(".fixed-menu-normal").hasClass("is-visible")) {
+        $(this).parent(".fixed-menu-normal").animate(
           {
             right: 0,
           },
           300
         );
       } else {
-        $(this).parent(".fixed-menu").animate(
+        $(this).parent(".fixed-menu-normal").animate(
           {
             right: -150,
           },
