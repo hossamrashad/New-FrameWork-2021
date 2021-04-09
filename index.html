@@ -54,6 +54,7 @@
   </head>
 
   <body>
+    <div class="jq-map"></div>
     <script src="js/JQuery/jquery-3-6-0.min.js"></script>
     <script src="js/bootstrap/popper-1.14.7.min.js"></script>
     <script src="js/bootstrap/bootstrap-4.3.1.min.js"></script>
@@ -82,11 +83,33 @@
     <!-- End background move -->
     <script src="js/snake/snake.min.js"></script>
     <script src="js/typedjs/typed.min.js"></script>
+    <script src="js/filter/mixitup.min.js"></script>
 
-    <script src="js/fixed-menu.js"></script>
     <script src="js/plugin-work.js"></script>
-    <script src="js/plugin.js"></script>
-
+    <script>
+      // popup
+      $(document).ready(function () {
+        "use strict";
+        $(".btn-show-popup").click(function () {
+          $($(this).data("popup")).show();
+        });
+        $(".popup").click(function () {
+          $(this).hide();
+        });
+        $(".popup .inner").click(function (e) {
+          e.stopPropagation();
+        });
+        $(".popup .close").click(function (e) {
+          e.preventDefault();
+          $(this).parentsUntil(".popup").parent().hide();
+        });
+        $(document).keydown(function (e) {
+          if (e.keyCode == 27) {
+            $(".popup").hide();
+          }
+        });
+      });
+    </script>
     <!-- <p class="copyright">
       حقوق الطبع والنشر © 2021 تصميم المواقع. كل الحقوق محفوظة. صمم
       بواسطة

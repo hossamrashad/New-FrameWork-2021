@@ -1,5 +1,28 @@
 /* jslint plusplus: true, evil:true */
 /*global $, jQuery, document, window, alert, prompt, confirm */
+
+// Window Height
+$(function () {
+  "use strict";
+  var windowH = $(window).height();
+  $(".jq-window-height").height(windowH);
+
+  $(window).resize(function () {
+    $(".jq-window-height").height(windowH);
+  });
+});
+
+// Window Height / 2
+$(function () {
+  "use strict";
+  var windowH = $(window).height();
+  $(".jq-window-height-2").height(windowH / 2);
+
+  $(window).resize(function () {
+    $(".jq-window-height-2").height(windowH / 2);
+  });
+});
+
 $(document).ready(function () {
   "use strict";
   // wow
@@ -35,6 +58,58 @@ $(document).ready(function () {
     },
   });
 
+  // fixed menu
+  $(document).ready(function () {
+    "use strict";
+    $(".fixed-menu .fa-bars").on("click", function () {
+      $(this).parent(".fixed-menu").toggleClass("is-visible");
+      if ($(this).parent(".fixed-menu").hasClass("is-visible")) {
+        $(this).parent(".fixed-menu").animate(
+          {
+            right: 0,
+          },
+          300
+        );
+      } else {
+        $(this).parent(".fixed-menu").animate(
+          {
+            right: -150,
+          },
+          300
+        );
+      }
+    });
+    $(".fixed-menu-padding-body .fa-bars").on("click", function () {
+      $(this).parent(".fixed-menu-padding-body").toggleClass("is-visible");
+      if ($(this).parent(".fixed-menu-padding-body").hasClass("is-visible")) {
+        $(this).parent(".fixed-menu-padding-body").animate(
+          {
+            right: 0,
+          },
+          300
+        );
+        $("body").animate(
+          {
+            paddingRight: "150px",
+          },
+          300
+        );
+      } else {
+        $(this).parent(".fixed-menu-padding-body").animate(
+          {
+            right: -150,
+          },
+          300
+        );
+        $("body").animate(
+          {
+            paddingRight: 0,
+          },
+          300
+        );
+      }
+    });
+  });
   // circle
   // $(function () {
   //   $(".circlechart").circlechart();
@@ -178,9 +253,6 @@ $("form").validateMini({
   },
 });
 
-// gmaps
-// var map = new GMaps({ el: ".jq-map", lat: 29.993663, lng: 31.222816 });
-
 // background move
 $(document).ready(function () {
   "use strict";
@@ -192,20 +264,4 @@ $(document).ready(function () {
 // snake
 $(".jq-snake").snakeify({
   speed: 200,
-});
-
-// typed js
-$(function () {
-  "use strict";
-
-  var typed = new Typed(".cayan", {
-    // Waits 1000ms after typing "First"
-    strings: ["First ^1000 sentence.", "Second sentence.", "yes"],
-    typeSpeed: 100,
-    loop: true,
-    startDelay: 1000,
-    backDelay: 1000,
-    cursorChar: "|",
-    showCursor: true,
-  });
 });

@@ -1,17 +1,16 @@
 /* jslint plusplus: true, evil:true */
 /*global $, jQuery, document, window, alert, prompt, confirm */
-
-// Window Height
-$(function () {
-  "use strict";
-  var windowH = $(window).height();
-  $(".jq-window-height").height(windowH);
-
-  $(window).resize(function () {
-    $(".jq-window-height").height(windowH);
-  });
-});
-
+/**
+ * dynamic tabs
+ *
+ * typed js
+ *
+ * mixitup
+ *
+ * gmaps
+ *
+ *
+ */
 // dynamic tabs
 $(document).ready(function () {
   "use strict";
@@ -22,3 +21,29 @@ $(document).ready(function () {
     $($(this).data("content")).fadeIn();
   });
 });
+
+//
+// typed js
+$(function () {
+  "use strict";
+
+  var typed = new Typed(".cayan", {
+    // Waits 1000ms after typing "First"
+    strings: ["First ^1000 sentence.", "Second sentence.", "yes"],
+    typeSpeed: 100,
+    loop: true,
+    startDelay: 1000,
+    backDelay: 1000,
+    cursorChar: "|",
+    showCursor: true,
+  });
+});
+
+//mixitup
+$(document).ready(function () {
+  "use strict";
+  var mixer = mixitup(".box-list");
+});
+
+// gmaps
+var map = new GMaps({ el: ".jq-map", lat: 29.993663, lng: 31.222816 });
