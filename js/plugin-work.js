@@ -265,3 +265,30 @@ $(document).ready(function () {
 $(".jq-snake").snakeify({
   speed: 200,
 });
+
+// popup
+$(document).ready(function () {
+  "use strict";
+
+  $(document).ready(function () {
+    "use strict";
+    $(".btn-show-popup").click(function () {
+      $($(this).data("popup")).fadeIn();
+    });
+    $(".popup").click(function () {
+      $(this).fadeOut();
+    });
+    $(".popup .inner").click(function (e) {
+      e.stopPropagation();
+    });
+    $(".popup .close").click(function (e) {
+      e.preventDefault();
+      $(this).parentsUntil(".popup").parent().fadeOut();
+    });
+    $(document).keydown(function (e) {
+      if (e.keyCode == 27) {
+        $(".popup").fadeOut();
+      }
+    });
+  });
+});

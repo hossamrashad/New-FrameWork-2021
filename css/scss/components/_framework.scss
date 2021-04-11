@@ -188,3 +188,13 @@
   width: 100%;
   min-height: 100px;
 }
+
+// navbar
+
+nav {
+  transition: 0.5s ease;
+}
+nav.css-nav-scroll {
+  background-color: rgb(102, 102, 102) !important;
+  color: aliceblue;
+}

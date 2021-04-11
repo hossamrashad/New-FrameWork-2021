@@ -1095,6 +1095,7 @@
 body {
   font-family: cairo;
   font-size: 16px;
+  min-height: 5000px;
 }
 
 ul,
@@ -1343,7 +1344,7 @@ a:focus {
 
 .social-one .social-inner-box p {
   font-family: "Cairo", sans-serif;
-  font-size: 10px;
+  font-size: 1em;
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -2479,7 +2480,13 @@ a:focus {
   min-height: 100px;
 }
 
-body {
-  height: 1000px;
+nav {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+nav.css-nav-scroll {
+  background-color: #666666 !important;
+  color: aliceblue;
 }
 /*# sourceMappingURL=framework.css.map */

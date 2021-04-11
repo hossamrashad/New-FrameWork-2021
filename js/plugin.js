@@ -39,7 +39,7 @@ $(function () {
   });
 });
 
-//mixitup
+// mixitup
 $(document).ready(function () {
   "use strict";
   var mixer = mixitup(".box-list");
@@ -47,3 +47,11 @@ $(document).ready(function () {
 
 // gmaps
 var map = new GMaps({ el: ".jq-map", lat: 29.993663, lng: 31.222816 });
+
+// navbar
+$(document).ready(function () {
+  "use strict";
+  $(window).scroll(function () {
+    $("nav").toggleClass("css-nav-scroll", $(this).scrollTop() > 100);
+  });
+});

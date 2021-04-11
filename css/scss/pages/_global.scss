@@ -2,8 +2,9 @@
 body {
   font: {
     family: cairo;
-    size: 16px;
+    size: $font-page;
   }
+  min-height: 5000px;
 }
 ul,
 ol {
