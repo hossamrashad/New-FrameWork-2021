@@ -292,3 +292,18 @@ $(document).ready(function () {
     });
   });
 });
+
+$(document).ready(function () {
+  "use strict";
+  $(".jq-timer").countTo({
+    from: 50,
+    to: 2500,
+    speed: 2000,
+    refreshInterval: 50,
+  });
+});
+// menu-Plus
+function openMenu() {
+  const menu = document.querySelector(".menu-Plus");
+  menu.classList.toggle("open");
+}

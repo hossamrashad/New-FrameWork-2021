@@ -1,4 +1,5 @@
-//
+// element-with-border
+
 .element-with-border {
   position: relative;
 
@@ -36,8 +37,45 @@
     }
   }
 }
+/*
+ <!-- Start social one -->
+<div class="social-one">
+  <div class="social-main social-center">
+    <div class="social-box">
+      <div class="social-icon-box social-center">
+        <i class="fa fa-instagram fa-2x "></i>
+      </div>
+      <div class="social-inner-box social-center">
+        <p>instagram</p>
+      </div>
+    </div>
+    <div class="social-box">
+      <div class="social-icon-box social-center ib-t">
+        <i class="fa fa-twitter fa-2x "></i>
+      </div>
+      <div class="social-inner-box social-center"><p>twitter</p></div>
+    </div>
+    <div class="social-box">
+      <div class="social-icon-box social-center ib-f">
+        <i class="fa fa-facebook fa-2x "></i>
+      </div>
+      <div class="social-inner-box social-center">
+        <p>facebook</p>
+      </div>
+    </div>
+    <div class="social-box">
+      <div class="social-icon-box social-center ib-w">
+        <i class="fa fa-whatsapp fa-2x "></i>
+      </div>
+      <div class="social-inner-box social-center">
+        <p>whatsapp</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End social one-->
+*/
 // social media
-
 .social-one {
   margin-top: 50px;
   .social-center {
@@ -105,6 +143,13 @@
 
 // scroll to top
 // scroll-to-top-1
+/*
+<!-- Start scroll to top -->
+<a href="#" class="scroll-to-top" id="scroll-to-top-1">
+ <i class="fa fa-chevron-up fa-2x fa-fw"></i>
+</a>
+<!-- End scroll to top -->
+*/
 #scroll-to-top-1 {
   background-color: #333;
   color: #fff;
@@ -124,7 +169,15 @@
     color: #fff;
   }
 }
+
 // scroll-to-top-2
+/*
+<!-- Start scroll to top -->     
+<a href="#" class="scroll-to-top" id="scroll-to-top-2">       
+<i class="fa fa-chevron-circle-up fa-2x fa-fw"></i>
+</a>     
+<!-- End scroll to top -->
+*/
 #scroll-to-top-2 {
   background-color: #2b3c4d;
   color: #fff;
@@ -144,7 +197,15 @@
     color: #fff;
   }
 }
+
 // scroll-to-top-3
+/*
+<!-- Start scroll to top -->
+<a href="#" class="scroll-to-top" id="scroll-to-top-3">
+  <i class="fa fa-hand-pointer-o fa-fw fa-2x"></i>
+</a>
+<!-- End scroll to top -->
+*/
 #scroll-to-top-3 {
   background-color: #007bff;
   color: #fff;
@@ -162,5 +223,212 @@
   border: 2px solid map-get($colors, 9);
   @include hover {
     color: #fff;
+  }
+}
+
+// css-before-after-width-height
+/*
+class="css-before-after-width-height "
+*/
+.css-before-after-width-height {
+  position: relative;
+  @include transition(0.5s);
+  z-index: 8;
+  &::before {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    top: 0;
+    content: "";
+    background: rgb(95, 95, 95);
+    transition: all 0.5s ease-out 0s;
+    -webkit-transition: all 0.5s ease-out 0s;
+    -moz-transition: all 0.5s ease-out 0s;
+    -ms-transition: all 0.5s ease-out 0s;
+    -o-transition: all 0.5s ease-out 0s;
+    z-index: -9;
+    opacity: 0;
+  }
+  &::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background: rgba(104, 104, 104, 0.671);
+    transition: all 0.5s ease-out 0s;
+    -webkit-transition: all 0.5s ease-out 0s;
+    -moz-transition: all 0.5s ease-out 0s;
+    -ms-transition: all 0.5s ease-out 0s;
+    -o-transition: all 0.5s ease-out 0s;
+    z-index: -9;
+    opacity: 0;
+  }
+  &:hover::after,
+  &:hover::before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+// css-parent-backward
+/*
+class="css-parent-backward"
+ class="css-backward-show"
+ class="css-backward-hide"
+*/
+.css-parent-backward {
+  position: relative;
+  overflow: hidden;
+  @include transition(0.5s);
+  .css-backward-show {
+    transform: translateY(0%);
+    position: relative;
+    overflow: hidden;
+    @include transition(0.5s);
+  }
+  .css-backward-hide {
+    transform: translateY(-100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include transition(0.5s);
+  }
+  &:hover .css-backward-show {
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+  }
+  &:hover .css-backward-hide {
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+  }
+}
+// menu-plus
+/*
+<!-- Start menu-plus -->
+    <div class="menu-Plus">
+      <button class="plus" onclick="openMenu()">+</button>
+      <ul>
+        <li>menu</li>
+        <li>about</li>
+        <li>contact</li>
+      </ul>
+    </div>
+    <!-- End menu-plus -->
+*/
+.menu-Plus {
+  background-color: #eee;
+  padding: 10px;
+  width: 150px;
+  -webkit-clip-path: circle(20px at 120px 30px);
+  clip-path: circle(20px at 120px 30px);
+  @include transition(0.5s);
+  //
+  .plus {
+    font-size: $font-page + 14;
+    background-color: #eee;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    @include borderRadius(50%);
+  }
+  ul {
+    li {
+      margin-bottom: 10px;
+    }
+  }
+  &.open {
+    -webkit-clip-path: circle(20px at 30px 30px);
+    clip-path: circle(200px at 20px 20px);
+  }
+}
+// clip path
+/*
+<div class="css-clip-path-1">
+ <a href="">
+   <img
+   src="https://placeimg.com/200/200/arch"
+   alt=""
+   class="img-fluid img-thumbnail"
+ />
+ <img
+   src="https://placeimg.com/200/200/nature"
+   alt=""
+   class="img-fluid img-thumbnail"
+ />
+ <img
+   src="https://placeimg.com/200/200/people"
+   alt=""
+                class="img-fluid img-thumbnail"
+ />
+ <img
+     src="https://placeimg.com/200/200/tech"
+     alt=""
+     class="img-fluid img-thumbnail"
+   />
+ </a> 
+</div>
+*/
+.css-clip-path-1 {
+  position: relative;
+  height: 250px;
+  width: 100%;
+
+  a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.6);
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      transition: 1s;
+      -webkit-transition: 1s;
+      -moz-transition: 1s;
+      -ms-transition: 1s;
+      -o-transition: 1s;
+      background-size: cover;
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4) {
+        -webkit-clip-path: circle(0 at 0% 100%);
+        clip-path: circle(0 at 0% 100%);
+      }
+    }
+  }
+
+  &:hover img:nth-child(2),
+  &:hover img:nth-child(3),
+  &:hover img:nth-child(4) {
+    -webkit-clip-path: circle(150% at 0% 100%);
+    clip-path: circle(150% at 0% 100%);
+  }
+  &:hover img:nth-child(2) {
+    transition-delay: 0;
+    transition-duration: 2s;
+  }
+  &:hover img:nth-child(3) {
+    transition-delay: 1s;
+    transition-duration: 2s;
+  }
+  &:hover img:nth-child(4) {
+    transition-delay: 2s;
+    transition-duration: 2s;
   }
 }
