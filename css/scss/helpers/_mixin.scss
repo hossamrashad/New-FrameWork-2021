@@ -78,22 +78,22 @@
 // @media(max-width:991 px){};  md
 // @media(min-width:992px){};   md
 // @media(min-width:1200px){};  lg
-@mixin xsmedia {
+@mixin xs-media {
   @media (max-width: 767px) {
     @content;
   }
 }
-@mixin smmedia {
+@mixin sm-media {
   @media (min-width: 768px) {
     @content;
   }
 }
-@mixin mdmedia {
+@mixin md-media {
   @media (min-width: 992px) {
     @content;
   }
 }
-@mixin lgmedia {
+@mixin lg-media {
   @media (min-width: 1200px) {
     @content;
   }

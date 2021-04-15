@@ -198,3 +198,188 @@ nav.css-nav-scroll {
   background-color: rgb(102, 102, 102) !important;
   color: aliceblue;
 }
+
+// form-1
+.parent-form-1 {
+  margin: 0;
+  padding: 0;
+  font-family: $font-cairo;
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://placeimg.com/1000/1000/tech");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  .wrapper-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    width: 400px;
+    height: 480px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 50px 30px;
+    @include borderRadius(20px);
+
+    .form-img {
+      width: 80px;
+      height: 80px;
+      @include borderRadius(50%);
+      position: absolute;
+      top: -40px;
+      left: calc(50% - 40px);
+    }
+    .h1 {
+      text-align: center;
+      font-size: $font-page + 6;
+      margin: 0;
+      padding: 0px 0px 20px;
+    }
+    label {
+      font-weight: bold;
+      font-size: $font-page + 1;
+    }
+    input {
+      border: none !important;
+      outline: none !important;
+      border-bottom: 1px solid #fff !important;
+      background: transparent;
+      height: 40px;
+      color: #fff;
+      font-size: $font-page;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    input:focus,
+    input:hover,
+    input:visited,
+    input:active,
+    input:focus-within,
+    input:focus-visible {
+      border: none !important;
+      outline: none !important;
+      border-bottom: 1px solid #fff !important;
+    }
+    ::-webkit-input-placeholder {
+      /* Edge */
+      color: #fff;
+      font-size: $font-page - 2;
+      line-height: 40px;
+    }
+
+    :-ms-input-placeholder {
+      /* Internet Explorer */
+      color: #fff;
+      font-size: $font-page - 2;
+      line-height: 40px;
+    }
+
+    ::-moz-placeholder {
+      color: #fff;
+      font-size: $font-page - 2;
+      line-height: 40px;
+    }
+
+    ::-ms-input-placeholder {
+      color: #fff;
+      font-size: $font-page - 2;
+      line-height: 40px;
+    }
+
+    ::placeholder {
+      color: #fff;
+      font-size: $font-page - 2;
+      line-height: 40px;
+    }
+    .btn-submit {
+      width: 50%;
+      margin: 35px auto 0px;
+      @include flexCenter;
+      font-size: $font-page + 4;
+    }
+    .sign-in-by {
+      border-top: 1px solid #999;
+      margin-top: 20px;
+      padding: 20px 0px;
+      label {
+        margin-left: 20px;
+        font-size: $font-page + 2;
+      }
+      i {
+        border: 1px solid #fff;
+        padding: 10px;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        line-height: 20px;
+        margin-left: 20px;
+        cursor: pointer;
+        @include borderRadius(50%);
+        @include transition(0.5s);
+        @include hover {
+          background-color: #fff;
+          color: #3498db;
+          border: 1px solid #3498db;
+        }
+      }
+    }
+    @include xs-media {
+      padding: 20px 10px;
+      width: 50%;
+      .form-img {
+        display: none;
+      }
+      label {
+        font-weight: bold;
+        font-size: $font-page;
+      }
+      ::-webkit-input-placeholder {
+        /* Edge */
+        color: #fff;
+        font-size: $font-page - 3;
+        line-height: 40px;
+      }
+
+      :-ms-input-placeholder {
+        /* Internet Explorer */
+        color: #fff;
+        font-size: $font-page - 3;
+        line-height: 40px;
+      }
+
+      ::-moz-placeholder {
+        color: #fff;
+        font-size: $font-page - 3;
+        line-height: 40px;
+      }
+
+      ::-ms-input-placeholder {
+        color: #fff;
+        font-size: $font-page - 3;
+        line-height: 40px;
+      }
+
+      ::placeholder {
+        color: #fff;
+        font-size: $font-page - 3;
+        line-height: 40px;
+      }
+      .sign-in-by {
+        label {
+          display: block;
+          font-size: $font-page;
+          margin-bottom: 20px;
+        }
+        i {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
