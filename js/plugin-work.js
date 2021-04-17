@@ -307,18 +307,3 @@ function openMenu() {
   const menu = document.querySelector(".menu-Plus");
   menu.classList.toggle("open");
 }
-
-$(function () {
-  "use strict";
-
-  var typed = new Typed(".text-write", {
-    // Waits 1000ms after typing "First"
-    strings: ["بحبك.", "وانتى كمان ", "بتحبينى"],
-    typeSpeed: 100,
-    loop: true,
-    startDelay: 1000,
-    backDelay: 1000,
-    cursorChar: "|",
-    showCursor: true,
-  });
-});
