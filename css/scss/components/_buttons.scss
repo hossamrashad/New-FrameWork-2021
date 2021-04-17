@@ -432,3 +432,225 @@ class="css-parent-backward"
     transition-duration: 2s;
   }
 }
+
+/*
+<div class="parent-face-back-rotatex">
+      <div class="button-text">
+        <span class="btn-face single-text">see more</span>
+        <a href="#" class="btn-back single-text">click here</a>
+      </div>
+    </div>
+*/
+//
+
+.parent-face-back-rotatex {
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+  perspective: 600px;
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+  .button-text {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    transform-style: preserve-3d;
+    @include transition(0.5s);
+    .single-text {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+    &:hover {
+      transform: rotateX(180deg);
+      -webkit-transform: rotateX(180deg);
+      -moz-transform: rotateX(180deg);
+      -ms-transform: rotateX(180deg);
+      -o-transform: rotateX(180deg);
+    }
+    .btn-face {
+      margin: 0;
+      color: #fff;
+      background-color: tomato;
+    }
+    .btn-back {
+      color: #fff;
+      background-color: #1abc9c;
+      text-decoration: none;
+      transform: rotateX(180deg);
+      -webkit-transform: rotateX(180deg);
+      -moz-transform: rotateX(180deg);
+      -ms-transform: rotateX(180deg);
+      -o-transform: rotateX(180deg);
+    }
+  }
+}
+
+/*
+<div class="parent-face-back-rotatey">
+      <div class="button-text">
+        <span class="btn-face single-text">see more</span>
+        <a href="#" class="btn-back single-text">click here</a>
+      </div>
+    </div>
+*/
+//
+
+.parent-face-back-rotatey {
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+  perspective: 600px;
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+  .button-text {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    transform-style: preserve-3d;
+    @include transition(0.5s);
+    .single-text {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+    &:hover {
+      transform: rotateY(180deg);
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
+    }
+    .btn-face {
+      margin: 0;
+      color: #fff;
+      background-color: tomato;
+    }
+    .btn-back {
+      color: #fff;
+      background-color: #1abc9c;
+      text-decoration: none;
+      transform: rotateY(180deg);
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
+    }
+  }
+}
+/*
+<div class="parent-view">
+      <div class="view-area">
+        <div class="play">
+          <i class="fa fa-play"></i>
+        </div>
+      </div>
+    </div>
+*/
+// view
+.parent-view {
+  height: 300px;
+  width: 100%;
+  position: relative;
+  .view-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    .play {
+      width: 80px;
+      height: 80px;
+      background: #ffcd44;
+      color: #fff;
+      text-align: center;
+      cursor: pointer;
+      line-height: 80px;
+      -webkit-animation-name: shadow;
+      animation-name: shadow;
+      -webkit-animation-duration: 2s;
+      animation-duration: 2s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      // animation: animate 2s linear infinite;
+      // -webkit-animation: animate 2s linear infinite;
+      @include borderRadius(50%);
+      @-webkit-keyframes shadow {
+        0% {
+          box-shadow: 0 0 0 0 rgba(255, 206, 67, 0.7);
+          background-color: #007bff;
+        }
+        40% {
+          box-shadow: 0 0 0 50px rgba(255, 206, 67, 0);
+        }
+        80% {
+          box-shadow: 0 0 0 50px rgba(255, 206, 67, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(255, 206, 67, 0);
+        }
+      }
+      @keyframes shadow {
+        0% {
+          box-shadow: 0 0 0 0 rgba(255, 206, 67, 0.7);
+        }
+        40% {
+          box-shadow: 0 0 0 50px rgba(255, 206, 67, 0);
+        }
+        80% {
+          box-shadow: 0 0 0 50px rgba(255, 206, 67, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(255, 206, 67, 0);
+        }
+      }
+    }
+  }
+}
+/*
+<div class="parent-text-shadow-1">
+      <h2 class="h1">hossam rashad</h2>
+    </div>
+*/
+// parent-shadow-1
+.parent-text-shadow-1 {
+  background: #ddd;
+  padding: 10px;
+  .h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    @include transition(0.5s);
+    @include hover {
+      text-shadow: -1px -1px 1px #333, 0 1px 0 #333, 0 2px 0 #333, 0 2px 0 #333,
+        0 3px 0 #333, 0 4px 0 #333, 0 5px 0 #333, 0 6px 0 #333, 0 7px 0 #333,
+        0 8px 0 #333, 0 9px 0 #333, 0 10px 0 #333, 0 11px 0 #333, 0 12px 0 #333,
+        0 13px 0 #333, 0 14px 0 #333, 0 15px 0 #333,
+        10px 25px 35px rgba(0, 0, 0, 0);
+    }
+  }
+}

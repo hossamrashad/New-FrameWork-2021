@@ -1095,7 +1095,7 @@
 body {
   font-family: cairo;
   font-size: 16px;
-  min-height: 5000px;
+  min-height: 500px;
 }
 
 ul,
@@ -1728,6 +1728,264 @@ class="css-parent-backward"
           transition-delay: 2s;
   -webkit-transition-duration: 2s;
           transition-duration: 2s;
+}
+
+/*
+<div class="parent-face-back-rotatex">
+      <div class="button-text">
+        <span class="btn-face single-text">see more</span>
+        <a href="#" class="btn-back single-text">click here</a>
+      </div>
+    </div>
+*/
+.parent-face-back-rotatex {
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+}
+
+.parent-face-back-rotatex:not(:last-child) {
+  margin-right: 15px;
+}
+
+.parent-face-back-rotatex .button-text {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.parent-face-back-rotatex .button-text .single-text {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.parent-face-back-rotatex .button-text:hover {
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+}
+
+.parent-face-back-rotatex .button-text .btn-face {
+  margin: 0;
+  color: #fff;
+  background-color: tomato;
+}
+
+.parent-face-back-rotatex .button-text .btn-back {
+  color: #fff;
+  background-color: #1abc9c;
+  text-decoration: none;
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+}
+
+/*
+<div class="parent-face-back-rotatey">
+      <div class="button-text">
+        <span class="btn-face single-text">see more</span>
+        <a href="#" class="btn-back single-text">click here</a>
+      </div>
+    </div>
+*/
+.parent-face-back-rotatey {
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+}
+
+.parent-face-back-rotatey:not(:last-child) {
+  margin-right: 15px;
+}
+
+.parent-face-back-rotatey .button-text {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.parent-face-back-rotatey .button-text .single-text {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.parent-face-back-rotatey .button-text:hover {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+.parent-face-back-rotatey .button-text .btn-face {
+  margin: 0;
+  color: #fff;
+  background-color: tomato;
+}
+
+.parent-face-back-rotatey .button-text .btn-back {
+  color: #fff;
+  background-color: #1abc9c;
+  text-decoration: none;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+/*
+<div class="parent-view">
+      <div class="view-area">
+        <div class="play">
+          <i class="fa fa-play"></i>
+        </div>
+      </div>
+    </div>
+*/
+.parent-view {
+  height: 300px;
+  width: 100%;
+  position: relative;
+}
+
+.parent-view .view-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.parent-view .view-area .play {
+  width: 80px;
+  height: 80px;
+  background: #ffcd44;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  line-height: 80px;
+  -webkit-animation-name: shadow;
+  animation-name: shadow;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+@-webkit-keyframes shadow {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 206, 67, 0.7);
+            box-shadow: 0 0 0 0 rgba(255, 206, 67, 0.7);
+    background-color: #007bff;
+  }
+  40% {
+    -webkit-box-shadow: 0 0 0 50px rgba(255, 206, 67, 0);
+            box-shadow: 0 0 0 50px rgba(255, 206, 67, 0);
+  }
+  80% {
+    -webkit-box-shadow: 0 0 0 50px rgba(255, 206, 67, 0);
+            box-shadow: 0 0 0 50px rgba(255, 206, 67, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 206, 67, 0);
+            box-shadow: 0 0 0 0 rgba(255, 206, 67, 0);
+  }
+}
+
+@keyframes shadow {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 206, 67, 0.7);
+            box-shadow: 0 0 0 0 rgba(255, 206, 67, 0.7);
+  }
+  40% {
+    -webkit-box-shadow: 0 0 0 50px rgba(255, 206, 67, 0);
+            box-shadow: 0 0 0 50px rgba(255, 206, 67, 0);
+  }
+  80% {
+    -webkit-box-shadow: 0 0 0 50px rgba(255, 206, 67, 0);
+            box-shadow: 0 0 0 50px rgba(255, 206, 67, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 206, 67, 0);
+            box-shadow: 0 0 0 0 rgba(255, 206, 67, 0);
+  }
+}
+
+/*
+<div class="parent-text-shadow-1">
+      <h2 class="h1">hossam rashad</h2>
+    </div>
+*/
+.parent-text-shadow-1 {
+  background: #ddd;
+  padding: 10px;
+}
+
+.parent-text-shadow-1 .h1 {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.parent-text-shadow-1 .h1:not([disabled]):hover {
+  text-shadow: -1px -1px 1px #333, 0 1px 0 #333, 0 2px 0 #333, 0 2px 0 #333, 0 3px 0 #333, 0 4px 0 #333, 0 5px 0 #333, 0 6px 0 #333, 0 7px 0 #333, 0 8px 0 #333, 0 9px 0 #333, 0 10px 0 #333, 0 11px 0 #333, 0 12px 0 #333, 0 13px 0 #333, 0 14px 0 #333, 0 15px 0 #333, 10px 25px 35px rgba(0, 0, 0, 0);
 }
 
 .loading {
@@ -2836,6 +3094,12 @@ nav.css-nav-scroll {
   -o-border-radius: 20px;
 }
 
+@media (max-width: 767px) {
+  .parent-form-1 .wrapper-form {
+    height: 350px;
+  }
+}
+
 .parent-form-1 .wrapper-form .form-img {
   width: 80px;
   height: 80px;
@@ -2849,6 +3113,12 @@ nav.css-nav-scroll {
   left: calc(50% - 40px);
 }
 
+@media (max-width: 767px) {
+  .parent-form-1 .wrapper-form .form-img {
+    display: none;
+  }
+}
+
 .parent-form-1 .wrapper-form .h1 {
   text-align: center;
   font-size: 22px;
@@ -2856,9 +3126,23 @@ nav.css-nav-scroll {
   padding: 0px 0px 20px;
 }
 
+@media (max-width: 767px) {
+  .parent-form-1 .wrapper-form .h1 {
+    font-size: 16px;
+    padding: 0px 0px 10px;
+  }
+}
+
 .parent-form-1 .wrapper-form label {
   font-weight: bold;
   font-size: 17px;
+}
+
+@media (max-width: 767px) {
+  .parent-form-1 .wrapper-form label {
+    font-weight: normal;
+    font-size: 12px !important;
+  }
 }
 
 .parent-form-1 .wrapper-form input {
@@ -2871,6 +3155,12 @@ nav.css-nav-scroll {
   font-size: 16px;
   width: 100%;
   margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .parent-form-1 .wrapper-form input {
+    height: 20px;
+  }
 }
 
 .parent-form-1 .wrapper-form input:focus,
@@ -2891,8 +3181,60 @@ nav.css-nav-scroll {
   line-height: 40px;
 }
 
+@media (max-width: 767px) {
+  .parent-form-1 .wrapper-form ::-webkit-input-placeholder {
+    font-size: 11px;
+    line-height: 20px;
+  }
+}
+
 .parent-form-1 .wrapper-form :-ms-input-placeholder {
   /* Internet Explorer */
+  color: #fff;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+@media (max-width: 767px) {
+  .parent-form-1 .wrapper-form :-ms-input-placeholder {
+    font-size: 11px;
+    line-height: 20px;
+  }
+}
+
+.parent-form-1 .wrapper-form ::-moz-placeholder {
+  color: #fff;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+@media (max-width: 767px) {
+  .parent-form-1 .wrapper-form ::-moz-placeholder {
+    font-size: 11px;
+    line-height: 20px;
+  }
+}
+
+.parent-form-1 .wrapper-form ::-ms-input-placeholder {
+  color: #fff;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+@media (max-width: 767px) {
+  .parent-form-1 .wrapper-form ::-ms-input-placeholder {
+    font-size: 11px;
+    line-height: 20px;
+  }
+}
+
+.parent-form-1 .wrapper-form ::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.parent-form-1 .wrapper-form :-ms-input-placeholder {
   color: #fff;
   font-size: 14px;
   line-height: 40px;
@@ -2910,6 +3252,25 @@ nav.css-nav-scroll {
   line-height: 40px;
 }
 
+@media (max-width: 767px) {
+  .parent-form-1 .wrapper-form ::-webkit-input-placeholder {
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .parent-form-1 .wrapper-form :-ms-input-placeholder {
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .parent-form-1 .wrapper-form ::-ms-input-placeholder {
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .parent-form-1 .wrapper-form ::placeholder {
+    font-size: 11px;
+    line-height: 20px;
+  }
+}
+
 .parent-form-1 .wrapper-form .btn-submit {
   width: 50%;
   margin: 35px auto 0px;
@@ -2925,6 +3286,13 @@ nav.css-nav-scroll {
   font-size: 20px;
 }
 
+@media (max-width: 767px) {
+  .parent-form-1 .wrapper-form .btn-submit {
+    margin: 0px auto 0px;
+    font-size: 13px;
+  }
+}
+
 .parent-form-1 .wrapper-form .sign-in-by {
   border-top: 1px solid #999;
   margin-top: 20px;
@@ -2936,7 +3304,20 @@ nav.css-nav-scroll {
   font-size: 18px;
 }
 
-.parent-form-1 .wrapper-form .sign-in-by i {
+.parent-form-1 .wrapper-form .sign-in-by .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px auto;
+}
+
+.parent-form-1 .wrapper-form .sign-in-by .social i {
   border: 1px solid #fff;
   padding: 10px;
   text-align: center;
@@ -2958,7 +3339,7 @@ nav.css-nav-scroll {
   -o-transition: all 0.5s ease-in-out;
 }
 
-.parent-form-1 .wrapper-form .sign-in-by i:not([disabled]):hover {
+.parent-form-1 .wrapper-form .sign-in-by .social i:not([disabled]):hover {
   background-color: #fff;
   color: #3498db;
   border: 1px solid #3498db;
@@ -3006,6 +3387,107 @@ nav.css-nav-scroll {
   .parent-form-1 .wrapper-form .sign-in-by i {
     margin-left: 10px;
   }
+}
+
+.parent-form-2 .h1 {
+  text-align: center;
+}
+
+.parent-form-2 .submit {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px 30px;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.parent-back-face {
+  -webkit-perspective: 600px;
+          perspective: 600px;
+}
+
+.parent-back-face .box {
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -ms-transition: transform 1s;
+  -o-transition: transform 1s;
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
+}
+
+.parent-back-face .box:not([disabled]):hover {
+  -webkit-transform: translateX(-100%) rotateY(-180deg);
+          transform: translateX(-100%) rotateY(-180deg);
+}
+
+.parent-back-face .box .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.parent-back-face .box .front {
+  background-color: red;
+}
+
+.parent-back-face .box .back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  color: #000;
+}
+
+.center-position {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.center-flix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cayan {
