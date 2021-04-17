@@ -27,9 +27,9 @@ $(document).ready(function () {
 $(function () {
   "use strict";
 
-  var typed = new Typed(".cayan", {
+  var typed = new Typed(".text-write", {
     // Waits 1000ms after typing "First"
-    strings: ["First ^1000 sentence.", "Second sentence.", "yes"],
+    strings: ["بحبك.", "وانتى كمان ", "بتحبينى"],
     typeSpeed: 100,
     loop: true,
     startDelay: 1000,
