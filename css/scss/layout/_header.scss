@@ -39,3 +39,105 @@
     }
   }
 }
+
+//
+/*
+<div
+        class="collapse navbar-collapse css-menu-hover-1"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span title="hossam">hossam</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span title="rashad">rashad</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span title="ahmed">ahmed</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span title="aboud">aboud</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span title="aboud">aboud</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span title="hegazy">hegazy</span></a>
+          </li>
+        </ul>
+      </div>
+*/
+.css-menu-hover-1 {
+  ul {
+    li {
+      transform-style: preserve-3d;
+      display: inline-block;
+      a {
+        position: relative;
+        display: block;
+        color: #fff;
+        // font-size: 18px;
+        font-family: poppins;
+        text-transform: uppercase;
+        text-decoration: none;
+        // font-weight: bold;
+        // background-color: #1abc9c;
+        span {
+          display: block;
+          // padding: 15px 30px;
+          width: 100%;
+          height: 100%;
+          &::before {
+            content: attr(title);
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: tomato;
+            color: #fff;
+            padding: 10px 0px;
+            transform-style: preserve-3d;
+            @include transition(0.4s);
+            transform: rotateX(90deg) translateY(150px);
+            -webkit-transform: rotateX(90deg) translateY(150px);
+            -moz-transform: rotateX(90deg) translateY(150px);
+            -ms-transform: rotateX(90deg) translateY(150px);
+            -o-transform: rotateX(90deg) translateY(150px);
+            transform-origin: bottom;
+            width: 100%;
+            height: 100%;
+
+            @include xs-media {
+              width: 18%;
+              direction: rtl;
+              right: 0;
+              text-align: center;
+            }
+            @include sm-media {
+              width: 15%;
+              direction: rtl;
+              right: 0;
+              text-align: center;
+            }
+            @include md-media {
+              width: 100%;
+              text-align: center;
+            }
+          }
+          &:hover::before {
+            transform: rotateX(0deg) translateY(0px);
+            -webkit-transform: rotateX(0deg) translateY(0px);
+            -moz-transform: rotateX(0deg) translateY(0px);
+            -ms-transform: rotateX(0deg) translateY(0px);
+            -o-transform: rotateX(0deg) translateY(0px);
+          }
+        }
+      }
+    }
+  }
+}

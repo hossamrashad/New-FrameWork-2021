@@ -26,6 +26,7 @@
   -ms-transform: scale($width, $height);
   -o-transform: scale($width, $height);
 }
+
 // hover
 // @include hover {}
 @mixin hover {
@@ -43,7 +44,20 @@
   -ms-transform: rotate($number);
   -o-transform: rotate($number);
 }
-
+@mixin rotateY($number) {
+  transform: rotateY($number);
+  -webkit-transform: rotateY($number);
+  -moz-transform: rotateY($number);
+  -ms-transform: rotateY($number);
+  -o-transform: rotateY($number);
+}
+@mixin rotateX($number) {
+  transform: rotateX($number);
+  -webkit-transform: rotateX($number);
+  -moz-transform: rotateX($number);
+  -ms-transform: rotateX($number);
+  -o-transform: rotateX($number);
+}
 // ul
 // @include horizontal-list;
 @mixin reset-list {
@@ -108,6 +122,15 @@
   height: 100%;
 }
 
+// translate
+// @include translate(10px, 10px);
+@mixin translate($width, $height) {
+  transform: translate($width, $height);
+  -webkit-transform: translate($width, $height);
+  -moz-transform: translate($width, $height);
+  -ms-transform: translate($width, $height);
+  -o-transform: translate($width, $height);
+}
 // prefix
 // @include prefix(box-shadow, 10px 10px 10px #ccc, webkit moz o ms);
 @mixin prefix($property, $value, $prefixes: ()) {

@@ -1,0 +1,57 @@
+.css-parent-slider-gallery-2 {
+  border: 5px solid #000;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.css-parent-slider-gallery-2 ul.img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+  padding: 0;
+}
+
+.css-parent-slider-gallery-2 ul.img-wrapper li {
+  width: 5%;
+  overflow: hidden;
+  transition: all 1.5s;
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.css-parent-slider-gallery-2 ul.img-wrapper li img {
+  width: 95%;
+  border: 5px solid #f00;
+  height: 100%;
+}
+
+.css-parent-slider-gallery-2 ul.img-wrapper li:hover {
+  width: 85%;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+.css-parent-slider-gallery-2 ul.img-wrapper li:nth-child(3) {
+  width: 95%;
+}
+
+.css-parent-slider-gallery-2 ul.img-wrapper li:nth-child(3) :hover {
+  width: 95%;
+}
+
+.css-parent-slider-gallery-2 ul.img-wrapper:hover li:nth-child(3) {
+  width: 70px;
+}
+/*# sourceMappingURL=test.css.map */

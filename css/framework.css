@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&family=Changa:wght@200;300;400;500;600;700;800&family=El+Messiri:wght@400;500;600;700&family=Lateef&family=Markazi+Text:wght@400;500;600;700&family=Mirza:wght@400;500;600;700&family=Scheherazade:wght@400;700&family=Short+Stack&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 /* arabic */
 @font-face {
@@ -971,7 +972,11 @@
 
 :root {
   --color-3498db: #3498db;
-  --color-ffffff: #ffffff;
+  --color-fff: #ffffff;
+  --color-000: #0000000;
+  --color-333: #333333;
+  --color-f00: #ff0000;
+  --color-080: #008800;
 }
 
 .col-my-left-1, .col-my-left-2, .col-my-left-3, .col-my-left-4, .col-my-left-5, .col-my-left-6, .col-my-left-7, .col-my-left-8, .col-my-left-9, .col-my-left-10, .col-my-left-11, .col-my-left-12 {
@@ -1192,7 +1197,7 @@ a:focus {
 }
 
 .li-border-bottom li a {
-  color: #000;
+  color: #333333;
   font-size: 17px;
   font-weight: 500;
   display: block;
@@ -1224,14 +1229,14 @@ a:focus {
           transform: scale(1);
 }
 
-.element-with-border {
+.css-element-with-border {
   position: relative;
 }
 
-.element-with-border .inner {
+.css-element-with-border .inner {
   background-color: #0099e5;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   margin: 40px auto;
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -1242,11 +1247,11 @@ a:focus {
   padding: 10px 15px;
 }
 
-.element-with-border .inner:before {
+.css-element-with-border .inner:before {
   content: "";
   width: 100%;
   height: 1px;
-  background-color: #000000;
+  background-color: #333333;
   position: absolute;
   left: 0;
   top: 50%;
@@ -1395,7 +1400,7 @@ a:focus {
 <!-- End scroll to top -->
 */
 #scroll-to-top-1 {
-  background-color: #333;
+  background-color: #333333;
   color: #fff;
   display: block;
   padding: 0px 5px 3px;
@@ -1731,14 +1736,14 @@ class="css-parent-backward"
 }
 
 /*
-<div class="parent-face-back-rotatex">
+<div class="parent-face-back-rotate-x">
       <div class="button-text">
         <span class="btn-face single-text">see more</span>
         <a href="#" class="btn-back single-text">click here</a>
       </div>
     </div>
 */
-.parent-face-back-rotatex {
+.parent-face-back-rotate-x {
   display: inline-block;
   position: relative;
   height: 50px;
@@ -1748,11 +1753,11 @@ class="css-parent-backward"
           perspective: 600px;
 }
 
-.parent-face-back-rotatex:not(:last-child) {
+.parent-face-back-rotate-x:not(:last-child) {
   margin-right: 15px;
 }
 
-.parent-face-back-rotatex .button-text {
+.parent-face-back-rotate-x .button-text {
   width: 100%;
   height: 100%;
   display: block;
@@ -1768,7 +1773,7 @@ class="css-parent-backward"
   -o-transition: all 0.5s ease-in-out;
 }
 
-.parent-face-back-rotatex .button-text .single-text {
+.parent-face-back-rotate-x .button-text .single-text {
   display: block;
   position: absolute;
   width: 100%;
@@ -1777,7 +1782,7 @@ class="css-parent-backward"
   backface-visibility: hidden;
 }
 
-.parent-face-back-rotatex .button-text:hover {
+.parent-face-back-rotate-x .button-text:hover {
   transform: rotateX(180deg);
   -webkit-transform: rotateX(180deg);
   -moz-transform: rotateX(180deg);
@@ -1785,13 +1790,13 @@ class="css-parent-backward"
   -o-transform: rotateX(180deg);
 }
 
-.parent-face-back-rotatex .button-text .btn-face {
+.parent-face-back-rotate-x .button-text .btn-face {
   margin: 0;
   color: #fff;
   background-color: tomato;
 }
 
-.parent-face-back-rotatex .button-text .btn-back {
+.parent-face-back-rotate-x .button-text .btn-back {
   color: #fff;
   background-color: #1abc9c;
   text-decoration: none;
@@ -1803,14 +1808,14 @@ class="css-parent-backward"
 }
 
 /*
-<div class="parent-face-back-rotatey">
+<div class="parent-face-back-rotate-y">
       <div class="button-text">
         <span class="btn-face single-text">see more</span>
         <a href="#" class="btn-back single-text">click here</a>
       </div>
     </div>
 */
-.parent-face-back-rotatey {
+.parent-face-back-rotate-y {
   display: inline-block;
   position: relative;
   height: 50px;
@@ -1820,11 +1825,11 @@ class="css-parent-backward"
           perspective: 600px;
 }
 
-.parent-face-back-rotatey:not(:last-child) {
+.parent-face-back-rotate-y:not(:last-child) {
   margin-right: 15px;
 }
 
-.parent-face-back-rotatey .button-text {
+.parent-face-back-rotate-y .button-text {
   width: 100%;
   height: 100%;
   display: block;
@@ -1840,7 +1845,7 @@ class="css-parent-backward"
   -o-transition: all 0.5s ease-in-out;
 }
 
-.parent-face-back-rotatey .button-text .single-text {
+.parent-face-back-rotate-y .button-text .single-text {
   display: block;
   position: absolute;
   width: 100%;
@@ -1849,7 +1854,7 @@ class="css-parent-backward"
   backface-visibility: hidden;
 }
 
-.parent-face-back-rotatey .button-text:hover {
+.parent-face-back-rotate-y .button-text:hover {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
@@ -1857,13 +1862,13 @@ class="css-parent-backward"
   -o-transform: rotateY(180deg);
 }
 
-.parent-face-back-rotatey .button-text .btn-face {
+.parent-face-back-rotate-y .button-text .btn-face {
   margin: 0;
   color: #fff;
   background-color: tomato;
 }
 
-.parent-face-back-rotatey .button-text .btn-back {
+.parent-face-back-rotate-y .button-text .btn-back {
   color: #fff;
   background-color: #1abc9c;
   text-decoration: none;
@@ -1963,16 +1968,16 @@ class="css-parent-backward"
 }
 
 /*
-<div class="parent-text-shadow-1">
+<div class="css-parent-text-shadow-1">
       <h2 class="h1">hossam rashad</h2>
     </div>
 */
-.parent-text-shadow-1 {
+.css-parent-text-shadow-1 {
   background: #ddd;
   padding: 10px;
 }
 
-.parent-text-shadow-1 .h1 {
+.css-parent-text-shadow-1 .h1 {
   text-align: center;
   color: #fff;
   font-weight: bold;
@@ -1984,8 +1989,991 @@ class="css-parent-backward"
   -o-transition: all 0.5s ease-in-out;
 }
 
-.parent-text-shadow-1 .h1:not([disabled]):hover {
+.css-parent-text-shadow-1 .h1:not([disabled]):hover {
   text-shadow: -1px -1px 1px #333, 0 1px 0 #333, 0 2px 0 #333, 0 2px 0 #333, 0 3px 0 #333, 0 4px 0 #333, 0 5px 0 #333, 0 6px 0 #333, 0 7px 0 #333, 0 8px 0 #333, 0 9px 0 #333, 0 10px 0 #333, 0 11px 0 #333, 0 12px 0 #333, 0 13px 0 #333, 0 14px 0 #333, 0 15px 0 #333, 10px 25px 35px rgba(0, 0, 0, 0);
+}
+
+/*
+<!-- Start parent-btn-open -->
+    <div class="parent-btn-open">
+      <div class="button-text">
+        <span class="single-text">See More</span>
+        <a href="#" class="single-text">Click Here</a>
+      </div>
+    </div>
+    <!-- End parent-btn-open -->
+*/
+.parent-btn-open {
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+}
+
+.parent-btn-open:not(:last-child) {
+  margin-right: 15px;
+}
+
+.parent-btn-open .button-text {
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.parent-btn-open .button-text span {
+  margin: 0;
+  color: #ffffff;
+  background-color: #3498db;
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+  -webkit-transition: transform 0.4s ease;
+  -moz-transition: transform 0.4s ease;
+  -ms-transition: transform 0.4s ease;
+  -o-transition: transform 0.4s ease;
+}
+
+.parent-btn-open .button-text a {
+  color: #ffffff;
+  background-color: #333333;
+  text-decoration: none;
+  z-index: -5;
+}
+
+.parent-btn-open .button-text .single-text {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.parent-btn-open .button-text:hover span {
+  transform: rotateX(90deg);
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  -o-transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+  -webkit-transition: transform 0.4s ease;
+  -moz-transition: transform 0.4s ease;
+  -ms-transition: transform 0.4s ease;
+  -o-transition: transform 0.4s ease;
+}
+
+/*
+<!-- Start social-box-2 -->
+    <div class="css-parent-social-box-2">
+      <a href="#" class="box-facebook">
+        facebook
+        <i class="fa fa-facebook fa-fw"></i>
+      </a>
+      <a href="#" class="box-whatsapp"
+        >whatsapp
+        <i class="fa fa-whatsapp fa-fw"></i>
+      </a>
+
+      <a href="#" class="box-youtube"
+        >youtube
+        <i class="fa fa-youtube fa-fw"></i>
+      </a>
+      <a href="#" class="box-google"
+        >google
+        <i class="fa fa-google fa-fw"></i>
+      </a>
+      <a href="#" class="box-dribbble"
+        >dribbble
+        <i class="fa fa-dribbble fa-fw"></i>
+      </a>
+      <a href="#" class="box-linkedin"
+        >linkedin
+        <i class="fa fa-linkedin fa-fw"></i>
+      </a>
+      <a href="#" class="box-pinterest"
+        >pinterest
+        <i class="fa fa-pinterest fa-fw"></i>
+      </a>
+      <a href="#" class="box-github"
+        >github
+        <i class="fa fa-github fa-fw"></i>
+      </a>
+    </div>
+    <!-- End social-box-2 -->
+*/
+.css-parent-social-box-2 a {
+  position: fixed;
+  right: -110px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  padding: 15px;
+  width: 150px;
+  text-decoration: none;
+  text-align: left;
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 15%;
+  text-transform: capitalize;
+  z-index: 1000;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.css-parent-social-box-2 a:hover {
+  right: 0px;
+}
+
+.css-parent-social-box-2 .box-facebook {
+  top: 10px;
+  background-color: #3498db;
+}
+
+.css-parent-social-box-2 .box-whatsapp {
+  top: 80px;
+  background-color: #29bb89;
+}
+
+.css-parent-social-box-2 .box-youtube {
+  top: 150px;
+  background-color: #cc0000;
+}
+
+.css-parent-social-box-2 .box-google {
+  top: 220px;
+  background-color: #3498db;
+}
+
+.css-parent-social-box-2 .box-dribbble {
+  top: 290px;
+  background-color: #ed4c67;
+}
+
+.css-parent-social-box-2 .box-linkedin {
+  top: 360px;
+  background-color: #046582;
+}
+
+.css-parent-social-box-2 .box-pinterest {
+  top: 430px;
+  background-color: #999999;
+}
+
+.css-parent-social-box-2 .box-github {
+  top: 500px;
+  background-color: #333333;
+}
+
+/*
+<div class="css-parent-mouse-icon jq-window-height">
+      <div class="mouse-icon">
+        <div class="wheel"></div>
+      </div>
+    </div>
+*/
+.css-parent-mouse-icon {
+  position: relative;
+}
+
+.css-parent-mouse-icon .mouse-icon {
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  border: 1px solid #3498db;
+  height: 50px;
+  width: 30px;
+  margin-left: -17px;
+  display: block;
+  z-index: 10;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.css-parent-mouse-icon .mouse-icon .wheel {
+  position: relative;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: #333333;
+  width: 4px;
+  height: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-animation-name: drop;
+  animation-name: drop;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+@-webkit-keyframes drop {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
+
+@keyframes drop {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
+
+/*
+<div class="parent-btn-ching-color-hover-left">
+      <a href="#" class=""> <span>Contact Us</span> </a>
+    </div>
+*/
+.css-parent-ching-color-left {
+  position: relative;
+}
+
+.css-parent-ching-color-left a {
+  position: absolute;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #ffffff;
+  border: 1px solid #3498db;
+  padding: 10px 15px;
+  overflow: hidden;
+  transform: translate(0%, 0%);
+  -webkit-transform: translate(0%, 0%);
+  -moz-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  -o-transform: translate(0%, 0%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.css-parent-ching-color-left a::before {
+  content: "";
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  height: 100%;
+  background: #3498db;
+  width: 100%;
+  top: 0;
+  left: -100%;
+}
+
+.css-parent-ching-color-left a:hover::before {
+  left: 0;
+  z-index: -1;
+}
+
+.css-parent-ching-color-left a span {
+  color: #3498db;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.css-parent-ching-color-left a:hover span {
+  color: #ffffff;
+}
+
+.css-parent-ching-color-right {
+  position: relative;
+}
+
+.css-parent-ching-color-right a {
+  position: absolute;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #ffffff;
+  border: 1px solid #3498db;
+  padding: 10px 15px;
+  overflow: hidden;
+  transform: translate(0%, 0%);
+  -webkit-transform: translate(0%, 0%);
+  -moz-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  -o-transform: translate(0%, 0%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.css-parent-ching-color-right a::before {
+  content: "";
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  height: 100%;
+  background: #3498db;
+  width: 100%;
+  top: 0;
+  right: -100%;
+}
+
+.css-parent-ching-color-right a:hover::before {
+  right: 0;
+  z-index: -1;
+}
+
+.css-parent-ching-color-right a span {
+  color: #3498db;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.css-parent-ching-color-right a:hover span {
+  color: #ffffff;
+}
+
+.css-parent-ching-color-top {
+  position: relative;
+}
+
+.css-parent-ching-color-top a {
+  position: absolute;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #ffffff;
+  border: 1px solid #3498db;
+  padding: 10px 15px;
+  overflow: hidden;
+  transform: translate(0%, 0%);
+  -webkit-transform: translate(0%, 0%);
+  -moz-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  -o-transform: translate(0%, 0%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.css-parent-ching-color-top a::before {
+  content: "";
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  height: 100%;
+  background: #3498db;
+  width: 100%;
+  left: 0;
+  top: -100%;
+}
+
+.css-parent-ching-color-top a:hover::before {
+  top: 0;
+  z-index: -1;
+}
+
+.css-parent-ching-color-top a span {
+  color: #3498db;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.css-parent-ching-color-top a:hover span {
+  color: #ffffff;
+}
+
+.css-parent-ching-color-bottom {
+  position: relative;
+}
+
+.css-parent-ching-color-bottom a {
+  position: absolute;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #ffffff;
+  border: 1px solid #3498db;
+  padding: 10px 15px;
+  overflow: hidden;
+  transform: translate(0%, 0%);
+  -webkit-transform: translate(0%, 0%);
+  -moz-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  -o-transform: translate(0%, 0%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.css-parent-ching-color-bottom a::before {
+  content: "";
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  height: 100%;
+  background: #3498db;
+  width: 100%;
+  right: 0;
+  bottom: -100%;
+}
+
+.css-parent-ching-color-bottom a:hover::before {
+  bottom: 0;
+  z-index: -1;
+}
+
+.css-parent-ching-color-bottom a span {
+  color: #3498db;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.css-parent-ching-color-bottom a:hover span {
+  color: #ffffff;
+}
+
+/*
+<!-- Start btn-flip -->
+<div class="css-parent-btn-flip-2">
+  <a href="#" title="Login" class="link"></a>
+</div>
+<!-- End btn-flip -->
+*/
+.css-parent-btn-flip-2 {
+  position: relative;
+}
+
+.css-parent-btn-flip-2 .link {
+  font-size: 20px;
+  font-family: poppins;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.css-parent-btn-flip-2 .link::before {
+  content: attr(title);
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 30px;
+  background: #fff;
+  color: tomato;
+  border: 1px solid tomato;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transform: translateX(-100%) rotateY(90deg);
+  -webkit-transform: translateX(-100%) rotateY(90deg);
+  -moz-transform: translateX(-100%) rotateY(90deg);
+  -ms-transform: translateX(-100%) rotateY(90deg);
+  -o-transform: translateX(-100%) rotateY(90deg);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.css-parent-btn-flip-2 .link::after {
+  content: attr(title);
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 30px;
+  background: tomato;
+  color: #fff;
+  border: 1px solid tomato;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transform: translateX(0) rotateY(0deg);
+  -webkit-transform: translateX(0) rotateY(0deg);
+  -moz-transform: translateX(0) rotateY(0deg);
+  -ms-transform: translateX(0) rotateY(0deg);
+  -o-transform: translateX(0) rotateY(0deg);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.css-parent-btn-flip-2 .link:hover::before {
+  transform: translateX(0) rotateY(0deg);
+  -webkit-transform: translateX(0) rotateY(0deg);
+  -moz-transform: translateX(0) rotateY(0deg);
+  -ms-transform: translateX(0) rotateY(0deg);
+  -o-transform: translateX(0) rotateY(0deg);
+}
+
+.css-parent-btn-flip-2 .link:hover::after {
+  transform: translateX(100%) rotateY(90deg);
+  -webkit-transform: translateX(100%) rotateY(90deg);
+  -moz-transform: translateX(100%) rotateY(90deg);
+  -ms-transform: translateX(100%) rotateY(90deg);
+  -o-transform: translateX(100%) rotateY(90deg);
+}
+
+/*
+<!-- Start text-back-img -->
+<div class="css-parent-text-back-img">
+  <h2 class="h1">Hossam</h2>
+</div>
+<!-- End text-back-img -->
+*/
+.css-parent-text-back-img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.css-parent-text-back-img .h1 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: poppins;
+  margin: 0;
+  background-image: url(../../images/440x440/image-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/*
+<!-- Start overlay-top -->
+          <div class="css-overlay-top">
+            <div class="side-text">
+              <h2 class="h1">hossam rashad</h2>
+            </div>
+            <div class="side-img">
+              <img
+                src="images/440x440/image-1.jpg"
+                alt=""
+                class="img-fluid img-thumbnail"
+              />
+            </div>
+          </div>
+          <!-- End overlay-top -->
+*/
+.css-overlay-top {
+  text-align: center;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.css-overlay-top img {
+  width: 100%;
+  height: 100%;
+}
+
+.css-overlay-top .h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 250px;
+  font-size: 2vw;
+  font-family: poppins;
+  text-transform: uppercase;
+}
+
+.css-overlay-top .side-text,
+.css-overlay-top .side-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.css-overlay-top .side-text {
+  background-color: #007bff;
+  color: #fff;
+  transform: rotateX(90deg);
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  -o-transform: rotateX(90deg);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+}
+
+.css-overlay-top .side-img {
+  background-color: #fff;
+  color: #007bff;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+}
+
+.css-overlay-top:hover .side-text {
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+}
+
+.css-overlay-top:hover .side-img {
+  transform: rotateX(120deg);
+  -webkit-transform: rotateX(120deg);
+  -moz-transform: rotateX(120deg);
+  -ms-transform: rotateX(120deg);
+  -o-transform: rotateX(120deg);
+}
+
+/*
+<!-- Start back-color-move -->
+          <div class="css-parent-btn-back-color-move">
+            <a href="#" class="link">learn more</a>
+          </div>
+          <!-- End back-color-move -->
+*/
+.css-parent-btn-back-color-move {
+  position: relative;
+}
+
+.css-parent-btn-back-color-move .link {
+  position: absolute;
+  text-transform: capitalize;
+  color: #3498db;
+  background-color: transparent;
+  border: 2px solid #3498db;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.6, 0, 0.7, 1);
+  -webkit-transition: all 0.5s cubic-bezier(0.6, 0, 0.7, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.6, 0, 0.7, 1);
+  -ms-transition: all 0.5s cubic-bezier(0.6, 0, 0.7, 1);
+  -o-transition: all 0.5s cubic-bezier(0.6, 0, 0.7, 1);
+  line-height: 50px;
+  padding: 0px 15px;
+  display: block;
+  width: 135px;
+  height: 50px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.css-parent-btn-back-color-move .link:hover {
+  color: #fff;
+}
+
+.css-parent-btn-back-color-move .link::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  background-color: #3498db;
+  transition: all 0.5s cubic-bezier(0.6, 0, 0.7, 1);
+  -webkit-transition: all 0.5s cubic-bezier(0.6, 0, 0.7, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.6, 0, 0.7, 1);
+  -ms-transition: all 0.5s cubic-bezier(0.6, 0, 0.7, 1);
+  -o-transition: all 0.5s cubic-bezier(0.6, 0, 0.7, 1);
+}
+
+.css-parent-btn-back-color-move .link:hover::before {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+/*
+<!-- Start back-face-1 -->
+<div class="css-parent-btn-back-face-1">
+  <a href="#" class="link">
+    <div class="side-face">learn more</div>
+    <div class="side-back">learn more</div>
+  </a>
+</div>
+<!-- End back-face-1 -->
+*/
+.css-parent-btn-back-face-1 {
+  position: relative;
+}
+
+.css-parent-btn-back-face-1 .link {
+  position: absolute;
+  width: 160px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #3498db;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border: 2px solid #3498db;
+  font-size: 20px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.css-parent-btn-back-face-1 .link .side-face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.css-parent-btn-back-face-1 .link .side-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(3, 3);
+  -webkit-transform: scale(3, 3);
+  -moz-transform: scale(3, 3);
+  -ms-transform: scale(3, 3);
+  -o-transform: scale(3, 3);
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  color: #ffffff;
+  background-color: #3498db;
+  zoom: 1;
+  filter: alpha(opacity=0);
+  -webkit-filter: alpha(opacity=0);
+  opacity: 0;
+}
+
+.css-parent-btn-back-face-1 .link:hover .side-face {
+  transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+}
+
+.css-parent-btn-back-face-1 .link:hover .side-back {
+  transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  zoom: 1;
+  filter: alpha(opacity=100);
+  -webkit-filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.css-parent-btn-back-face-2 {
+  width: 150px;
+  height: 60px;
+  margin-top: 30px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.css-parent-btn-back-face-2 .side-face {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #333333;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.css-parent-btn-back-face-2 .side-face p {
+  font-size: 22px;
+  text-align: center;
+  line-height: 60px;
+  letter-spacing: 0.1em;
+}
+
+.css-parent-btn-back-face-2 .side-face p .link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.css-parent-btn-back-face-2 .side-back {
+  position: absolute;
+  width: 150px;
+  height: 60px;
+  top: -60px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #3498db;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.css-parent-btn-back-face-2 .side-back p {
+  font-size: 22px;
+  text-align: center;
+  line-height: 60px;
+  letter-spacing: 0.1em;
+}
+
+.css-parent-btn-back-face-2 .side-back p .link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.css-parent-btn-back-face-2:hover .side-back {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  top: 0;
 }
 
 .loading {
@@ -2726,61 +3714,6 @@ class="css-parent-backward"
   }
 }
 
-.fixed-menu-icon {
-  z-index: 99999;
-  position: relative;
-}
-
-.fixed-menu-icon i {
-  background-color: #009688;
-  color: #ffffff;
-  position: fixed;
-  right: 30px;
-  top: 100px;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  cursor: pointer;
-  z-index: 9999;
-  background-color: transparent;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-
-.fixed-menu-icon i:not([disabled]):hover {
-  background-color: white;
-}
-
-.fixed-menu {
-  background-color: #009688;
-  color: #fff;
-  padding: 50px 10px;
-  position: fixed;
-  right: 0px;
-  top: 20%;
-  height: 50%;
-  width: 170px;
-  z-index: 9999;
-  zoom: 1;
-  filter: alpha(opacity=0);
-  -webkit-filter: alpha(opacity=0);
-  opacity: 0;
-  border-radius: 10px 0px 0px 10px;
-  -webkit-border-radius: 10px 0px 0px 10px;
-  -moz-border-radius: 10px 0px 0px 10px;
-  -ms-border-radius: 10px 0px 0px 10px;
-  -o-border-radius: 10px 0px 0px 10px;
-}
-
 .jq-window-height {
   text-decoration: none;
 }
@@ -2837,6 +3770,19 @@ class="css-parent-backward"
   padding-right: 0;
 }
 
+/*
+<div class="jq-snake">
+            <img src="images/440x440/image-1.jpg" alt="" />
+            <div class="overlay">
+              <div class="disc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quisquam, enim. Et, minus iste repellendus expedita fugit unde
+                debitis rerum assumenda ipsa laborum explicabo, optio eaque
+                voluptatem odio commodi, itaque omnis?
+              </div>
+            </div>
+          </div>
+*/
 .jq-snake {
   position: relative;
   overflow: hidden;
@@ -2891,9 +3837,35 @@ class="css-parent-backward"
   direction: ltr !important;
 }
 
+/*
+ <!-- Start fixed menu -->
+    <div class="fixed-menu-normal">
+      <i class="fa fa-bars fa-fw fa-2x" aria-hidden="true"></i>
+      <h3 class="h5">1 - الرئيسية</h3>
+      <h3 class="h5">2 - مشاريعنا</h3>
+      <h3 class="h5">3 - المقالات</h3>
+      <h3 class="h5">4 - الالوان</h3>
+      <h3 class="h5">5 - الخريطة</h3>
+      <h3 class="h5">6 - اتصال بنا</h3>
+    </div>
+    <!-- End fixed menu -->
+
+    ****************************
+
+    <!-- Start fixed menu -->
+        <div class="fixed-menu-padding-body">
+          <i class="fa fa-bars fa-fw fa-2x" aria-hidden="true"></i>
+          <h3 class="h5">1 - الرئيسية</h3>
+          <h3 class="h5">2 - مشاريعنا</h3>
+          <h3 class="h5">3 - المقالات</h3>
+          <h3 class="h5">4 - الالوان</h3>
+          <h3 class="h5">5 - الخريطة</h3>
+          <h3 class="h5">6 - اتصال بنا</h3>
+        </div>
+        <!-- End fixed menu -->
+*/
 .fixed-menu-normal,
 .fixed-menu-padding-body {
-  background-color: #3498db;
   color: #fff;
   padding: 10px 10px;
   position: fixed;
@@ -2918,7 +3890,6 @@ class="css-parent-backward"
   height: 40px;
   line-height: 40px;
   text-align: center;
-  background-color: #3498db;
   border-radius: 10px 0px 0px 10px;
   -webkit-border-radius: 10px 0px 0px 10px;
   -moz-border-radius: 10px 0px 0px 10px;
@@ -2930,12 +3901,87 @@ class="css-parent-backward"
 
 .fixed-menu-normal a,
 .fixed-menu-padding-body a {
-  color: #ffffff;
   margin: 30px 0px;
   display: block;
   text-align: center;
 }
 
+/*
+<!-- Start mixitup -->
+        <div class="parent-mixitup">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box-menu">
+                <ul>
+                  <li class="mixitup-control-active" data-filter="*">all</li>
+                  <li data-filter=".photo">photo</li>
+                  <li data-filter=".ui">photo</li>
+                  <li data-filter=".paint">painting</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row box-list">
+            <div class="col-md-3 col-sm-3 mix box-item photo paint">
+              <img
+                src="images/440x440/image-1.jpg"
+                alt=""
+                class="img-fluid img-thumbnail"
+              />
+            </div>
+            <div class="col-md-3 col-sm-6 mix box-item ui">
+              <img
+                src="images/440x440/image-2.jpg"
+                alt=""
+                class="img-fluid img-thumbnail"
+              />
+            </div>
+            <div class="col-md-3 col-sm-6 mix box-item ui">
+              <img
+                src="images/440x440/image-3.jpg"
+                alt=""
+                class="img-fluid img-thumbnail"
+              />
+            </div>
+            <div class="col-md-3 col-sm-6 mix box-item photo">
+              <img
+                src="images/440x440/image-4.jpg"
+                alt=""
+                class="img-fluid img-thumbnail"
+              />
+            </div>
+            <div class="col-md-3 col-sm-6 mix box-item paint">
+              <img
+                src="images/440x440/image-5.jpg"
+                alt=""
+                class="img-fluid img-thumbnail"
+              />
+            </div>
+            <div class="col-md-3 col-sm-6 mix box-item ui paint">
+              <img
+                src="images/440x440/image-6.jpg"
+                alt=""
+                class="img-fluid img-thumbnail"
+              />
+            </div>
+            <div class="col-md-3 col-sm-6 mix box-item ui">
+              <img
+                src="images/440x440/image-7.jpg"
+                alt=""
+                class="img-fluid img-thumbnail"
+              />
+            </div>
+            <div class="col-md-3 col-sm-6 mix box-item photo">
+              <img
+                src="images/440x440/image-8.jpg"
+                alt=""
+                class="img-fluid img-thumbnail"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- End mixitup -->
+*/
 .parent-mixitup img {
   width: 100%;
 }
@@ -2954,7 +4000,6 @@ class="css-parent-backward"
   -o-border-radius: 5px;
   cursor: pointer;
   margin-bottom: 60px;
-  background: #3498db;
   font-size: 18px;
   padding: 10px 30px;
   color: #fff;
@@ -2976,6 +4021,16 @@ class="css-parent-backward"
   object-fit: cover;
 }
 
+/*
+<!-- Start popup -->
+    <span class="btn-show-popup" data-popup=".sign-in">تسجيل الدخول</span>
+    <div class="popup sign-in">
+      <div class="inner">
+        <button class="close">close</button>
+      </div>
+    </div>
+    <!-- End popup -->
+*/
 .btn-show-popup {
   cursor: pointer;
   position: fixed;
@@ -3010,7 +4065,6 @@ class="css-parent-backward"
 
 .popup .inner {
   position: fixed;
-  background-color: #ffffff;
   width: 50%;
   min-height: 300px;
   display: -webkit-box;
@@ -3049,16 +4103,6 @@ class="css-parent-backward"
 .jq-map {
   width: 100%;
   min-height: 100px;
-}
-
-nav {
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-
-nav.css-nav-scroll {
-  background-color: #666666 !important;
-  color: aliceblue;
 }
 
 .parent-form-1 {
@@ -3410,6 +4454,18 @@ nav.css-nav-scroll {
           align-items: center;
 }
 
+/*
+<div class="parent-back-face">
+      <div class="box">
+        <div class="face front">
+          <img src="https://placeimg.com/200/200/any" alt="" />
+        </div>
+        <div class="face back">
+          <p>Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+      </div>
+    </div>
+*/
 .parent-back-face {
   -webkit-perspective: 600px;
           perspective: 600px;
@@ -3478,7 +4534,7 @@ nav.css-nav-scroll {
   -o-transform: translate(-50%, -50%);
 }
 
-.center-flix {
+.center-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3490,17 +4546,470 @@ nav.css-nav-scroll {
           align-items: center;
 }
 
-.cayan {
-  margin: 100px auto;
-  border: 2px solid #999;
-  width: 30%;
-  height: 300px;
+.css-parent-grid {
+  width: 100%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px 1%;
+  /*
+  justify-content: space-between;
+  align-content: space-between;
+  */
+}
+
+.css-back-transparent {
+  background-color: transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.css-back-transparent.css-scroll-back-color {
+  background-color: #fff;
+}
+
+/*
+<div class="parent-rotating-box">
+            <div class="single-rd">
+              <div class="front-side">
+                <img src="images/440x440/image-5.jpg" alt="" />
+              </div>
+              <div class="back-side">
+                <img src="images/440x440/image-2.jpg" alt="" />
+              </div>
+              <div class="left-side">
+                <img src="images/440x440/image-3.jpg" alt="" />
+              </div>
+              <div class="right-side">
+                <img src="images/440x440/image-4.jpg" alt="" />
+              </div>
+              <div class="top-side"></div>
+              <div class="bottom-side"></div>
+            </div>
+          </div>
+*/
+.parent-rotating-box {
+  margin: auto;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  position: relative;
+  width: 50%;
+  height: 250px;
+}
+
+.parent-rotating-box .single-rd {
+  width: 100%;
+  -webkit-animation: rotate 15s linear infinite;
+  animation: rotate 15s linear infinite;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  margin-top: 60px;
+}
+
+.parent-rotating-box .single-rd img {
+  width: 100%;
+  height: 100%;
+}
+
+.parent-rotating-box .single-rd div {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+}
+
+.parent-rotating-box .single-rd .front-side {
+  transform: translateZ(25px);
+  -webkit-transform: translateZ(25px);
+  -moz-transform: translateZ(25px);
+  -ms-transform: translateZ(25px);
+  -o-transform: translateZ(25px);
+}
+
+.parent-rotating-box .single-rd .back-side {
+  transform: rotateY(180deg) translateZ(200px);
+  -webkit-transform: rotateY(180deg) translateZ(200px);
+  -moz-transform: rotateY(180deg) translateZ(200px);
+  -ms-transform: rotateY(180deg) translateZ(200px);
+  -o-transform: rotateY(180deg) translateZ(200px);
+}
+
+.parent-rotating-box .single-rd .left-side {
+  transform: rotateY(-90deg) translateX(-200px);
+  -webkit-transform: rotateY(-90deg) translateX(-200px);
+  -moz-transform: rotateY(-90deg) translateX(-200px);
+  -ms-transform: rotateY(-90deg) translateX(-200px);
+  -o-transform: rotateY(-90deg) translateX(-200px);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.parent-rotating-box .single-rd .right-side {
+  transform: rotateY(90deg) translateX(200px);
+  -webkit-transform: rotateY(90deg) translateX(200px);
+  -moz-transform: rotateY(90deg) translateX(200px);
+  -ms-transform: rotateY(90deg) translateX(200px);
+  -o-transform: rotateY(90deg) translateX(200px);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.parent-rotating-box .single-rd .top-side {
+  transform: rotateX(-90deg) translateY(-200px);
+  -webkit-transform: rotateX(-90deg) translateY(-200px);
+  -moz-transform: rotateX(-90deg) translateY(-200px);
+  -ms-transform: rotateX(-90deg) translateY(-200px);
+  -o-transform: rotateX(-90deg) translateY(-200px);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.parent-rotating-box .single-rd .bottom-side {
+  transform: rotateX(90deg) translateY(200px);
+  -webkit-transform: rotateX(90deg) translateY(200px);
+  -moz-transform: rotateX(90deg) translateY(200px);
+  -ms-transform: rotateX(90deg) translateY(200px);
+  -o-transform: rotateX(90deg) translateY(200px);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotateY(0);
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0);
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+  }
+}
+
+/*
+<!-- Start overlay-box-3 -->
+          <div class="css-parent-overlay-box-3">
+            <img
+              src="images/440x440/image-1.jpg"
+              alt=""
+              class="img-fluid img-thumbnail"
+            />
+            <div class="img-text">
+              <h2 class="h1">Lorem ipsum</h2>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                ex incidunt magnam officia aperiam nulla.
+              </p>
+              <a href="#" class="link">learn more</a>
+            </div>
+          </div>
+          <!-- End overlay-box-3 -->
+*/
+.css-parent-overlay-box-3 {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.css-parent-overlay-box-3 img {
+  width: 100%;
+  height: 250px;
+}
+
+.css-parent-overlay-box-3 .img-text {
+  text-align: center;
+  width: 100%;
+  height: 250px;
+  background-color: tomato;
+  position: absolute;
+  top: -100%;
+  left: 0%;
+  padding: 15px 0px;
+  font-family: poppins;
+  zoom: 1;
+  filter: alpha(opacity=0);
+  -webkit-filter: alpha(opacity=0);
+  opacity: 0;
+  color: #fff;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.css-parent-overlay-box-3 .img-text .h1 {
+  margin: 0;
+}
+
+.css-parent-overlay-box-3 .img-text .lead {
+  padding: 0px 15%;
+  line-height: 1.3;
+  font-size: 18px;
+}
+
+.css-parent-overlay-box-3 .img-text .link {
+  display: inline-block;
+  color: tomato;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 15px 30px;
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+  border: 2px solid tomato;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-  padding: 20px;
+}
+
+.css-parent-overlay-box-3:hover .img-text {
+  left: 0;
+  top: 0;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  zoom: 1;
+  filter: alpha(opacity=100);
+  -webkit-filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+/*
+<!-- Start box-border-fide -->
+<div class="css-parent-box-border-fide">
+  <div class="css-child-box-border-fide">hossam</div>
+</div>
+<!-- End box-border-fide -->
+*/
+.css-parent-box-border-fide {
+  width: 100%;
+}
+
+.css-parent-box-border-fide .css-child-box-border-fide {
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 10px 10px 10px #ccc;
+  -o-box-shadow: 10px 10px 10px #ccc;
+  -ms-box-shadow: 10px 10px 10px #ccc;
+  box-shadow: 10px 10px 10px #ccc;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  margin: 0;
+}
+
+.css-parent-box-border-fide .css-child-box-border-fide img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.css-parent-box-border-fide .css-child-box-border-fide h3 {
+  margin: 0;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+.css-parent-box-border-fide .css-child-box-border-fide::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-left: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.css-parent-box-border-fide .css-child-box-border-fide::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 4px;
+  width: 100%;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.css-parent-box-border-fide .css-child-box-border-fide:hover::before {
+  border-color: #3498db;
+  height: 100%;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: 0.3s height linear 0.3s, 0.3s -webkit-transform linear;
+  transition: 0.3s height linear 0.3s, 0.3s -webkit-transform linear;
+  transition: 0.3s transform linear, 0.3s height linear 0.3s;
+  transition: 0.3s transform linear, 0.3s height linear 0.3s, 0.3s -webkit-transform linear;
+  -webkit-transition: 0.3s transform linear, 0.3s height linear 0.3s;
+  -moz-transition: 0.3s transform linear, 0.3s height linear 0.3s;
+  -ms-transition: 0.3s transform linear, 0.3s height linear 0.3s;
+  -o-transition: 0.3s transform linear, 0.3s height linear 0.3s;
+}
+
+.css-parent-box-border-fide .css-child-box-border-fide:hover::after {
+  border-color: #3498db;
+  height: 100%;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: 0.3s height linear 0.3s, 0.3s -webkit-transform linear;
+  transition: 0.3s height linear 0.3s, 0.3s -webkit-transform linear;
+  transition: 0.3s transform linear, 0.3s height linear 0.3s;
+  transition: 0.3s transform linear, 0.3s height linear 0.3s, 0.3s -webkit-transform linear;
+  -webkit-transition: 0.3s transform linear, 0.3s height linear 0.3s;
+  -moz-transition: 0.3s transform linear, 0.3s height linear 0.3s;
+  -ms-transition: 0.3s transform linear, 0.3s height linear 0.3s;
+  -o-transition: 0.3s transform linear, 0.3s height linear 0.3s;
+}
+
+/*
+<!-- Start slider-gallery-2 -->
+<div class="css-parent-slider-gallery-2">
+  <ul class="img-wrapper">
+    <li>
+      <img
+        src="images/440x440/image-1.jpg"
+        alt=""
+        class="img-fluid img-thumbnail"
+      />
+    </li>
+    <li>
+      <img
+        src="images/440x440/image-2.jpg"
+        alt=""
+        class="img-fluid img-thumbnail"
+      />
+    </li>
+    <li>
+      <img
+        src="images/440x440/image-3.jpg"
+        alt=""
+        class="img-fluid img-thumbnail"
+      />
+    </li>
+  </ul>
+</div>
+<!-- End slider-gallery-2 -->
+*/
+.css-parent-slider-gallery-2 {
+  width: 600px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.css-parent-slider-gallery-2 ul.img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+  padding: 0;
+}
+
+.css-parent-slider-gallery-2 ul.img-wrapper li {
+  width: 70px;
+  overflow: hidden;
+  transition: all 1.5s;
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.css-parent-slider-gallery-2 ul.img-wrapper li img {
+  width: 450px;
+  border: 5px solid #f00;
+  height: 100%;
+}
+
+.css-parent-slider-gallery-2 ul.img-wrapper li:hover {
+  width: 700px;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+.css-parent-slider-gallery-2 ul.img-wrapper li:nth-child(3) {
+  width: 500px;
+}
+
+.css-parent-slider-gallery-2 ul.img-wrapper li:nth-child(3) :hover {
+  width: 500px;
+}
+
+.css-parent-slider-gallery-2 ul.img-wrapper:hover li:nth-child(3) {
+  width: 70px;
+}
+
+/*
+<!-- Start box-overlay-4 -->
+          <div class="parent-box-overlay-3">
+            <div class="main-content">
+              <div class="single-img">
+                <img
+                  src="images/440x440/image-1.jpg"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+              </div>
+              <div class="overlay">
+                <h4>see more</h4>
+                <p>price - $15</p>
+              </div>
+            </div>
+          </div>
+          <!-- End box-overlay-3 -->
+*/
+.parent-box-overlay-4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3510,5 +5019,344 @@ nav.css-nav-scroll {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+
+.parent-box-overlay-4 .main-content {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.parent-box-overlay-4 .main-content .single-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.parent-box-overlay-4 .main-content .single-img img {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+
+.parent-box-overlay-4 .main-content .overlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
+.parent-box-overlay-4 .main-content .overlay h4,
+.parent-box-overlay-4 .main-content .overlay p {
+  position: absolute;
+  background-color: #3498db;
+  color: #fff;
+  right: 25px;
+  bottom: 40px;
+  padding: 10px 30px;
+  z-index: 2;
+  zoom: 1;
+  filter: alpha(opacity=0);
+  -webkit-filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateX(-80%);
+  transform: translateX(-80%);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.parent-box-overlay-4 .main-content .overlay p {
+  font-size: 14px;
+  background-color: #4d4d4d;
+  bottom: -15px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.parent-box-overlay-4 .main-content:hover h4,
+.parent-box-overlay-4 .main-content:hover p {
+  zoom: 1;
+  filter: alpha(opacity=100);
+  -webkit-filter: alpha(opacity=100);
+  opacity: 1;
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+.parent-box-overlay-4 .main-content:hover .single-img {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  -webkit-filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+
+.css-parent-team-back-to-face .single-team {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: transparent;
+}
+
+.css-parent-team-back-to-face .single-team .img-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+}
+
+.css-parent-team-back-to-face .single-team .img-area img {
+  width: 100%;
+  height: 100%;
+}
+
+.css-parent-team-back-to-face .single-team .img-text {
+  position: absolute;
+  padding: 25px;
+  width: 100%;
+  height: 250px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  transform: rotateY(90deg);
+  -webkit-transform: rotateY(90deg);
+  -moz-transform: rotateY(90deg);
+  -ms-transform: rotateY(90deg);
+  -o-transform: rotateY(90deg);
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+
+.css-parent-team-back-to-face .single-team:hover .img-area {
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  transform: rotateY(-90deg);
+  -webkit-transform: rotateY(-90deg);
+  -moz-transform: rotateY(-90deg);
+  -ms-transform: rotateY(-90deg);
+  -o-transform: rotateY(-90deg);
+}
+
+.css-parent-team-back-to-face .single-team:hover .img-text {
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  -webkit-perspective: 600px;
+          perspective: 600px;
+}
+
+/*
+<div
+        class="collapse navbar-collapse css-menu-hover-1"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span title="hossam">hossam</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span title="rashad">rashad</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span title="ahmed">ahmed</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span title="aboud">aboud</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span title="aboud">aboud</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span title="hegazy">hegazy</span></a>
+          </li>
+        </ul>
+      </div>
+*/
+.css-menu-hover-1 ul li {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  display: inline-block;
+}
+
+.css-menu-hover-1 ul li a {
+  position: relative;
+  display: block;
+  color: #fff;
+  font-family: poppins;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.css-menu-hover-1 ul li a span {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.css-menu-hover-1 ul li a span::before {
+  content: attr(title);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: tomato;
+  color: #fff;
+  padding: 10px 0px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transform: rotateX(90deg) translateY(150px);
+  -webkit-transform: rotateX(90deg) translateY(150px);
+  -moz-transform: rotateX(90deg) translateY(150px);
+  -ms-transform: rotateX(90deg) translateY(150px);
+  -o-transform: rotateX(90deg) translateY(150px);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .css-menu-hover-1 ul li a span::before {
+    width: 18%;
+    direction: rtl;
+    right: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .css-menu-hover-1 ul li a span::before {
+    width: 15%;
+    direction: rtl;
+    right: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .css-menu-hover-1 ul li a span::before {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.css-menu-hover-1 ul li a span:hover::before {
+  transform: rotateX(0deg) translateY(0px);
+  -webkit-transform: rotateX(0deg) translateY(0px);
+  -moz-transform: rotateX(0deg) translateY(0px);
+  -ms-transform: rotateX(0deg) translateY(0px);
+  -o-transform: rotateX(0deg) translateY(0px);
+}
+
+.parent-overlay {
+  background-color: #eee;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  -webkit-animation: fadeInOut 2s infinite linear;
+  animation: fadeInOut 2s infinite linear;
+  -webkit-box-shadow: 10px 10px 100px black;
+  -o-box-shadow: 10px 10px 100px black;
+  -ms-box-shadow: 10px 10px 100px black;
+  box-shadow: 10px 10px 100px black;
+}
+
+.parent-overlay .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.parent-overlay .overlay:not([disabled]):hover {
+  background-color: rgba(156, 156, 156, 0.5);
+  -webkit-box-shadow: 10px 10px 10px #ccc;
+  -o-box-shadow: 10px 10px 10px #ccc;
+  -ms-box-shadow: 10px 10px 10px #ccc;
+  box-shadow: 10px 10px 10px #ccc;
+}
+
+@-webkit-keyframes fadeInOut {
+  0% {
+    opacity: 0.5;
+    background-color: aqua;
+  }
+  50% {
+    opacity: 1;
+    background-color: chocolate;
+  }
+  100% {
+    opacity: 0.5;
+    background-color: darkgreen;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.5;
+    background-color: aqua;
+  }
+  50% {
+    opacity: 1;
+    background-color: chocolate;
+  }
+  100% {
+    opacity: 0.5;
+    background-color: darkgreen;
+  }
 }
 /*# sourceMappingURL=framework.css.map */

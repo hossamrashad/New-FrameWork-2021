@@ -1,0 +1,49 @@
+// css-parent-slider-gallery-2
+.css-parent-slider-gallery-2 {
+  border: 5px solid #000;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  ul.img-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 0;
+    li {
+      width: 5%;
+      overflow: hidden;
+      transition: all 1.5s;
+      -webkit-transition: all 1.5s;
+      -moz-transition: all 1.5s;
+      -ms-transition: all 1.5s;
+      -o-transition: all 1.5s;
+      // display: inline-block;
+      margin-left: 0;
+      margin-right: 0;
+      //
+      img {
+        width: 95%;
+        border: 5px solid #f00;
+        height: 100%;
+      }
+      &:hover {
+        width: 85%;
+        transition: all 1s;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
+      }
+      &:nth-child(3) {
+        width: 95%;
+      }
+      &:nth-child(3) :hover {
+        width: 95%;
+      }
+    }
+
+    &:hover li:nth-child(3) {
+      width: 70px;
+    }
+  }
+}

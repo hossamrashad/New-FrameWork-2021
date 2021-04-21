@@ -5,17 +5,17 @@
 // @media(min-width:1200px){};  lg
 
 p {
-  @include xsmedia {
+  @include xs-media {
     //color: #f00;
   }
 
-  @include smmedia {
+  @include sm-media {
     //color: rgb(47, 0, 255);
   }
-  @include mdmedia {
+  @include md-media {
     //color: rgb(0, 255, 149);
   }
-  @include lgmedia {
+  @include lg-media {
     //color: rgb(251, 255, 0);
   }
 }
