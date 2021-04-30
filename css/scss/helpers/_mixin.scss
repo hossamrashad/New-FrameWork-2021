@@ -16,7 +16,13 @@
   -ms-transition: all $number ease-in-out;
   -o-transition: all $number ease-in-out;
 }
-
+@mixin transitions($property, $number, $event) {
+  transition: $property $number $event;
+  -webkit-transition: $property $number $event;
+  -moz-transition: $property $number $event;
+  -ms-transition: $property $number $event;
+  -o-transition: $property $number $event;
+}
 // scale
 // @include scale(1.5, 1.5);
 @mixin scale($width, $height) {
@@ -26,13 +32,19 @@
   -ms-transform: scale($width, $height);
   -o-transform: scale($width, $height);
 }
-
-// hover
-// @include hover {}
-@mixin hover {
-  &:not([disabled]):hover {
-    @content;
-  }
+@mixin scaleX($width) {
+  transform: scaleX($width);
+  -webkit-transform: scaleX($width);
+  -moz-transform: scaleX($width);
+  -ms-transform: scaleX($width);
+  -o-transform: scaleX($width);
+}
+@mixin scaleY($height) {
+  transform: scaleY($height);
+  -webkit-transform: scaleY($height);
+  -moz-transform: scaleY($height);
+  -ms-transform: scaleY($height);
+  -o-transform: scaleY($height);
 }
 
 // rotate
@@ -58,6 +70,119 @@
   -ms-transform: rotateX($number);
   -o-transform: rotateX($number);
 }
+@mixin rotateZ($number) {
+  transform: rotateZ($number);
+  -webkit-transform: rotateZ($number);
+  -moz-transform: rotateZ($number);
+  -ms-transform: rotateZ($number);
+  -o-transform: rotateZ($number);
+}
+// translate
+// @include translate(10px, 10px);
+@mixin translate($width, $height) {
+  transform: translate($width, $height);
+  -webkit-transform: translate($width, $height);
+  -moz-transform: translate($width, $height);
+  -ms-transform: translate($width, $height);
+  -o-transform: translate($width, $height);
+}
+@mixin translateX($width) {
+  transform: translateX($width);
+  -webkit-transform: translateX($width);
+  -moz-transform: translateX($width);
+  -ms-transform: translateX($width);
+  -o-transform: translateX($width);
+}
+@mixin translateY($height) {
+  transform: translateY($height);
+  -webkit-transform: translateY($height);
+  -moz-transform: translateY($height);
+  -ms-transform: translateY($height);
+  -o-transform: translateY($height);
+}
+@mixin translateZ($height) {
+  transform: translateZ($height);
+  -webkit-transform: translateZ($height);
+  -moz-transform: translateZ($height);
+  -ms-transform: translateZ($height);
+  -o-transform: translateZ($height);
+}
+// skew
+// @include skew(0deg, 0deg);
+@mixin skew($width, $height) {
+  transform: skew($width, $height);
+  -webkit-transform: skew($width, $height);
+  -moz-transform: skew($width, $height);
+  -ms-transform: skew($width, $height);
+  -o-transform: skew($width, $height);
+}
+@mixin skewX($width) {
+  transform: skewX($width);
+  -webkit-transform: skewX($width);
+  -moz-transform: skewX($width);
+  -ms-transform: skewX($width);
+  -o-transform: skewX($width);
+}
+@mixin skewY($height) {
+  transform: skewY($height);
+  -webkit-transform: skewY($height);
+  -moz-transform: skewY($height);
+  -ms-transform: skewY($height);
+  -o-transform: skewY($height);
+}
+// $translateX, $translateY, $scaleX, $skewY, $skewX ,$scaleY
+// @include matrix( 1, 0, 0, 1, 0, 0 );
+@mixin matrix($translateX, $translateY, $scaleX, $skewY, $skewX, $scaleY) {
+  transform: matrix($translateX, $translateY, $scaleX, $skewY, $skewX, $scaleY);
+  -webkit-transform: matrix(
+    $translateX,
+    $translateY,
+    $scaleX,
+    $skewY,
+    $skewX,
+    $scaleY
+  );
+  -moz-transform: matrix(
+    $translateX,
+    $translateY,
+    $scaleX,
+    $skewY,
+    $skewX,
+    $scaleY
+  );
+  -ms-transform: matrix(
+    $translateX,
+    $translateY,
+    $scaleX,
+    $skewY,
+    $skewX,
+    $scaleY
+  );
+  -o-transform: matrix(
+    $translateX,
+    $translateY,
+    $scaleX,
+    $skewY,
+    $skewX,
+    $scaleY
+  );
+}
+//  box-shadow: horizontal     |  vertical     |  blur | spread | color | inset
+//  box-shadow: right + left   |  top + button |  blur | spread | color | inset
+//  @include boxShadow(-1px, 0px, 10px, #000);
+@mixin boxShadow($right, $button, $spread, $color) {
+  -o-box-shadow: $right $button $spread $color;
+  -ms-box-shadow: $right $button $spread $color;
+  box-shadow: $right $button $spread $color;
+}
+
+// hover
+// @include hover {}
+@mixin hover {
+  &:not([disabled]):hover {
+    @content;
+  }
+}
 // ul
 // @include horizontal-list;
 @mixin reset-list {
@@ -75,15 +200,6 @@
       right: 2em;
     }
   }
-}
-//  box-shadow: horizontal     |  vertical     |  blur | spread | color | inset
-//  box-shadow: right + left   |  top + button |  blur | spread | color | inset
-
-//  @include boxShadow(-1px, 0px, 10px, #000);
-@mixin boxShadow($right, $button, $spread, $color) {
-  -o-box-shadow: $right $button $spread $color;
-  -ms-box-shadow: $right $button $spread $color;
-  box-shadow: $right $button $spread $color;
 }
 
 // media
@@ -122,15 +238,6 @@
   height: 100%;
 }
 
-// translate
-// @include translate(10px, 10px);
-@mixin translate($width, $height) {
-  transform: translate($width, $height);
-  -webkit-transform: translate($width, $height);
-  -moz-transform: translate($width, $height);
-  -ms-transform: translate($width, $height);
-  -o-transform: translate($width, $height);
-}
 // prefix
 // @include prefix(box-shadow, 10px 10px 10px #ccc, webkit moz o ms);
 @mixin prefix($property, $value, $prefixes: ()) {
