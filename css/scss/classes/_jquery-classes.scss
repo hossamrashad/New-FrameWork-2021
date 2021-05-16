@@ -30,7 +30,7 @@
 // gmaps
 .jq-map {
   width: 100%;
-  height: 400px;
+  min-height: 400px;
 }
 
 //
@@ -51,4 +51,170 @@
     family: Arial, Helvetica, sans-serif;
   }
   color: #999;
+}
+
+/*
+<div class="jq-snake">
+            <img src="images/440x440/image-1.jpg" alt="" />
+            <div class="overlay">
+              <div class="disc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quisquam, enim. Et, minus iste repellendus expedita fugit unde
+                debitis rerum assumenda ipsa laborum explicabo, optio eaque
+                voluptatem odio commodi, itaque omnis?
+              </div>
+            </div>
+          </div>
+*/
+.jq-snake {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 5px solid #fff;
+    text-align: center;
+
+    .disc {
+      position: absolute;
+      color: #fff;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+    }
+  }
+}
+// mixitup
+/*
+<!-- Start mixitup -->
+        <div class="parent-mixitup">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box-menu">
+                <ul>
+                  <li class="mixitup-control-active" data-filter="*">all</li>
+                  <li data-filter=".photo">photo</li>
+                  <li data-filter=".ui">photo</li>
+                  <li data-filter=".paint">painting</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row box-list">
+            <div class="col-md-3 col-sm-3 mix box-item photo paint">
+              <img
+                src="images/440x440/image-1.jpg"
+                alt=""
+                class="img-fluid img-thumbnail"
+              />
+            </div>
+            <div class="col-md-3 col-sm-6 mix box-item ui">
+              <img
+                src="images/440x440/image-2.jpg"
+                alt=""
+                class="img-fluid img-thumbnail"
+              />
+            </div>
+            <div class="col-md-3 col-sm-6 mix box-item ui">
+              <img
+                src="images/440x440/image-3.jpg"
+                alt=""
+                class="img-fluid img-thumbnail"
+              />
+            </div>
+            <div class="col-md-3 col-sm-6 mix box-item photo">
+              <img
+                src="images/440x440/image-4.jpg"
+                alt=""
+                class="img-fluid img-thumbnail"
+              />
+            </div>
+            <div class="col-md-3 col-sm-6 mix box-item paint">
+              <img
+                src="images/440x440/image-5.jpg"
+                alt=""
+                class="img-fluid img-thumbnail"
+              />
+            </div>
+            <div class="col-md-3 col-sm-6 mix box-item ui paint">
+              <img
+                src="images/440x440/image-6.jpg"
+                alt=""
+                class="img-fluid img-thumbnail"
+              />
+            </div>
+            <div class="col-md-3 col-sm-6 mix box-item ui">
+              <img
+                src="images/440x440/image-7.jpg"
+                alt=""
+                class="img-fluid img-thumbnail"
+              />
+            </div>
+            <div class="col-md-3 col-sm-6 mix box-item photo">
+              <img
+                src="images/440x440/image-8.jpg"
+                alt=""
+                class="img-fluid img-thumbnail"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- End mixitup -->
+*/
+.parent-mixitup {
+  img {
+    width: 100%;
+  }
+  .box-menu {
+    text-align: center;
+    ul {
+      li {
+        font-weight: bold;
+        text-transform: uppercase;
+        @include borderRadius(5px);
+        cursor: pointer;
+        margin-bottom: 60px;
+        background: map-get($colors, 29);
+        font-size: 18px;
+        padding: 10px 30px;
+        color: #fff;
+      }
+      .mixitup-control-active {
+        background: rgb(123, 123, 123);
+      }
+    }
+  }
+  .box-item {
+    margin-bottom: 30px;
+    .box-item img {
+      height: 100%;
+      max-height: 300px;
+      width: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+  }
+}
+
+// css class
+
+.height100vh {
+  height: 100vh;
+}
+.height50vh {
+  height: calc(100vh / 2);
 }

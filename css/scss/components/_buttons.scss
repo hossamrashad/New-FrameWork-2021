@@ -1,5 +1,11 @@
 // css-element-with-border
-
+/*
+<!-- Start element with border -->     
+<div class="css-element-with-border">       
+<div class="inner">hossam</div>     
+</div>     
+<!-- End element with border -->
+*/
 .css-element-with-border {
   position: relative;
 
@@ -639,7 +645,7 @@ class="css-parent-backward"
 .css-parent-text-shadow-1 {
   background: #ddd;
   padding: 10px;
-  .h1 {
+  h2 {
     text-align: center;
     color: #fff;
     font-weight: bold;
@@ -898,7 +904,7 @@ class="css-parent-backward"
 
 // parent-btn-ching-color-hover
 /*
-<div class="parent-btn-ching-color-hover-left">
+<div class="css-parent-ching-color-left">
       <a href="#" class=""> <span>Contact Us</span> </a>
     </div>
 */
@@ -943,6 +949,7 @@ class="css-parent-backward"
     }
   }
 }
+
 .css-parent-ching-color-right {
   position: relative;
   a {
@@ -1166,7 +1173,7 @@ class="css-parent-backward"
     font-weight: 900;
     font-family: poppins;
     margin: 0;
-    background-image: url(../../images/440x440/image-2.jpg);
+    background-image: url(https://placeimg.com/200/200/arch);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -1384,8 +1391,19 @@ class="css-parent-backward"
     }
   }
 }
-
-// css-parent-btn-back-face-1
+/*
+<!-- Start back-face-2 -->
+            <div class="css-parent-btn-back-face-2">
+              <div class="side-face">
+                <p><a href="#" class="link"> learn more</a></p>
+              </div>
+              <div class="side-back">
+                <p><a href="#" class="link"> learn more</a></p>
+              </div>
+            </div>
+            <!-- End back-face-2 -->
+*/
+// css-parent-btn-back-face-2
 .css-parent-btn-back-face-2 {
   width: 150px;
   height: 60px;

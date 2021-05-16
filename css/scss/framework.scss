@@ -29,3 +29,25 @@
 @import "./layout/header"; // 15
 @import "./pages/homePage"; // 18
 @import "./layout/footer"; // 17
+
+.test-btn {
+  margin: 100px auto;
+  width: 200px;
+  border-width: 10px;
+  padding: 20px;
+  text-align: center;
+  height: 120px;
+  font-size: $font-lg;
+  @include borderRadiusposition(5px, 5px, 5px, 5px);
+  @include bordercolor(#e8ae1a, #76cd9c, #a60b55, #333);
+  @include transitionAll(all, 0.5s, linear);
+  @include borderStyle(solid, solid, solid, solid);
+  @include transitionAll(all, 1.5s, linear);
+  @include hover {
+    @include scaleY(1.5);
+    padding: 0px;
+    font-size: $font-sm;
+    border-width: 20px;
+    height: 70px;
+  }
+}

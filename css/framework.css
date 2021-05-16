@@ -1230,6 +1230,13 @@ a:focus {
           transform: scale(1);
 }
 
+/*
+<!-- Start element with border -->     
+<div class="css-element-with-border">       
+<div class="inner">hossam</div>     
+</div>     
+<!-- End element with border -->
+*/
 .css-element-with-border {
   position: relative;
 }
@@ -1978,7 +1985,7 @@ class="css-parent-backward"
   padding: 10px;
 }
 
-.css-parent-text-shadow-1 .h1 {
+.css-parent-text-shadow-1 h2 {
   text-align: center;
   color: #fff;
   font-weight: bold;
@@ -1990,7 +1997,7 @@ class="css-parent-backward"
   -o-transition: all 0.5s ease-in-out;
 }
 
-.css-parent-text-shadow-1 .h1:not([disabled]):hover {
+.css-parent-text-shadow-1 h2:not([disabled]):hover {
   text-shadow: -1px -1px 1px #333, 0 1px 0 #333, 0 2px 0 #333, 0 2px 0 #333, 0 3px 0 #333, 0 4px 0 #333, 0 5px 0 #333, 0 6px 0 #333, 0 7px 0 #333, 0 8px 0 #333, 0 9px 0 #333, 0 10px 0 #333, 0 11px 0 #333, 0 12px 0 #333, 0 13px 0 #333, 0 14px 0 #333, 0 15px 0 #333, 10px 25px 35px rgba(0, 0, 0, 0);
 }
 
@@ -2274,7 +2281,7 @@ class="css-parent-backward"
 }
 
 /*
-<div class="parent-btn-ching-color-hover-left">
+<div class="css-parent-ching-color-left">
       <a href="#" class=""> <span>Contact Us</span> </a>
     </div>
 */
@@ -2628,7 +2635,7 @@ class="css-parent-backward"
   font-weight: 900;
   font-family: poppins;
   margin: 0;
-  background-image: url(../../images/440x440/image-2.jpg);
+  background-image: url(https://placeimg.com/200/200/arch);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2902,6 +2909,18 @@ class="css-parent-backward"
   opacity: 1;
 }
 
+/*
+<!-- Start back-face-2 -->
+            <div class="css-parent-btn-back-face-2">
+              <div class="side-face">
+                <p><a href="#" class="link"> learn more</a></p>
+              </div>
+              <div class="side-back">
+                <p><a href="#" class="link"> learn more</a></p>
+              </div>
+            </div>
+            <!-- End back-face-2 -->
+*/
 .css-parent-btn-back-face-2 {
   width: 150px;
   height: 60px;
@@ -2977,57 +2996,17 @@ class="css-parent-backward"
   top: 0;
 }
 
-.loading {
-  background: #222;
-  color: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 99999;
-}
+/*
 
-.loading .spinner {
-  width: 40px;
-  height: 40px;
-  background-color: #333;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
-  animation: sk-rotateplane 1.2s infinite ease-in-out;
-}
+<div id="preloader">
+  <div class="preloader-area">
+    <div class="preloader-box">
+      <div class="preloader"></div>
+    </div>
+  </div>
+</div>
 
-@-webkit-keyframes sk-rotateplane {
-  0% {
-    -webkit-transform: perspective(120px);
-  }
-  50% {
-    -webkit-transform: perspective(120px) rotateY(180deg);
-  }
-  100% {
-    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
-  }
-}
-
-@keyframes sk-rotateplane {
-  0% {
-    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-  }
-  50% {
-    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-  }
-  100% {
-    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-  }
-}
-
+*/
 #preloader {
   width: 100%;
   height: 100%;
@@ -3136,6 +3115,78 @@ class="css-parent-backward"
   }
 }
 
+/*
+
+<div class="loading">
+ <div class="spinner"></div>
+</div>
+
+*/
+.loading {
+  background: #222;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+}
+
+.loading .spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% {
+    -webkit-transform: perspective(120px);
+  }
+  50% {
+    -webkit-transform: perspective(120px) rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
+  }
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+/*
+
+<!-- Start preloader -->
+    <div class="loading-parent">
+      <div class="loading-child">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+    <!-- End preloader -->
+
+*/
 .loading-parent {
   background: #2980b9;
   color: #fff;
@@ -3371,6 +3422,16 @@ class="css-parent-backward"
   }
 }
 
+/*
+
+<!-- Start loading 3 -->
+    <div class="loading-parent-3">
+      <div class="loader-child">
+      </div>
+    </div>
+    <!-- End loading 3 --> 
+
+*/
 .loading-parent-3 {
   background: #ffffff;
   color: #fff;
@@ -3435,18 +3496,38 @@ class="css-parent-backward"
 
 @-webkit-keyframes spin {
   100% {
+    transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
   }
 }
 
 @keyframes spin {
   100% {
+    transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
   }
 }
 
+/*
+
+ <!-- Start loading 4 -->
+    <div class="loading-parent-4">
+      <div class="loader-child">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- End loading 4 -->
+
+*/
 .loading-parent-4 {
   margin: 0;
   padding: 0;
@@ -3542,6 +3623,23 @@ class="css-parent-backward"
   border-radius: 50%;
 }
 
+/*
+
+<!-- Start loading 5 -->
+    <div class="loading-parent-5">
+      <div class="loader-child">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End loading 5 -->
+
+*/
 .loading-parent-5 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3749,7 +3847,7 @@ class="css-parent-backward"
 
 .jq-map {
   width: 100%;
-  height: 400px;
+  min-height: 400px;
 }
 
 .jq-backmove {
@@ -3765,10 +3863,6 @@ class="css-parent-backward"
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   color: #999;
-}
-
-.box-lest:not(:last-of-type) {
-  padding-right: 0;
 }
 
 /*
@@ -3816,95 +3910,6 @@ class="css-parent-backward"
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
-}
-
-.css-hover-zoom-scale {
-  overflow: hidden;
-}
-
-.css-hover-zoom-scale img {
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-}
-
-.css-hover-zoom-scale img:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-}
-
-.owl-stage-outer {
-  direction: ltr !important;
-}
-
-/*
- <!-- Start fixed menu -->
-    <div class="fixed-menu-normal">
-      <i class="fa fa-bars fa-fw fa-2x" aria-hidden="true"></i>
-      <h3 class="h5">1 - الرئيسية</h3>
-      <h3 class="h5">2 - مشاريعنا</h3>
-      <h3 class="h5">3 - المقالات</h3>
-      <h3 class="h5">4 - الالوان</h3>
-      <h3 class="h5">5 - الخريطة</h3>
-      <h3 class="h5">6 - اتصال بنا</h3>
-    </div>
-    <!-- End fixed menu -->
-
-    ****************************
-
-    <!-- Start fixed menu -->
-        <div class="fixed-menu-padding-body">
-          <i class="fa fa-bars fa-fw fa-2x" aria-hidden="true"></i>
-          <h3 class="h5">1 - الرئيسية</h3>
-          <h3 class="h5">2 - مشاريعنا</h3>
-          <h3 class="h5">3 - المقالات</h3>
-          <h3 class="h5">4 - الالوان</h3>
-          <h3 class="h5">5 - الخريطة</h3>
-          <h3 class="h5">6 - اتصال بنا</h3>
-        </div>
-        <!-- End fixed menu -->
-*/
-.fixed-menu-normal,
-.fixed-menu-padding-body {
-  color: #fff;
-  padding: 10px 10px;
-  position: fixed;
-  right: -150px;
-  top: 0%;
-  height: 1000%;
-  width: 150px;
-  z-index: 9999;
-  border-radius: 10px 0px 0px 10px;
-  -webkit-border-radius: 10px 0px 0px 10px;
-  -moz-border-radius: 10px 0px 0px 10px;
-  -ms-border-radius: 10px 0px 0px 10px;
-  -o-border-radius: 10px 0px 0px 10px;
-}
-
-.fixed-menu-normal .fa-bars,
-.fixed-menu-padding-body .fa-bars {
-  position: absolute;
-  left: -40px;
-  top: 20px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  border-radius: 10px 0px 0px 10px;
-  -webkit-border-radius: 10px 0px 0px 10px;
-  -moz-border-radius: 10px 0px 0px 10px;
-  -ms-border-radius: 10px 0px 0px 10px;
-  -o-border-radius: 10px 0px 0px 10px;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.fixed-menu-normal a,
-.fixed-menu-padding-body a {
-  margin: 30px 0px;
-  display: block;
-  text-align: center;
 }
 
 /*
@@ -4020,6 +4025,110 @@ class="css-parent-backward"
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.height100vh {
+  height: 100vh;
+}
+
+.height50vh {
+  height: calc(100vh / 2);
+}
+
+.box-lest:not(:last-of-type) {
+  padding-right: 0;
+}
+
+.css-hover-zoom-scale {
+  overflow: hidden;
+}
+
+.css-hover-zoom-scale img {
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.css-hover-zoom-scale img:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.owl-stage-outer {
+  direction: ltr !important;
+}
+
+/*
+<!-- Start fixed menu -->
+    <div class="fixed-menu-normal">
+      <i class="fa fa-bars fa-fw fa-2x" aria-hidden="true"></i>
+      <h3 class="h5">1 - الرئيسية</h3>
+      <h3 class="h5">2 - مشاريعنا</h3>
+      <h3 class="h5">3 - المقالات</h3>
+      <h3 class="h5">4 - الالوان</h3>
+      <h3 class="h5">5 - الخريطة</h3>
+      <h3 class="h5">6 - اتصال بنا</h3>
+    </div>
+    <!-- End fixed menu -->
+
+    ****************************
+
+    <!-- Start fixed menu -->
+        <div class="fixed-menu-padding-body">
+          <i class="fa fa-bars fa-fw fa-2x" aria-hidden="true"></i>
+          <h3 class="h5">1 - الرئيسية</h3>
+          <h3 class="h5">2 - مشاريعنا</h3>
+          <h3 class="h5">3 - المقالات</h3>
+          <h3 class="h5">4 - الالوان</h3>
+          <h3 class="h5">5 - الخريطة</h3>
+          <h3 class="h5">6 - اتصال بنا</h3>
+        </div>
+        <!-- End fixed menu -->
+*/
+.fixed-menu-normal,
+.fixed-menu-padding-body {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 10px;
+  position: fixed;
+  right: -150px;
+  top: 0%;
+  height: 1000%;
+  width: 150px;
+  z-index: 9999;
+  border-radius: 10px 0px 0px 10px;
+  -webkit-border-radius: 10px 0px 0px 10px;
+  -moz-border-radius: 10px 0px 0px 10px;
+  -ms-border-radius: 10px 0px 0px 10px;
+  -o-border-radius: 10px 0px 0px 10px;
+}
+
+.fixed-menu-normal .fa-bars,
+.fixed-menu-padding-body .fa-bars {
+  position: absolute;
+  left: -40px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #3498db;
+  border-radius: 10px 0px 0px 10px;
+  -webkit-border-radius: 10px 0px 0px 10px;
+  -moz-border-radius: 10px 0px 0px 10px;
+  -ms-border-radius: 10px 0px 0px 10px;
+  -o-border-radius: 10px 0px 0px 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.fixed-menu-normal a,
+.fixed-menu-padding-body a {
+  color: #ffffff;
+  margin: 30px 0px;
+  display: block;
+  text-align: center;
 }
 
 /*
@@ -5359,5 +5468,65 @@ class="css-parent-backward"
     opacity: 0.5;
     background-color: darkgreen;
   }
+}
+
+.test-btn {
+  margin: 100px auto;
+  width: 200px;
+  border-width: 10px;
+  padding: 20px;
+  text-align: center;
+  height: 120px;
+  font-size: 40px;
+  border-top-left-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  -o-border-top-left-radius: 5px;
+  -ms-border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+  -o-border-top-right-radius: 5px;
+  -ms-border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-bottom-left-radius: 5px;
+  -o-border-bottom-left-radius: 5px;
+  -ms-border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-bottom-right-radius: 5px;
+  -o-border-bottom-right-radius: 5px;
+  -ms-border-bottom-right-radius: 5px;
+  border-top-color: #e8ae1a;
+  border-right-color: #76cd9c;
+  border-bottom-color: #a60b55;
+  border-left-color: #333;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  transition: all 1.5s linear;
+  -webkit-transition: all 1.5s linear;
+  -moz-transition: all 1.5s linear;
+  -ms-transition: all 1.5s linear;
+  -o-transition: all 1.5s linear;
+}
+
+.test-btn:not([disabled]):hover {
+  transform: scaleY(1.5);
+  -webkit-transform: scaleY(1.5);
+  -moz-transform: scaleY(1.5);
+  -ms-transform: scaleY(1.5);
+  -o-transform: scaleY(1.5);
+  padding: 0px;
+  font-size: 20px;
+  border-width: 20px;
+  height: 70px;
 }
 /*# sourceMappingURL=framework.css.map */

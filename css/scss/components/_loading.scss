@@ -1,72 +1,17 @@
-// Start Div Loading
 
-// <div class="loading">
-//  <div class="spinner"></div>
-// </div>
+/*
 
-.loading {
-  background: #222;
-  color: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 99999;
-  .spinner {
-    width: 40px;
-    height: 40px;
-    background-color: #333;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
-    animation: sk-rotateplane 1.2s infinite ease-in-out;
-  }
-}
+<div id="preloader">
+  <div class="preloader-area">
+    <div class="preloader-box">
+      <div class="preloader"></div>
+    </div>
+  </div>
+</div>
 
-@-webkit-keyframes sk-rotateplane {
-  0% {
-    -webkit-transform: perspective(120px);
-  }
+*/
 
-  50% {
-    -webkit-transform: perspective(120px) rotateY(180deg);
-  }
-
-  100% {
-    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
-  }
-}
-
-@keyframes sk-rotateplane {
-  0% {
-    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-  }
-
-  50% {
-    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-  }
-
-  100% {
-    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-  }
-}
-// End Loading
-
-// <div id="preloader">
-//   <div class="preloader-area">
-//     <div class="preloader-box">
-//       <div class="preloader"></div>
-//     </div>
-//   </div>
-// </div>
-
-// PERLOADER
+// preloader
 #preloader {
   width: 100%;
   height: 100%;
@@ -174,13 +119,87 @@
   }
 }
 
+
+// Start Div Loading
+
+/*
+
+<div class="loading">
+ <div class="spinner"></div>
+</div>
+
+*/
+
+.loading {
+  background: #222;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  .spinner {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% {
+    -webkit-transform: perspective(120px);
+  }
+
+  50% {
+    -webkit-transform: perspective(120px) rotateY(180deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
+  }
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+// End Loading
+
 //
-// <div class="loading-2">
-//   <div class="circle"></div>
-//   <div class="circle"></div>
-//   <div class="circle"></div>
-//   <div class="circle"></div>
-// </div>
+
+/*
+
+<!-- Start preloader -->
+    <div class="loading-parent">
+      <div class="loading-child">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+    <!-- End preloader -->
+
+*/
 .loading-parent {
   background: #2980b9;
   color: #fff;
@@ -382,7 +401,16 @@
 }
 
 // loading-parent-3
+/*
 
+<!-- Start loading 3 -->
+    <div class="loading-parent-3">
+      <div class="loader-child">
+      </div>
+    </div>
+    <!-- End loading 3 --> 
+
+*/
 .loading-parent-3 {
   background: #ffffff;
   color: #fff;
@@ -442,16 +470,38 @@
   @-webkit-keyframes spin {
     100% {
       transform: rotate(360deg);
-    }
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+}
   }
 
   @keyframes spin {
     100% {
       transform: rotate(360deg);
-    }
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+}
   }
 }
 
+/*
+
+ <!-- Start loading 4 -->
+    <div class="loading-parent-4">
+      <div class="loader-child">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- End loading 4 -->
+
+*/
 .loading-parent-4 {
   margin: 0;
   padding: 0;
@@ -537,6 +587,23 @@
 
 // loading-parent-5
 
+/*
+
+<!-- Start loading 5 -->
+    <div class="loading-parent-5">
+      <div class="loader-child">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End loading 5 -->
+
+*/
 .loading-parent-5 {
   display: flex;
   justify-content: center;

@@ -2,9 +2,13 @@
 @import "./font/font-ar";
 // web safe fonts
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+
+
 // Ar Font Family
 // Font Name || Cairo
 $font-cairo: "Cairo", sans-serif;
+$cairo-Font: "Cairo", sans-serif;
 $font-ar-1: "Short Stack", cursive;
 $font-ar-2: "Tajawal", sans-serif;
 $font-ar-3: "Markazi Text", serif;
@@ -14,9 +18,15 @@ $font-ar-6: "Mirza", cursive;
 $font-ar-7: "Lateef", cursive;
 $font-ar-8: "Scheherazade", serif;
 
-// EN Font Family
-$font-en-1: "Tahoma, Arial";
+// 
+$font-Droid: "Droid Arabic Kufi";
+$Droid-font: "Droid Arabic Kufi";
 
+// EN Font Family
+// Font Name || Tahoma
+$font-en-1: "Tahoma, Arial";
+$font-Tahoma: "Tahoma, Arial";
+$Tahoma-font: "Tahoma, Arial";
 // best web safe fonts for html and css
 $font-safe-1: "Arial, sans-serif";
 // Font Name || Times
@@ -47,3 +57,5 @@ $font-lg: 40px;
 $font-md: 30px;
 $font-sm: 20px;
 $font-page: 16px;
+$page-font: 16px;
+

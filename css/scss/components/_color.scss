@@ -12,7 +12,7 @@ $colors: (
   eee: #eeeeee,
   ccc: #cccccc,
   7: #95a5a6,
-  8: #969696,
+  969: #969696,
   9: #737373,
   10: #766a65,
   11: #9e9d89,
@@ -77,4 +77,8 @@ $colors: (
   --color-333: #333333;
   --color-f00: #ff0000;
   --color-080: #008800;
+}
+
+.color-fff {
+  color: map-get($colors, 1);
 }
