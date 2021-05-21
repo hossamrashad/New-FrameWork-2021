@@ -1,3 +1,16 @@
+/* for selection */
+
+::-moz-selection {
+  color: #fff;
+  background-color: #da0000;
+}
+
+::selection {
+  color: #fff;
+  background-color: #da0000;
+}
+/* for selection */
+
 
 // Start hoverZoomLink
 .css-hover-zoom-scale {
