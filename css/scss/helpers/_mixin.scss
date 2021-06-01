@@ -97,6 +97,7 @@
   -o-transition: $property 0.5s linear;
 }
 
+// @include transitions();
 @mixin transitions($property, $number, $event) {
   transition: $property $number $event;
   -webkit-transition: $property $number $event;
@@ -143,7 +144,7 @@
   -ms-transform: rotate($number);
   -o-transform: rotate($number);
 }
-
+// @include rotateY(10deg);
 @mixin rotateY($number) {
   transform: rotateY($number);
   -webkit-transform: rotateY($number);
@@ -151,7 +152,7 @@
   -ms-transform: rotateY($number);
   -o-transform: rotateY($number);
 }
-
+// @include rotateX(10deg);
 @mixin rotateX($number) {
   transform: rotateX($number);
   -webkit-transform: rotateX($number);
@@ -159,7 +160,7 @@
   -ms-transform: rotateX($number);
   -o-transform: rotateX($number);
 }
-
+// @include rotateZ(10deg);
 @mixin rotateZ($number) {
   transform: rotateZ($number);
   -webkit-transform: rotateZ($number);
@@ -177,7 +178,7 @@
   -ms-transform: translate($width, $height);
   -o-transform: translate($width, $height);
 }
-
+// @include translateX(10px, 10px);
 @mixin translateX($width) {
   transform: translateX($width);
   -webkit-transform: translateX($width);
@@ -185,7 +186,7 @@
   -ms-transform: translateX($width);
   -o-transform: translateX($width);
 }
-
+// @include translateY(10px, 10px);
 @mixin translateY($height) {
   transform: translateY($height);
   -webkit-transform: translateY($height);
@@ -193,7 +194,7 @@
   -ms-transform: translateY($height);
   -o-transform: translateY($height);
 }
-
+// @include translateZ(10px, 10px);
 @mixin translateZ($height) {
   transform: translateZ($height);
   -webkit-transform: translateZ($height);
@@ -211,7 +212,7 @@
   -ms-transform: skew($width, $height);
   -o-transform: skew($width, $height);
 }
-
+// @include skewX(0deg, 0deg);
 @mixin skewX($width) {
   transform: skewX($width);
   -webkit-transform: skewX($width);
@@ -219,7 +220,7 @@
   -ms-transform: skewX($width);
   -o-transform: skewX($width);
 }
-
+// @include skewY(0deg, 0deg);
 @mixin skewY($height) {
   transform: skewY($height);
   -webkit-transform: skewY($height);

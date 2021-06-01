@@ -9,7 +9,7 @@ body {
 ul,
 ol {
   // global ul + li style
-  @include horizontal-list;
+  @include reset-list;
 }
 a {
   text-decoration: none;

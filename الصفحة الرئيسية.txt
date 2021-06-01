@@ -1,14 +1,154 @@
-Homepage 	----------->  الصفحة الرئيسية
 
-about us 	-----------> معلومات عنا
+***********   All pages  ****************
 
-Our services 	-----------> خدماتنا
+index            	----------->  الصفحة الرئيسية
 
-Our projects	-----------> مشاريعنا
+about us 	        -----------> معلومات عنا
 
-Address		-----------> العنوان
+Our services 	    -----------> خدماتنا
 
-contact us	-----------> اتصل بنا
+Our projects	    -----------> مشاريعنا
+
+Address	        	-----------> العنوان
+
+contact us      	-----------> اتصل بنا
+
+
+
+************* Html  *********************
+
+1 - Comment
+
+2 - Meta
+
+3 - Favicon
+
+4 - IE9
+
+//  Img // 
+
+1 - Normal Img 
+
+2 - src
+
+//  Iframe // 
+
+1 - Website 
+
+// font-awesome //
+
+
+************* css   *********************
+Class
+A border
+1 - css-li-border-bottom
+
+B color 
+
+************* Scss  *********************
+
+// Mixin // 
+A Border 
+1 - @include borderRadius(10px);
+2 - @include borderRadiusposition(5px, 5px, 5px, 5px);
+3 - @include borderStyle(solid, dashed, double, none);
+4 - 
+
+B transition
+1 - @include transitionAll(all, 0.5s, linear);
+2 - @include transitionProperty(all);
+3 - @include transitionTime(0.5s);
+4 - 
+5 - 
+
+C Scale 
+1 - @include scale(1.5, 1.5);
+2 - @include scaleX(1.5);
+3 - @include scaleY(1.5);
+4 - 
+5 - 
+
+D rotate
+1 - @include rotate(10deg);
+2 - @include rotateY(10deg);
+3 - @include rotateX(10deg);
+4 - @include rotateZ(10deg);
+5 - 
+
+E translate
+1 - @include translate(10px, 10px);
+2 - @include translateX(10px, 10px);
+3 - @include translateY(10px, 10px);
+4 - @include translateZ(10px, 10px);
+5 -
+
+F Skew 
+1 - @include skew(0deg, 0deg);
+2 - @include skewX(0deg, 0deg);
+3 - @include skewY(0deg, 0deg);
+4 - 
+5 - 
+
+Global 
+
+1 - @include hover {}
+
+************* js    *********************
+
+
+
+************* vs code *********************
+
+1 - f1 = ctrl+shift+p
+
+
+
+
+
+ //  Pc // 
+
+ 1 - ctrl+s  = save
+
+
+// plugin // 
+
+A - Vscode Google Translate
+
+1 ctrl-shift-t = translate
+
+B - Prettier - Code formatter
+
+2 - ctrl=shift=f = format
+
+ 
+
+
+
+*************** google *********************
+
+Element Console (( Sources ))
+
+
+1 - jquery To Add
+
+var jqueryToAdd = document.createElement("script");
+
+jqueryToAdd.src = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js';
+
+document.getElementsByTagName('head')[0].appendChild(jqueryToAdd);
+
+
+2 - css-border
+
+$('*').css('border','1px solid #f00');
+
+
+
+
+
+
+
+
 
 
 

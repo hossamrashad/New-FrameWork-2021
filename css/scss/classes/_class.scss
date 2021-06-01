@@ -1,0 +1,37 @@
+// color || background-color
+.color-fff {
+  color: map-get($colors, fff);
+}
+
+.back-fff {
+  background-color: map-get($colors, fff);
+}
+
+.color-999 {
+  color: map-get($colors, 999);
+}
+.back-999 {
+  background-color: map-get($colors, 999);
+}
+
+.color-main {
+  color: $main-color;
+}
+.back-main {
+  background-color: $main-color;
+}
+
+.color-second {
+  color: $second-color;
+}
+.back-second {
+  background-color: $second-color;
+}
+
+.color-third {
+  color: $third-color;
+}
+
+.back-third {
+  background-color: $third-color;
+}

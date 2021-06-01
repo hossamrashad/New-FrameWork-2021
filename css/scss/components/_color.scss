@@ -1,4 +1,7 @@
 // color
+$main-color: #333;
+$second-color: #000;
+$third-color: #3498db;
 
 $color-3498db: #3498db;
 $text-color: #9c9c9c;
@@ -79,6 +82,4 @@ $colors: (
   --color-080: #008800;
 }
 
-.color-fff {
-  color: map-get($colors, 1);
-}
+
