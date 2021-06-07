@@ -1,3 +1,24 @@
+// global classes
+.hide-xs {
+  @include xs-sm-media {
+    display: none !important;
+  }
+}
+.hide-sm {
+  @include sm-md-media {
+    display: none !important;
+  }
+}
+.hide-md {
+  @include md-lg-media {
+    display: none !important;
+  }
+}
+.hide-lg {
+  @include lg-media {
+    display: none !important;
+  }
+}
 /* for selection */
 
 ::-moz-selection {
@@ -10,7 +31,6 @@
   background-color: #da0000;
 }
 /* for selection */
-
 
 // Start hoverZoomLink
 .css-hover-zoom-scale {
@@ -99,8 +119,6 @@
   }
 }
 
-
-
 // popup
 /*
 <!-- Start popup -->
@@ -163,12 +181,6 @@
       cursor: pointer;
     }
   }
-}
-
-// map
-.jq-map {
-  width: 100%;
-  min-height: 100px;
 }
 
 // form-1
@@ -469,6 +481,7 @@
     }
   }
 }
+
 .center-position {
   position: absolute;
   left: 50%;
@@ -983,6 +996,391 @@
     &:hover .img-text {
       @include rotateY(0deg);
       perspective: 600px;
+    }
+  }
+}
+
+// section haver box
+/*
+<div class="container-fluid">
+        <div class="css-section-haver-box-parent">
+          <div class="column active">
+            <div class="content">
+              <h1 class="">1</h1>
+              <div class="box">
+                <h2>what is lorem ipsum</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Natus architecto eos repellat ullam quam quod vitae commodi
+                  vero ab eius id dolorem pariatur, necessitatibus quis dolorum
+                  fugiat distinctio praesentium numquam.
+                </p>
+              </div>
+            </div>
+            <div class="bg bg1"></div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <h1>2</h1>
+              <div class="box">
+                <h2>what is lorem ipsum</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Natus architecto eos repellat ullam quam quod vitae commodi
+                  vero ab eius id dolorem pariatur, necessitatibus quis dolorum
+                  fugiat distinctio praesentium numquam.
+                </p>
+              </div>
+            </div>
+            <div class="bg bg2"></div>
+          </div>
+          <div class="column hide-xs">
+            <div class="content">
+              <h1>3</h1>
+              <div class="box">
+                <h2>what is lorem ipsum</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Natus architecto eos repellat ullam quam quod vitae commodi
+                  vero ab eius id dolorem pariatur, necessitatibus quis dolorum
+                  fugiat distinctio praesentium numquam.
+                </p>
+              </div>
+            </div>
+            <div class="bg bg3"></div>
+          </div>
+        </div>
+      </div>
+*/
+.css-section-haver-box-parent {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden !important;
+  position: relative;
+  display: grid;
+
+  @include sm-md-media {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    .column.hide-xs {
+      display: none;
+    }
+  }
+  @include md-lg-media {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  @include lg-media {
+    grid-template-columns: repeat(auto-fill, minmax(33.33%, 1fr));
+  }
+  .column {
+    height: 100%;
+    z-index: 1;
+    &:not(:last-of-type) {
+      border-left: 2px solid #333;
+    }
+    .content {
+      position: relative;
+      height: 100%;
+      h1 {
+        position: absolute;
+        top: 50%;
+        @include translateY(-50%);
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        color: rgba(255, 255, 255, 2);
+        font-size: 15em;
+        font-weight: bolder;
+        border-top: 2px solid #333;
+        border-bottom: 2px solid #333;
+        @include xs-media {
+          font-size: 5em;
+        }
+      }
+      .box {
+        @include borderRadius(5px);
+        position: absolute;
+        top: 50%;
+        @include translateY(100%);
+        padding: 40px 20px;
+        background-color: rgba(255, 255, 255, 1);
+        @include transitionAll(all, 0.5s, linear);
+        @include opacity(0);
+
+        h2 {
+          margin: 0;
+          padding: 0;
+          font-size: 30px;
+          color: #262626;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 18px;
+          color: #262626;
+        }
+      }
+    }
+    .bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+    }
+    &.active .bg.bg1 {
+      background: url(../images/440x440/image-1.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      @include transitionAll(all, 0.5s, linear);
+    }
+    &.active .bg.bg2 {
+      background: url(../images/440x440/image-2.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      @include transitionAll(all, 0.5s, linear);
+    }
+    &.active .bg.bg3 {
+      background: url(../images/440x440/image-3.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      @include transitionAll(all, 0.5s, linear);
+    }
+    &.active .bg.bg4 {
+      background: url(../images/440x440/image-4.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      @include transitionAll(all, 0.5s, linear);
+    }
+    &.active {
+      .content {
+        .box {
+          @include translateY(-50%);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.css-box-read-more {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff173;
+  height: 100%;
+  .child {
+    position: relative;
+    max-width: 90%;
+    h2 {
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    img {
+      display: block;
+      margin-bottom: 20px;
+    }
+    button {
+      position: relative;
+      padding: 5px 20px;
+      display: inline-block;
+      margin-bottom: 20px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #111;
+    }
+  }
+}
+.css-box-read-more#jq-box-read-more.activeShow {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.css-popup-box-read-more {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  @include translate(-50%, -50%);
+  width: 600px;
+  padding: 50px;
+  padding-bottom: 20px;
+  @include boxShadow(-1px, 0px, 10px, #000);
+  background-color: #fff;
+  z-index: 200;
+  visibility: hidden;
+  opacity: 0;
+  @include transitionAll(all, 0.3s, linear);
+  button {
+    position: relative;
+    padding: 5px 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #111;
+  }
+  &.activeShow {
+    visibility: visible;
+    opacity: 1;
+    top: 50%;
+  }
+}
+
+/*
+<div class="parent-box-icon-have-back-text">
+            <div class="card">
+              <div class="face face1">
+                <div class="content">
+                  <i class="fa fa-cog fa-fw fa-3x"></i>
+                  <h3>Services:</h3>
+                </div>
+              </div>
+              <div class="face face2">
+                <div class="content">
+                  <p>
+                    Services contain the business logic and data sources for the app. Apps talk to these services through an Application Programming Interface (API), which you can think of like the cord that plugged into the back of Neo’s head. When folks talk about “the cloud”, this is what they’re typically referring to. These services may be first-party (built by the app’s company), or third- party (using one or more services made by someone else).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+*/
+
+// parent-box-icon-have-back-text
+.parent-box-icon-have-back-text {
+  position: relative;
+  .card {
+    position: relative;
+    cursor: pointer;
+    &:hover .face.face1 {
+      background-color: $main-color;
+      @include translateY(0);
+      min-height: 100px;
+    }
+    &:hover .face.face2 {
+      @include translateY(0);
+    }
+    &:hover .face.face1 .content {
+      opacity: 1;
+    }
+    .face {
+      width: 100%;
+      min-height: 400px;
+      @include transitionAll(all, 0.5s, linear);
+      overflow: hidden;
+    }
+    .face.face1 {
+      position: relative;
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      @include translateY(200px);
+      .content {
+        text-align: center;
+        opacity: 0.2;
+        @include transitionTime(0.5s);
+        img {
+          max-width: 100px;
+        }
+        h3 {
+          margin: 10px 0 0;
+          padding: 0;
+          color: #fff;
+          text-align: center;
+          font-size: 1.5em;
+        }
+      }
+    }
+    .face.face2 {
+      position: relative;
+      color: $main-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+      @include boxShadow(0, 20px, 50px, #000);
+      @include translateY(-200px);
+      height: 400px;
+    }
+  }
+}
+
+// parent-dynamic-tabs
+/*
+<section class="parent-dynamic-tabs">
+          <div class="container">
+            <div class="dynamic-tabs">
+              <ul class="tabs-list">
+                <li class="active" data-content=".content-one">
+                  Mediciric Objectives
+                </li>
+                <li data-content=".content-tow">STATISTICS</li>
+              </ul>
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="content-list">
+                    <div class="content-one ">Objectives</div>
+                    <div class="content-tow ">STATISTICS</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+*/
+.parent-dynamic-tabs {
+  .dynamic-tabs {
+    ul.tabs-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+        position: relative;
+        padding: 15px 30px;
+        background-color: $main-color;
+        top: 1px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        font-weight: bold;
+        color: #fff;
+        @include transitionAll(all, 0.5s, linear);
+        &:hover {
+          color: $text-color;
+        }
+      }
+      li.active {
+        color: $text-color;
+        border-bottom: 1px solid $main-color;
+        z-index: 2;
+      }
+    }
+    .content-list {
+      background-color: $main-color;
+      border: 1px solid #ccc;
+      position: relative;
+
+      &> div {
+        padding: 20px;
+        min-height: 300px;
+        color: #fff;
+      }
+      &> div:not(:first-child) {
+        display: none;
+      }
     }
   }
 }
