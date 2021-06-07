@@ -1,4 +1,4 @@
-
+Learn anything online === تعلم أي شيء عبر الإنترنت
 ***********   All pages  ****************
 
 index            	----------->  الصفحة الرئيسية
@@ -39,6 +39,13 @@ contact us      	-----------> اتصل بنا
 
 
 ************* css   *********************
+
+// Plugin//
+
+* - fontAwesome
+* - animate 
+
+
 Class
 A border
 1 - css-li-border-bottom
@@ -94,7 +101,27 @@ Global
 1 - @include hover {}
 
 ************* js    *********************
+// plugin // 
 
+* - JQuery
+
+* - nicescroll
+
+* - bootstrap
+
+* - wow
+
+* - owl
+
+* - magnific
+
+* - Show-And-Hide-box
+
+* - gmaps
+
+* - snake
+
+* - fitText
 
 
 ************* vs code *********************
@@ -110,7 +137,7 @@ Global
  1 - ctrl+s  = save
 
 
-// plugin // 
+// plugin Vscode // 
 
 A - Vscode Google Translate
 

@@ -21,6 +21,7 @@ body {
       text-align: center;
       text-transform: capitalize;
       border: 2px solid#fafafa;
+      z-index: 2000;
     }
   }
 
@@ -40,6 +41,7 @@ body {
       text-align: center;
       text-transform: capitalize;
       border: 2px solid#fafafa;
+      z-index: 2000;
     }
   }
   @include md-media {
@@ -58,6 +60,7 @@ body {
       text-align: center;
       text-transform: capitalize;
       border: 2px solid#fafafa;
+      z-index: 2000;
     }
   }
   @include lg-media {
@@ -76,6 +79,8 @@ body {
       text-align: center;
       text-transform: capitalize;
       border: 2px solid#fafafa;
+      z-index: 2000;
+
     }
   }
 }

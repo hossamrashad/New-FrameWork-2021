@@ -3810,8 +3810,34 @@ class="css-parent-backward"
   text-decoration: none;
 }
 
+/*
+<!-- Start show-hide-box -->
+<div class="jq-show-hide-box">
+  <img src="images/440x440/image-1.jpg" alt="" class="img-fluid" />
+  <div class="img-text">
+    <h3 class="h2">rovan</h3>
+    <p class="lead">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+      laborum facilis quam beatae, ipsum sunt animi quasi dolore
+      blanditiis similique voluptatibus eligendi, cupiditate dicta
+      mollitia necessitatibus .
+    </p>
+  </div>
+</div>
+<!-- End show-hide-box -->
+*/
 .jq-show-hide-box {
   text-decoration: none;
+  width: 100%;
+}
+
+.jq-show-hide-box img {
+  width: 100%;
+  height: 250px;
+}
+
+.jq-show-hide-box .img-text {
+  height: 225px;
 }
 
 .jq-magnific-image {
@@ -3838,6 +3864,11 @@ class="css-parent-backward"
   border: 1px solid green;
 }
 
+/*
+<!-- Start map -->
+    <div class="jq-map"></div>
+    <!-- End map -->
+*/
 .jq-map {
   width: 100%;
   min-height: 400px;
@@ -3860,16 +3891,16 @@ class="css-parent-backward"
 
 /*
 <div class="jq-snake">
-            <img src="images/440x440/image-1.jpg" alt="" />
-            <div class="overlay">
-              <div class="disc">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Quisquam, enim. Et, minus iste repellendus expedita fugit unde
-                debitis rerum assumenda ipsa laborum explicabo, optio eaque
-                voluptatem odio commodi, itaque omnis?
-              </div>
+  <img src="images/440x440/image-1.jpg" alt="" />
+    <div class="overlay">
+      <div class="disc">
+      Quisquam, enim. Et, minus iste repellendus expedita fugit unde
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      voluptatem odio commodi, itaque omnis?
+      debitis rerum assumenda ipsa laborum explicabo, optio eaque
+      </div>
+      </div>
             </div>
-          </div>
 */
 .jq-snake {
   position: relative;
@@ -4028,8 +4059,127 @@ class="css-parent-backward"
   height: calc(100vh / 2);
 }
 
+.numberChildbody {
+  position: fixed;
+  bottom: 70px;
+  left: 10px;
+  height: 50px;
+  color: #fff;
+  background-color: #333;
+  font-size: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  border: 2px solid #fafafa;
+}
+
+@media (max-width: 767px) {
+  .owl-carousel {
+    display: inline-block;
+  }
+  .owl-carousel .owl-prev span,
+  .owl-carousel .owl-next span {
+    font-size: 20px;
+    padding: 1px 18px;
+    background-color: #1abc9c;
+    color: #fff;
+    border: 2px solid #198754;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+  }
+}
+
+@media (min-width: 768px) {
+  .owl-carousel {
+    display: inline-block;
+  }
+  .owl-carousel .owl-prev span,
+  .owl-carousel .owl-next span {
+    font-size: 30px;
+    padding: 1px 18px;
+    background-color: #1abc9c;
+    color: #fff;
+    border: 2px solid #198754;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+  }
+  .owl-carousel .owl-prev span {
+    position: absolute;
+    right: 0%;
+    top: 50%;
+  }
+  .owl-carousel .owl-next span {
+    position: absolute;
+    left: 0%;
+    top: 50%;
+  }
+}
+
+.owl-carousel .owl-nav.disabled {
+  display: inline-block;
+}
+
+.owl-carousel .owl-nav.disabled .owl-prev span,
+.owl-carousel .owl-nav.disabled .owl-next span {
+  font-size: 30px;
+  padding: 1px 18px;
+  background-color: #1abc9c;
+  color: #fff;
+  border: 2px solid #198754;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.owl-carousel .owl-nav.disabled .owl-prev span {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+}
+
+.owl-carousel .owl-nav.disabled .owl-next span {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+}
+
+.jq-fittext {
+  text-align: center;
+}
+
 .box-lest:not(:last-of-type) {
   padding-right: 0;
+}
+
+@media (min-width: 767px) and (max-width: 766px) {
+  .hide-xs {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hide-sm {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hide-md {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hide-lg {
+    display: none !important;
+  }
 }
 
 /* for selection */
@@ -4213,11 +4363,6 @@ class="css-parent-backward"
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   cursor: pointer;
-}
-
-.jq-map {
-  width: 100%;
-  min-height: 100px;
 }
 
 .parent-form-1 {
@@ -5302,6 +5447,331 @@ class="css-parent-backward"
           perspective: 600px;
 }
 
+/*
+<div class="container-fluid">
+        <div class="css-section-haver-box-parent">
+          <div class="column active">
+            <div class="content">
+              <h1 class="">1</h1>
+              <div class="box">
+                <h2>what is lorem ipsum</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Natus architecto eos repellat ullam quam quod vitae commodi
+                  vero ab eius id dolorem pariatur, necessitatibus quis dolorum
+                  fugiat distinctio praesentium numquam.
+                </p>
+              </div>
+            </div>
+            <div class="bg bg1"></div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <h1>2</h1>
+              <div class="box">
+                <h2>what is lorem ipsum</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Natus architecto eos repellat ullam quam quod vitae commodi
+                  vero ab eius id dolorem pariatur, necessitatibus quis dolorum
+                  fugiat distinctio praesentium numquam.
+                </p>
+              </div>
+            </div>
+            <div class="bg bg2"></div>
+          </div>
+          <div class="column hide-xs">
+            <div class="content">
+              <h1>3</h1>
+              <div class="box">
+                <h2>what is lorem ipsum</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Natus architecto eos repellat ullam quam quod vitae commodi
+                  vero ab eius id dolorem pariatur, necessitatibus quis dolorum
+                  fugiat distinctio praesentium numquam.
+                </p>
+              </div>
+            </div>
+            <div class="bg bg3"></div>
+          </div>
+        </div>
+      </div>
+*/
+.css-section-haver-box-parent {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden !important;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .css-section-haver-box-parent {
+    -ms-grid-columns: (minmax(50%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+  .css-section-haver-box-parent .column.hide-xs {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .css-section-haver-box-parent {
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .css-section-haver-box-parent {
+    -ms-grid-columns: (minmax(33.33%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(33.33%, 1fr));
+  }
+}
+
+.css-section-haver-box-parent .column {
+  height: 100%;
+  z-index: 1;
+}
+
+.css-section-haver-box-parent .column:not(:last-of-type) {
+  border-left: 2px solid #333;
+}
+
+.css-section-haver-box-parent .column .content {
+  position: relative;
+  height: 100%;
+}
+
+.css-section-haver-box-parent .column .content h1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 15em;
+  font-weight: bolder;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+}
+
+@media (max-width: 767px) {
+  .css-section-haver-box-parent .column .content h1 {
+    font-size: 5em;
+  }
+}
+
+.css-section-haver-box-parent .column .content .box {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  padding: 40px 20px;
+  background-color: white;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  zoom: 1;
+  filter: alpha(opacity=0);
+  -webkit-filter: alpha(opacity=0);
+  opacity: 0;
+}
+
+.css-section-haver-box-parent .column .content .box h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  color: #262626;
+  margin-bottom: 20px;
+}
+
+.css-section-haver-box-parent .column .content .box p {
+  font-size: 18px;
+  color: #262626;
+}
+
+.css-section-haver-box-parent .column .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.css-section-haver-box-parent .column.active .bg.bg1 {
+  background: url(../images/440x440/image-1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+}
+
+.css-section-haver-box-parent .column.active .bg.bg2 {
+  background: url(../images/440x440/image-2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+}
+
+.css-section-haver-box-parent .column.active .bg.bg3 {
+  background: url(../images/440x440/image-3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+}
+
+.css-section-haver-box-parent .column.active .bg.bg4 {
+  background: url(../images/440x440/image-4.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+}
+
+.css-section-haver-box-parent .column.active .content .box {
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  opacity: 1;
+}
+
+.css-box-read-more {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff173;
+  height: 100%;
+}
+
+.css-box-read-more .child {
+  position: relative;
+  max-width: 90%;
+}
+
+.css-box-read-more .child h2 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.css-box-read-more .child img {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.css-box-read-more .child button {
+  position: relative;
+  padding: 5px 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #111;
+}
+
+.css-box-read-more#jq-box-read-more.activeShow {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.css-popup-box-read-more {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  width: 600px;
+  padding: 50px;
+  padding-bottom: 20px;
+  -o-box-shadow: -1px 0px 10px #000;
+  -ms-box-shadow: -1px 0px 10px #000;
+  -webkit-box-shadow: -1px 0px 10px #000;
+          box-shadow: -1px 0px 10px #000;
+  background-color: #fff;
+  z-index: 200;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+.css-popup-box-read-more button {
+  position: relative;
+  padding: 5px 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #111;
+}
+
+.css-popup-box-read-more.activeShow {
+  visibility: visible;
+  opacity: 1;
+  top: 50%;
+}
+
 .color-fff {
   color: #ffffff;
 }
@@ -5566,6 +6036,61 @@ class="css-parent-backward"
   -o-transition: all 0.5s linear;
 }
 
+.copyright {
+  margin: 0px;
+  padding: 20px 0px;
+  background-color: #161719;
+  color: #ffffff;
+  text-align: center;
+}
+
+.copyright .lead,
+.copyright .link {
+  display: inline-block;
+}
+
+.copyright .link {
+  margin-right: 20px;
+}
+
+.copyright .link a {
+  text-decoration: none;
+  color: #3498db;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.copyright .link a > div {
+  display: inline-block;
+}
+
+.copyright .link a .css-parent-text-shadow-15-5 {
+  display: inline-block;
+  background: #adadad;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.copyright .link a .css-parent-text-shadow-15-5 h4 {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.copyright .link a .css-parent-text-shadow-15-5 h4:hover {
+  text-shadow: -1px -1px 1px #333, 0 1px 0 #333, 0 2px 0 #333, 0 2px 0 #333, 0 3px 0 #333, 0 4px 0 #333, 0 5px 0 #333, 0 6px 0 #333, 0 7px 0 #333, 0 8px 0 #333, 0 9px 0 #333, 0 10px 0 #333, 0 11px 0 #333, 0 12px 0 #333, 0 13px 0 #333, 0 14px 0 #333, 0 15px 0 #333, 10px 25px 35px rgba(0, 0, 0, 0);
+}
+
 @media (max-width: 767px) {
   body::before {
     content: "xs";
@@ -5580,6 +6105,7 @@ class="css-parent-backward"
     text-align: center;
     text-transform: capitalize;
     border: 2px solid #fafafa;
+    z-index: 2000;
   }
 }
 
@@ -5597,6 +6123,7 @@ class="css-parent-backward"
     text-align: center;
     text-transform: capitalize;
     border: 2px solid #fafafa;
+    z-index: 2000;
   }
 }
 
@@ -5614,6 +6141,7 @@ class="css-parent-backward"
     text-align: center;
     text-transform: capitalize;
     border: 2px solid #fafafa;
+    z-index: 2000;
   }
 }
 
@@ -5631,6 +6159,7 @@ class="css-parent-backward"
     text-align: center;
     text-transform: capitalize;
     border: 2px solid #fafafa;
+    z-index: 2000;
   }
 }
 
@@ -5662,7 +6191,6 @@ class="css-parent-backward"
   height: 200px;
   background-color: #333;
   color: #fff;
-  margin: 100px auto;
   border-width: 20px;
   border-radius: 10px;
   -webkit-border-radius: 10px;

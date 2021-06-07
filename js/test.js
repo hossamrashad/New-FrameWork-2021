@@ -9,17 +9,9 @@
 /*jslint browser: true */
 /*global window */
 
-// src To Head 
-
-// var jqueryToAdd = document.createElement("script");
-
-// jqueryToAdd.src = 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js';
-
-// document.getElementsByTagName('head')[0].appendChild(jqueryToAdd);
-
-
 var numberChildbody = document.getElementById("numberChildbody"),
   jquerySrc = document.createElement("script"),
+  niceScrollSrc = document.createElement("script"),
   bootstrapSrc = document.createElement("script"),
   wowSrc = document.createElement("script"),
   owlSrc = document.createElement("script"),
@@ -34,12 +26,14 @@ var numberChildbody = document.getElementById("numberChildbody"),
   typedSrc = document.createElement("script"),
   mixitupSrc = document.createElement("script"),
   countToSrc = document.createElement("script"),
-  
   pluginWorkSrc = document.createElement("script"),
-  toolSrc = document.createElement("script"),
+  myTol = document.createElement("script"),
+  testWork = document.createElement("script"),
   body = document.getElementsByTagName("body")[0];
 
 jquerySrc.src = "js/JQuery/jquery-3-6-0.min.js";
+
+niceScrollSrc.src = "js/nicescroll/jquery.nicescroll.min.js";
 
 bootstrapSrc.src = "js/bootstrap/bootstrap-5.0.1-min.js";
 
@@ -56,7 +50,7 @@ validateMiniSrc.src = "js/form/jquery.validateMini.min.js";
 gmapsStc1.src = "http://maps.google.com/maps/api/js";
 gmapsStc2.src = "js/gmap/gmaps.min.js";
 
-backgroundVideo.src = 'js/background-video/jquery.vide.js';
+backgroundVideo.src = "js/background-video/jquery.vide.js";
 
 backgroundmove.src = "js/backgroundmove/jquery.backgroundMove.js";
 
@@ -66,23 +60,25 @@ typedSrc.src = "js/typedjs/typed.min.js";
 
 mixitupSrc.src = "js/filter/mixitup.min.js";
 
-countToSrc.src = 'js/countTo/jquery.countTo.js';
+countToSrc.src = "js/countTo/jquery.countTo.js";
 
 /**************************/
 
 pluginWorkSrc.src = "js/plugin-work.js";
-toolSrc.src = "js/My-Tools.js";
-
-
+myTol.src = "js/My-Tools.js";
+testWork.src = "js/test-work.js";
 /*************/
 
 body.insertBefore(jquerySrc, body.childNodes[body.childNodes.length - 1]);
 
+// body.insertBefore(niceScrollSrc, body.childNodes[body.childNodes.length - 1]);
+
 body.insertBefore(bootstrapSrc, body.childNodes[body.childNodes.length - 1]);
+
 
 body.insertBefore(wowSrc, body.childNodes[body.childNodes.length - 1]);
 
-body.insertBefore(owlSrc, body.childNodes[body.childNodes.length - 1]);
+// body.insertBefore(owlSrc, body.childNodes[body.childNodes.length - 1]);
 
 // body.insertBefore(magnificSrd, body.childNodes[body.childNodes.length - 1]);
 
@@ -105,15 +101,10 @@ body.insertBefore(owlSrc, body.childNodes[body.childNodes.length - 1]);
 
 // body.insertBefore(countToSrc, body.childNodes[body.childNodes.length - 1]);
 
-// ********* // 
+// ********* //
 // body.insertBefore(pluginWorkSrc, body.childNodes[body.childNodes.length - 1]);
 // body.insertBefore(myTol, body.childNodes[body.childNodes.length - 1]);
-
-// body.insertBefore(pluginWorkSrc, body.childNodes[body.childNodes.length - 1]);
-
-// body.insertBefore(toolSrc, body.childNodes[body.childNodes.length - 1]);
-
-
+body.insertBefore(testWork, body.childNodes[body.childNodes.length]);
 
 //
 

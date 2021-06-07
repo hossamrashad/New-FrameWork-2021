@@ -316,15 +316,30 @@
     @content;
   }
 }
+@mixin xs-sm-media {
+  @media (min-width: 767px) and (max-width: 766px){
+    @content;
+  }
+}
 
 @mixin sm-media {
   @media (min-width: 768px) {
     @content;
   }
 }
+@mixin sm-md-media {
+  @media (min-width: 768px) and (max-width: 991px){
+    @content;
+  }
+}
 
 @mixin md-media {
   @media (min-width: 992px) {
+    @content;
+  }
+}
+@mixin md-lg-media {
+  @media (min-width: 992px) and (max-width: 1199px){
     @content;
   }
 }

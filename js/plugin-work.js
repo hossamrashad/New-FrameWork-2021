@@ -10,6 +10,12 @@
 /*global window */
 
 /**
+ * Wow
+ *
+ * Owl
+ *
+ * magnific
+ *
  * dynamic tabs
  *
  * typed js
@@ -21,119 +27,57 @@
  *
  */
 
+// $(document).ready(function () {
+//   "use strict";
 
-$(document).ready(function () {
-  "use strict";
-  // wow
+// nice scroll
+// $(function () {
+//   $("html").niceScroll({
+//     cursorcolor: "#ecf0f1",
+//     cursorwidth: "12px",
+//     cursorborder: "3px solid #34495e",
+//     cursorborderradius: "10px",
+//     scrollspeed: "60",
+//   });
+// });
 
-  // new WOW().init();
+// });
 
-  // nice scroll
-  $(function () {
-    $("html").niceScroll({
-      cursorcolor: "#ecf0f1",
-      cursorwidth: "12px",
-      cursorborder: "3px solid #34495e",
-      cursorborderradius: "10px",
-      scrollspeed: "60",
-    });
-  });
-  // owl
-  // $(".owl-carousel").owlCarousel({
-  //   loop: true,
-  //   margin: 10,
-  //   nav: true,
-  //   dots: false,
-  //   autoplay: true,
-  //   smartSpeed: 1000,
-  //   responsive: {
-  //     0: {
-  //       items: 1,
-  //     },
-  //     600: {
-  //       items: 1,
-  //     },
-  //     1000: {
-  //       items: 3,
-  //     },
-  //   },
-  // });
-
-  
-  // circle
-  // $(function () {
-  //   $(".circlechart").circlechart();
-  // });
-});
-
-
-
-// magnific
-$(document).ready(function () {
-  $(".jq-magnific-image").magnificPopup({
-    type: "image",
-  });
-  $(".jq-magnific-gallery").magnificPopup({
-    type: "image",
-    gallery: {
-      enabled: true,
-    },
-  });
-  $(".jq-magnific-video").magnificPopup({
-    type: "iframe",
-  });
-});
-
-
-// show and hide box
-// show-hide-box
-$(function () {
-  $(".jq-show-hide-box").expandable({
-    height: 250,
-    expand_responsive: 768,
-  });
-});
+// circle
+// $(function () {
+//   $(".circlechart").circlechart();
+// });
+// });
 
 // form validateMini
-$("form").validateMini({
-  validates: {
-    strong: (params, value) => {
-      return (
-        /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])/.test(value) ||
-        "A Strong Password Required"
-      );
-    },
-  },
-});
+// $("form").validateMini({
+//   validates: {
+//     strong: (params, value) => {
+//       return (
+//         /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])/.test(value) ||
+//         "A Strong Password Required"
+//       );
+//     },
+//   },
+// });
 
 // background move
-$(document).ready(function () {
-  "use strict";
-  $(".jq-backmove").backgroundMove({
-    movementStrength: "50",
-  });
-});
+// $(document).ready(function () {
+//   "use strict";
+//   $(".jq-backmove").backgroundMove({
+//     movementStrength: "50",
+//   });
+// });
 
-// snake
-$(".jq-snake").snakeify({
-  speed: 200,
-});
-
-
-
-$(document).ready(function () {
-  "use strict";
-  $(".jq-timer").countTo({
-    from: 50,
-    to: 2500,
-    speed: 2000,
-    refreshInterval: 50,
-  });
-});
-
-
-
-
+// $(document).ready(function () {
+//   "use strict";
+//   $(".jq-timer").countTo({
+//     from: 50,
+//     to: 2500,
+//     speed: 2000,
+//     refreshInterval: 50,
+//   });
+// });
 
 //
 // typed js
@@ -162,7 +106,75 @@ $(document).ready(function () {
 
 // });
 
-// gmaps
-// var map = new GMaps({ el: ".jq-map", lat: 29.993663, lng: 31.222816 });
+// window.onload = (function () {
+$(document).ready(function () {
+  "use strict";
 
+  // wow
+  new WOW().init();
 
+  // owl
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: false,
+    autoplay: true,
+    smartSpeed: 1000,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
+      },
+    },
+  });
+
+  // magnific
+  $(".jq-magnific-image").magnificPopup({
+    type: "image",
+  });
+  $(".jq-magnific-gallery").magnificPopup({
+    type: "image",
+    gallery: {
+      enabled: true,
+    },
+  });
+  $(".jq-magnific-video").magnificPopup({
+    type: "iframe",
+  });
+
+  // snake
+  $(".jq-snake").snakeify({
+    speed: 200,
+  });
+
+  // show and hide box
+  $(function () {
+    $(".jq-show-hide-box").expandable({
+      height: 250,
+      expand_responsive: 768,
+    });
+  });
+
+  // gmaps
+  var map = new GMaps({ el: ".jq-map", lat: 30.039977, lng: 31.219695 });
+
+  // FitText
+  $(".jq-fittext").fitText(1.2, { minFontSize: "20px", maxFontSize: "30px" });
+
+  // section box haver
+  $(document).on(
+    "mouseover",
+    ".css-section-haver-box-parent .column",
+    function () {
+      "use strict";
+      $(this).addClass("active").siblings().removeClass("active");
+    }
+  );
+  
+});

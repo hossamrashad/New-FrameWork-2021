@@ -1,8 +1,32 @@
 .jq-window-height {
   text-decoration: none;
 }
+/*
+<!-- Start show-hide-box -->
+<div class="jq-show-hide-box">
+  <img src="images/440x440/image-1.jpg" alt="" class="img-fluid" />
+  <div class="img-text">
+    <h3 class="h2">rovan</h3>
+    <p class="lead">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+      laborum facilis quam beatae, ipsum sunt animi quasi dolore
+      blanditiis similique voluptatibus eligendi, cupiditate dicta
+      mollitia necessitatibus .
+    </p>
+  </div>
+</div>
+<!-- End show-hide-box -->
+*/
 .jq-show-hide-box {
   text-decoration: none;
+  width: 100%;
+  img {
+    width: 100%;
+    height: 250px;
+  }
+  .img-text {
+    height: 225px;
+  }
 }
 .jq-magnific-image {
   text-decoration: none;
@@ -28,6 +52,11 @@
 }
 
 // gmaps
+/*
+<!-- Start map -->
+    <div class="jq-map"></div>
+    <!-- End map -->
+*/
 .jq-map {
   width: 100%;
   min-height: 400px;
@@ -55,16 +84,16 @@
 
 /*
 <div class="jq-snake">
-            <img src="images/440x440/image-1.jpg" alt="" />
-            <div class="overlay">
-              <div class="disc">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Quisquam, enim. Et, minus iste repellendus expedita fugit unde
-                debitis rerum assumenda ipsa laborum explicabo, optio eaque
-                voluptatem odio commodi, itaque omnis?
-              </div>
+  <img src="images/440x440/image-1.jpg" alt="" />
+    <div class="overlay">
+      <div class="disc">
+      Quisquam, enim. Et, minus iste repellendus expedita fugit unde
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      voluptatem odio commodi, itaque omnis?
+      debitis rerum assumenda ipsa laborum explicabo, optio eaque
+      </div>
+      </div>
             </div>
-          </div>
 */
 .jq-snake {
   position: relative;
@@ -90,11 +119,7 @@
       color: #fff;
       width: 100%;
       top: 50%;
-      transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -o-transform: translateY(-50%);
+      @include translateY(-50%);
     }
   }
 }
@@ -217,4 +242,109 @@
 }
 .height50vh {
   height: calc(100vh / 2);
+}
+
+// test helpers js
+.numberChildbody {
+  position: fixed;
+  bottom: 70px;
+  left: 10px;
+  height: 50px;
+  color: #fff;
+  background-color: #333;
+  font-size: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  border: 2px solid #fafafa;
+}
+
+// start Owl style
+
+.owl-carousel {
+  // style xs media
+  @include xs-media{
+    display: inline-block;
+    .owl-prev,
+    .owl-next {
+      span {
+        font-size: 20px;
+        padding: 1px 18px;
+        background-color: #1abc9c;
+        color: #fff;
+        border: 2px solid #198754;
+        @include borderRadius(7px);
+      }
+    }
+  }
+  // style sm media
+  @include sm-media{
+    display: inline-block;
+    .owl-prev,
+    .owl-next {
+      span {
+        font-size: 30px;
+        padding: 1px 18px;
+        background-color: #1abc9c;
+        color: #fff;
+        border: 2px solid #198754;
+        @include borderRadius(7px);
+      }
+    }
+    // Button owl-prev
+    .owl-prev {
+      // span
+      span {
+        position: absolute;
+        right: 0%;
+        top: 50%;
+      }
+    }
+    // Button owl-next
+    .owl-next {
+      // span
+      span {
+        position: absolute;
+        left: 0%;
+        top: 50%;
+      }
+    }
+  }
+  // style media md
+  .owl-nav.disabled {
+    display: inline-block;
+    .owl-prev,
+    .owl-next {
+      span {
+        font-size: 30px;
+        padding: 1px 18px;
+        background-color: #1abc9c;
+        color: #fff;
+        border: 2px solid #198754;
+        @include borderRadius(7px);
+      }
+    }
+    // Button owl-prev
+    .owl-prev {
+      // span
+      span {
+        position: absolute;
+        right: 0%;
+        top: 50%;
+      }
+    }
+    // Button owl-next
+    .owl-next {
+      // span
+      span {
+        position: absolute;
+        left: 0%;
+        top: 50%;
+      }
+    }
+  }
+}
+
+// fitText
+.jq-fittext {
+  text-align: center;
 }
