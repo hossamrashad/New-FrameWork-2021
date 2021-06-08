@@ -10,15 +10,31 @@
 /*global window */
 
 /**
- * 
- * 
- * 
+ *
+ * Window Height
+ *
+ * Window Height / 2
+ *
+ * fixed menu
+ *
+ * button scroll to top
+ *
+ *
+ *
+ *
+ *
+ * menu-Plus
+ *
+ * jq-box-read-more
  */
+// window height
 $(function () {
   "use strict";
   // Window Height
   var windowH = $(window).height();
+
   $(".jq-window-height").height(windowH);
+
   $(window).resize(function () {
     $(".jq-window-height").height(windowH);
   });
@@ -197,22 +213,21 @@ $(document).ready(function () {
     $($(this).data("content")).fadeIn();
   });
 
-  // dynamic tab
-  $(".tabs-list li").on("click", function () {
 
-    console.log($(this).data("content"));
 
-    $(this).addClass("active").siblings().removeClass("active");
 
-    $('.content-list > div').hide();
-
-    $($(this).data('content')).fadeIn();
-    
-  });
+  // section box haver
+  $(document).on(
+    "mouseover",
+    ".css-section-haver-box-parent .column",
+    function () {
+      "use strict";
+      $(this).addClass("active").siblings().removeClass("active");
+    }
+  );
 });
 
 // menu-Plus
-
 function openMenu() {
   "use strict";
   const menu = document.querySelector(".menu-Plus");
@@ -220,11 +235,20 @@ function openMenu() {
   menu.classList.toggle("open");
 }
 
+// jq-box-read-more
 function readmore() {
   "use strict";
   var blur = document.getElementById("jq-box-read-more");
   blur.classList.toggle("activeShow");
-// Show Popup 
+  // Show Popup
   var popupReadMore = document.getElementById("css-popup-box-read-more");
   popupReadMore.classList.toggle("activeShow");
 }
+
+// navbar change color
+window.addEventListener("scroll", function () {
+  var windowH = $(window).height();
+  var nav = this.document.querySelector("nav");
+  var windowPosition = this.window.scrollY > windowH;
+  nav.classList.toggle('css-nav-change-color', windowPosition);
+});

@@ -72,14 +72,15 @@
   text-decoration: none;
 }
 
-//
-.jq-timer {
+// countTo
+.jq-countTo {
   font: {
     size: $font-page + 10;
     weight: bold;
     family: Arial, Helvetica, sans-serif;
   }
   color: #999;
+  display: block;
 }
 
 /*
@@ -126,115 +127,219 @@
 // mixitup
 /*
 <!-- Start mixitup -->
+    <section class="mixitup">
+      <div class="container">
         <div class="parent-mixitup">
           <div class="row">
             <div class="col-sm-12">
-              <div class="box-menu">
-                <ul>
-                  <li class="mixitup-control-active" data-filter="*">all</li>
-                  <li data-filter=".photo">photo</li>
-                  <li data-filter=".ui">photo</li>
-                  <li data-filter=".paint">painting</li>
-                </ul>
+              <div class="controls">
+                <button class="btn mixitup-btn-style active" data-filter="*">
+                  all
+                </button>
+                <button class="btn mixitup-btn-style" data-filter=".photo">
+                  photo
+                </button>
+                <button class="btn mixitup-btn-style" data-filter=".ui">
+                  ui
+                </button>
+                <button class="btn mixitup-btn-style" data-filter=".paint">
+                  painting
+                </button>
               </div>
             </div>
           </div>
-          <div class="row box-list">
-            <div class="col-md-3 col-sm-3 mix box-item photo paint">
-              <img
-                src="images/440x440/image-1.jpg"
-                alt=""
-                class="img-fluid img-thumbnail"
-              />
+          <div class="row portfolio-item">
+            <div class="col-md-4 col-sm-6 mix single-item photo ui">
+              <div class="img-erea">
+                <img
+                  src="images/440x440/image-1.jpg"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+              </div>
+              <div class="img-disc">
+                <h3 class="h2">rovan hossam</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur, voluptatum enim? Deserunt hic maiores id
+                </p>
+              </div>
             </div>
-            <div class="col-md-3 col-sm-6 mix box-item ui">
-              <img
-                src="images/440x440/image-2.jpg"
-                alt=""
-                class="img-fluid img-thumbnail"
-              />
+            <div class="col-md-4 col-sm-6 mix single-item photo paint">
+              <div class="img-erea">
+                <img
+                  src="images/440x440/image-8.jpg"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+              </div>
+              <div class="img-disc">
+                <h3 class="h2">rovan hossam</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur, voluptatum enim? Deserunt hic maiores id
+                </p>
+              </div>
             </div>
-            <div class="col-md-3 col-sm-6 mix box-item ui">
-              <img
-                src="images/440x440/image-3.jpg"
-                alt=""
-                class="img-fluid img-thumbnail"
-              />
+            <div class="col-md-4 col-sm-6 mix single-item ui paint">
+              <div class="img-erea">
+                <img
+                  src="images/440x440/image-2.jpg"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+              </div>
+              <div class="img-disc">
+                <h3 class="h2">rovan hossam</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur, voluptatum enim? Deserunt hic maiores id
+                </p>
+              </div>
             </div>
-            <div class="col-md-3 col-sm-6 mix box-item photo">
-              <img
-                src="images/440x440/image-4.jpg"
-                alt=""
-                class="img-fluid img-thumbnail"
-              />
+            <div class="col-md-4 col-sm-6 mix single-item photo ui">
+              <div class="img-erea">
+                <img
+                  src="images/440x440/image-3.jpg"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+              </div>
+              <div class="img-disc">
+                <h3 class="h2">rovan hossam</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur, voluptatum enim? Deserunt hic maiores id
+                </p>
+              </div>
             </div>
-            <div class="col-md-3 col-sm-6 mix box-item paint">
-              <img
-                src="images/440x440/image-5.jpg"
-                alt=""
-                class="img-fluid img-thumbnail"
-              />
+            <div class="col-md-4 col-sm-6 mix single-item photo paint">
+              <div class="img-erea">
+                <img
+                  src="images/440x440/image-4.jpg"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+              </div>
+              <div class="img-disc">
+                <h3 class="h2">rovan hossam</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur, voluptatum enim? Deserunt hic maiores id
+                </p>
+              </div>
             </div>
-            <div class="col-md-3 col-sm-6 mix box-item ui paint">
-              <img
-                src="images/440x440/image-6.jpg"
-                alt=""
-                class="img-fluid img-thumbnail"
-              />
-            </div>
-            <div class="col-md-3 col-sm-6 mix box-item ui">
-              <img
-                src="images/440x440/image-7.jpg"
-                alt=""
-                class="img-fluid img-thumbnail"
-              />
-            </div>
-            <div class="col-md-3 col-sm-6 mix box-item photo">
-              <img
-                src="images/440x440/image-8.jpg"
-                alt=""
-                class="img-fluid img-thumbnail"
-              />
+            <div class="col-md-4 col-sm-6 mix single-item photo paint">
+              <div class="img-erea">
+                <img
+                  src="images/440x440/image-5.jpg"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+              </div>
+              <div class="img-disc">
+                <h3 class="h2">rovan hossam</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur, voluptatum enim? Deserunt hic maiores id
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <!-- End mixitup -->
+      </div>
+    </section>
+    <!-- End mixitup -->
 */
-.parent-mixitup {
-  img {
-    width: 100%;
-  }
-  .box-menu {
+
+.mixitup {
+  padding: 60px 0px;
+  background-color: #f1f1f1;
+  h3.h2 {
     text-align: center;
-    ul {
-      li {
-        font-weight: bold;
-        text-transform: uppercase;
-        @include borderRadius(5px);
-        cursor: pointer;
-        margin-bottom: 60px;
-        background: map-get($colors, 29);
-        font-size: 18px;
-        padding: 10px 30px;
-        color: #fff;
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+  .parent-mixitup {
+    img {
+      width: 100%;
+    }
+    // controls button
+    div.controls {
+      text-align: center;
+      margin-bottom: 60px;
+      // button
+      button:focus {
+        outline: none;
       }
-      .mixitup-control-active {
-        background: rgb(123, 123, 123);
+      button.mixitup-btn-style {
+        background: $main-color;
+        border: 1px solid $main-color;
+        color: $color-fff;
+        font-size: $font-page;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 10px 30px;
+        margin-bottom: 5px;
+        cursor: pointer;
+        @include transitionAll(all, 0.5s, linear);
+        @include borderRadius(5px);
+      }
+      
+      button:hover, button.mixitup-control-active{
+        background: $color-fff;
+        border: 1px solid $main-color;
+        color: $main-color;
       }
     }
-  }
-  .box-item {
-    margin-bottom: 30px;
-    .box-item img {
-      height: 100%;
-      max-height: 300px;
-      width: 100%;
-      -o-object-fit: cover;
-      object-fit: cover;
+    // div parent item
+    div.portfolio-item {
+      div.single-item {
+        margin-bottom: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        //
+        div.img-erea {
+          img {
+            width: 100%;
+          }
+        }
+        div.img-disc {
+          @include overlay;
+          display: grid;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          background-color: rgba(0, 0, 0, 0.5);
+          @include transitionAll(all, 0.3s, linear);
+          cursor: pointer;
+          @include scaleY(0);
+          transform-origin: center center;
+          opacity: 0;
+          visibility: hidden;
+          color: $color-fff;
+          h3.h2 {
+            color: $main-color;
+            text-transform: uppercase;
+            font-size: $font-page + 4;
+            margin: 10px;
+          }
+          p.lead {
+            color: $color-fff;
+            font-size: $font-page;
+            padding: 0px 25px;
+          }
+        }
+        &:hover .img-disc {
+          @include scaleY(1);
+          opacity: 1;
+          visibility: visible;
+        }
+      }
     }
   }
 }
-
 // css class
 
 .height100vh {
@@ -260,9 +365,14 @@
 
 // start Owl style
 
+// for wol dir ltr
+.owl-stage-outer {
+  direction: ltr !important;
+}
+
 .owl-carousel {
   // style xs media
-  @include xs-media{
+  @include xs-media {
     display: inline-block;
     .owl-prev,
     .owl-next {
@@ -277,7 +387,7 @@
     }
   }
   // style sm media
-  @include sm-media{
+  @include sm-media {
     display: inline-block;
     .owl-prev,
     .owl-next {
@@ -347,4 +457,92 @@
 // fitText
 .jq-fittext {
   text-align: center;
+}
+
+// jq-nivo-slider
+.jq-nivo-slider {
+  position: relative;
+  .slider-wrapper {
+    .slider-active {
+      // height: 100vh;
+      img {
+      }
+    }
+    .slider-content {
+      display: none;
+    }
+    .nivo-caption {
+      background: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 100%;
+    }
+    .slider-disc {
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+    .slider-bg {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 50px;
+      h2 {
+        font-size: 40px;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 19px;
+        color: #ddd;
+      }
+    }
+    // <<==  ==>>
+    .nivo-directionNav a {
+      font-size: 15px;
+      color: #fff;
+      background: #333;
+      width: 30px;
+      height: 100px;
+      line-height: 100px;
+      margin-top: -50px;
+      text-align: center;
+      @include transitionAll(all, 0.4s, linear);
+      left: -50px;
+      opacity: 0.5;
+      &:hover {
+        background-color: #fff;
+        color: #333;
+        opacity: 1;
+      }
+    }
+    // nivo-controlNav
+    .nivo-controlNav {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      z-index: 9999999999;
+      @include transitionAll(all, 0.4s, linear);
+      a {
+        width: 25px;
+        height: 7px;
+        margin: 0px 5px;
+        background: #fff;
+        display: inline-block;
+        text-indent: -99999px;
+        @include transitionAll(all, 0.4s, linear);
+      }
+      a.nivo-control:hover,
+      a.nivo-control.active {
+        background-color: #333;
+      }
+    }
+  }
+  &:hover .nivo-directionNav a {
+    opacity: 1;
+    left: 0;
+  }
+  &:hover .nivo-directionNav .nivo-nextNav {
+    right: 0;
+    left: auto;
+  }
 }

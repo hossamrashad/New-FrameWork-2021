@@ -1,46 +1,66 @@
-// navbar bootstrap
-.navbar {
-  // like logo
-  .navbar-brand {
-    a {
+// Header
+header.header {
+  // navbar bootstrap
+  nav.navbar {
+    @include transitionAll(all, 0.5s, ease);
+
+    // a like logo
+    .navbar-brand {
     }
-  }
-  // dropdown menu for mobail
-  .navbar-toggler {
-    // span = img
-    .navbar-toggler-icon {
+
+    // button dropdown menu for mobail phone
+    .navbar-toggler {
+      // span = img
+      .navbar-toggler-icon {
+      }
     }
-  }
-  // div = container for ul
-  .navbar-collapse {
-    // ul link
-    .navbar-nav {
-      // li
-      .nav-item {
-        // a
-        .nav-link {
+
+    // div = container for ul
+    div.collapse.navbar-collapse {
+      // ul link
+      ul.navbar-nav {
+        @include xs-media {
+          // if you went to li start left in rtl
+          // align-items: flex-start;
+          // if you went to li start left in rtl
+          // align-items: flex-end;
         }
-      }
-      // li
-      .nav-item.active {
-        // a
-        .nav-link {
-        }
-      }
-      // li dropdown
-      .dropdown {
-        // div dropdown
-        .dropdown-menu {
-          // a item
-          .dropdown-item {
+        // li
+        li.nav-item {
+          // a
+          a.nav-link {
           }
+          // a active
+          a.nav-link.active {
+          }
+        }
+        // li dropdown
+        li.nav-item.dropdown {
+          // a link name
+          a.nav-link.dropdown-toggle {
+          }
+          // div dropdown
+          ul.dropdown-menu {
+            li {
+              // a item
+              a.dropdown-item {
+              }
+            }
+          }
+        }
+      }
+      // form
+      form.d-flex {
+        input.form-control.me-2 {
+        }
+        button.btn.btn-outline-success {
         }
       }
     }
   }
 }
 
-//
+// nav new style
 /*
 <div
         class="collapse navbar-collapse css-menu-hover-1"
@@ -137,6 +157,67 @@
             -o-transform: rotateX(0deg) translateY(0px);
           }
         }
+      }
+    }
+  }
+}
+
+// navbar change color
+nav.navbar.css-nav-change-color {
+  background-color: $main-color !important;
+  @include boxShadow(-1px, 0px, 10px, #000);
+
+  // a like logo
+  .navbar-brand {
+    color: #fff;
+  }
+  // button dropdown menu for mobail phone
+  .navbar-toggler {
+    // span = img
+    .navbar-toggler-icon {
+    }
+  }
+
+  // div = container for ul
+  div.collapse.navbar-collapse {
+    // ul link
+    ul.navbar-nav {
+      @include xs-media {
+        // if you went to li start left in rtl
+        // align-items: flex-start;
+        // if you went to li start left in rtl
+        // align-items: flex-end;
+      }
+      // li
+      li.nav-item {
+        // a
+        a.nav-link {
+          color: #fff;
+        }
+        // a active
+        a.nav-link.active {
+        }
+      }
+      // li dropdown
+      li.nav-item.dropdown {
+        // a link name
+        a.nav-link.dropdown-toggle {
+        }
+        // div dropdown
+        ul.dropdown-menu {
+          li {
+            // a item
+            a.dropdown-item {
+            }
+          }
+        }
+      }
+    }
+    // form
+    form.d-flex {
+      input.form-control.me-2 {
+      }
+      button.btn.btn-outline-success {
       }
     }
   }

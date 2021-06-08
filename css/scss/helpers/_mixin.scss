@@ -1,3 +1,131 @@
+/*
+* ********** Border Radius ***********
+
+* @include borderRadius(5px);
+* 
+* @include borderRadiusposition(5px, 5px, 5px, 5px);
+* 
+* @include bordercolor(#e8ae1a, #76cd9c, #a60b55, #333);
+* 
+* @include borderStyle(solid, dashed, double, none);
+* 
+* ************ transition ****************
+* 
+* @include transitionAll(all, 0.5s, linear);
+* 
+* @include transitions();
+* 
+* @include transitionTime(0.5s);
+* 
+* @include transition(0.5s);
+* 
+* @include transitionProperty(all);
+* 
+* ************ scale *************
+* 
+* @include scale(1.5, 1.5);
+* 
+* @include scaleX(1.5);
+* 
+* @include scaleY(1.5);
+* 
+* ************ rotate ***************
+* 
+* @include rotate(10deg);
+*
+* @include rotateY(10deg);
+*
+* @include rotateX(10deg);
+*
+* @include rotateZ(10deg);
+* 
+* *************** translate **************
+*
+* @include translate(10px, 10px);
+*
+* @include translateX(10px);
+*
+* @include translateY(10px);
+*
+* @include translateZ(10px);
+* 
+* *********** skew *********
+*
+* @include skew(0deg, 0deg);
+*
+* @include skewX(0deg, 0deg);
+*
+* @include skewY(0deg, 0deg);
+* 
+* *************** matrix ***********
+*
+* @include matrix( 1, 0, 0, 1, 0, 0 );
+* 
+* * $translateX, $translateY, $scaleX, $skewY, $skewX ,$scaleY
+* 
+* ******** Box shadow **************
+*
+* @include boxShadow(-1px, 0px, 10px, #000);
+* 
+* ************ hover ************
+* 
+* @include hover {};
+* 
+*  ************** ul *****************
+* 
+* @include reset-list;
+* 
+*  *** li ***
+* 
+* @include horizontal-list;
+* 
+* ************ media ************
+* 
+* @include xs-media{}
+* 
+* @include sm-media{}
+* 
+* @include sm-md-media{}
+* 
+* @include md-media{}
+* 
+* @include md-lg-media{}
+*
+* @include lg-media{}
+* 
+* 
+* ************* overlay ************
+* 
+* @include overlay;
+* 
+* 
+* ********** prefix ******************
+* 
+* @include prefix(box-shadow, 10px 10px 10px #ccc, webkit moz o ms);
+* 
+* ************ opacity ****************
+* 
+* @include opacity(0.5);
+* 
+* 
+* ************ flex center *********
+* 
+* @include flexCenter;
+*  
+*  ************ position Center ******************
+*  
+*  @include positionCenter;
+*  
+*  
+* *********** clear fix  for float ************* 
+*  
+*  @include clearfix;
+*  
+*  
+*  
+*/
+
+
 // borderRadius
 // @include borderRadius(5px);
 
@@ -178,7 +306,7 @@
   -ms-transform: translate($width, $height);
   -o-transform: translate($width, $height);
 }
-// @include translateX(10px, 10px);
+// @include translateX(10px);
 @mixin translateX($width) {
   transform: translateX($width);
   -webkit-transform: translateX($width);
@@ -186,7 +314,7 @@
   -ms-transform: translateX($width);
   -o-transform: translateX($width);
 }
-// @include translateY(10px, 10px);
+// @include translateY(10px);
 @mixin translateY($height) {
   transform: translateY($height);
   -webkit-transform: translateY($height);
@@ -194,7 +322,7 @@
   -ms-transform: translateY($height);
   -o-transform: translateY($height);
 }
-// @include translateZ(10px, 10px);
+// @include translateZ(10px);
 @mixin translateZ($height) {
   transform: translateZ($height);
   -webkit-transform: translateZ($height);
@@ -297,7 +425,6 @@
 
   li {
     display: inline-block;
-
     margin: {
       left: -2px;
       right: 2em;
@@ -311,22 +438,29 @@
 // @media(max-width:991 px){};  md
 // @media(min-width:992px){};   md
 // @media(min-width:1200px){};  lg
+
+// @include xs-media{}
 @mixin xs-media {
   @media (max-width: 767px) {
     @content;
   }
 }
+
+// @include xs-sm-media{}
 @mixin xs-sm-media {
   @media (min-width: 767px) and (max-width: 766px){
     @content;
   }
 }
 
+// @include sm-media{}
 @mixin sm-media {
   @media (min-width: 768px) {
     @content;
   }
 }
+
+// @include sm-md-media{}
 @mixin sm-md-media {
   @media (min-width: 768px) and (max-width: 991px){
     @content;
@@ -350,7 +484,25 @@
   }
 }
 
+// @include mq(767px) {}
+// @include mq(1500px, 1900px) {}
+@mixin mq($arg...) {
+  @if length($arg) ==1 {
+    @media screen and (max-width: nth($arg, 1)) {
+      @content;
+    }
+  }
+
+  @if length($arg) ==2 {
+    @media screen and (max-width: nth($arg, 1)) and (max-width: nth($arg, 2)) {
+      @content;
+    }
+  }
+}
+
+
 // overlay
+// @include overlay;
 @mixin overlay {
   position: absolute;
   top: 0;
@@ -369,16 +521,6 @@
   #{$property}: $value;
 }
 
-// animation
-@mixin KeyFrame($animation-name) {
-  @-webkit-keyframes #{$animation-name} {
-    @content;
-  }
-
-  @keyframes #{$animation-name} {
-    @content;
-  }
-}
 
 // opacity
 //  @include opacity(0.5);
@@ -403,11 +545,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
+  @include translate(-50%, -50%);
 }
 
 // clearfix
@@ -450,22 +588,6 @@
   }
 }
 
-// media
-// @include mq(767px) {}
-// @include mq(1500px, 1900px) {}
-@mixin mq($arg...) {
-  @if length($arg) ==1 {
-    @media screen and (max-width: nth($arg, 1)) {
-      @content;
-    }
-  }
-
-  @if length($arg) ==2 {
-    @media screen and (max-width: nth($arg, 1)) and (max-width: nth($arg, 2)) {
-      @content;
-    }
-  }
-}
 
 // grid
 // col-my-left-1 12
@@ -495,5 +617,17 @@ $grid-num: 12;
   .col-my-right-#{$i} {
     width: (100%/ ($grid-num / $i));
     @extend %grid-boot-right;
+  }
+}
+
+
+// animation
+@mixin KeyFrame($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @keyframes #{$animation-name} {
+    @content;
   }
 }

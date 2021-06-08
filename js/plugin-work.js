@@ -16,13 +16,22 @@
  *
  * magnific
  *
- * dynamic tabs
+ * snake
  *
- * typed js
- *
- * mixitup
+ * show and hide box
  *
  * gmaps
+ *
+ * FitText
+ *
+ * nivo slide
+ *
+ * mixitup
+ * -------
+ * typed js
+ *
+ *
+ *
  *
  *
  */
@@ -69,42 +78,7 @@
 //   });
 // });
 
-// $(document).ready(function () {
-//   "use strict";
-//   $(".jq-timer").countTo({
-//     from: 50,
-//     to: 2500,
-//     speed: 2000,
-//     refreshInterval: 50,
-//   });
-// });
 
-//
-// typed js
-// $(function () {
-//   "use strict";
-
-//   var typed = new Typed(".text-write", {
-//     // Waits 1000ms after typing "First"
-//     strings: ["بحبك.", "وانتى كمان ", "بتحبينى"],
-//     typeSpeed: 100,
-//     loop: true,
-//     startDelay: 1000,
-//     backDelay: 1000,
-//     cursorChar: "|",
-//     showCursor: true,
-//   });
-// });
-
-// mixitup
-
-// $(document).ready(function () {
-
-//   "use strict";
-
-//   var mixer = mixitup(".box-list");
-
-// });
 
 // window.onload = (function () {
 $(document).ready(function () {
@@ -138,12 +112,14 @@ $(document).ready(function () {
   $(".jq-magnific-image").magnificPopup({
     type: "image",
   });
+
   $(".jq-magnific-gallery").magnificPopup({
     type: "image",
     gallery: {
       enabled: true,
     },
   });
+
   $(".jq-magnific-video").magnificPopup({
     type: "iframe",
   });
@@ -167,14 +143,68 @@ $(document).ready(function () {
   // FitText
   $(".jq-fittext").fitText(1.2, { minFontSize: "20px", maxFontSize: "30px" });
 
-  // section box haver
-  $(document).on(
-    "mouseover",
-    ".css-section-haver-box-parent .column",
-    function () {
-      "use strict";
-      $(this).addClass("active").siblings().removeClass("active");
-    }
-  );
-  
+  // nivo slide
+
+  $(".slider-active").nivoSlider({
+    // points
+    controlNav: true,
+    // angle left & right
+    directionNav: true,
+    randomStart: true,
+    controlNavThumbs: false,
+    animSpeed: 500,
+    pauseTime: 5000,
+    pauseOnHover: false,
+    manualAdvance: false,
+    prevText: '<i class="fas fa-angle-left"></i>',
+    nextText: '<i class="fas fa-angle-right"></i>',
+    slices: 15,
+    boxCols: 8,
+    boxRows: 4,
+
+    // effect: "random",
+
+    // startSlide: 0,
+
+    // beforeChange: function () {},
+    // afterChange: function () {},
+    // slideshowEnd: function () {},
+    // lastSlide: function () {},
+    // afterLoad: function () {},
+  });
+
+  // mixitup
+  var mixer = mixitup(".portfolio-item", {
+    animation: {
+      duration: 300,
+      effectsOut: "fade translateX(-100%)",
+    },
+  });
+
+  // countTo
+  $(".jq-countTo").countTo({
+    from: 50,
+    to: 2500,
+    speed: 3000,
+    refreshInterval: 50,
+  });
+
+  // typed js
+$(function () {
+  "use strict";
+
+  var typed = new Typed(".jq-typed-text", {
+    // Waits 1000ms after typing "First"
+    strings: ["rovan.", " Hossam ", "Rashad"],
+    typeSpeed: 100,
+    startDelay:5000,
+    backDelay: 1000,
+    loop: true,
+    // loopCount:3, == Number of loop
+    loopCount: false,
+    cursorChar: '<i class="fas fa-angle-left"></i>',
+    showCursor: true,
+  });
 });
+});
+// end

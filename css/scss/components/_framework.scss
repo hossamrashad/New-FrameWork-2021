@@ -1,34 +1,17 @@
+
+
 // global classes
-.hide-xs {
-  @include xs-sm-media {
-    display: none !important;
-  }
-}
-.hide-sm {
-  @include sm-md-media {
-    display: none !important;
-  }
-}
-.hide-md {
-  @include md-lg-media {
-    display: none !important;
-  }
-}
-.hide-lg {
-  @include lg-media {
-    display: none !important;
-  }
-}
+
 /* for selection */
 
 ::-moz-selection {
   color: #fff;
-  background-color: #da0000;
+  background-color: $main-color;
 }
 
 ::selection {
   color: #fff;
-  background-color: #da0000;
+  background-color: $main-color;
 }
 /* for selection */
 
@@ -44,10 +27,7 @@
 }
 // End hoverZoomLink
 
-// for wol dir ltr
-.owl-stage-outer {
-  direction: ltr !important;
-}
+
 
 // fixed menu
 /*
@@ -122,29 +102,34 @@
 // popup
 /*
 <!-- Start popup -->
-    <span class="btn-show-popup" data-popup=".sign-in">تسجيل الدخول</span>
-    <div class="popup sign-in">
+    <span class=" btn btn-show-popup " data-popup=".show-parent-popup">popup </span>
+    <div class="popup show-parent-popup">
       <div class="inner">
-        <button class="close">close</button>
+        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas reiciendis architecto veniam, voluptatem deserunt natus perferen sunt enim labore veritatis repellendus, exercitationem harum dolor sed deserunt, voluptas ipsa, et nisi culpa error facere?eum. recusandae. Cum, repudiandae!</p>
+        <i class="fas fa-window-close close"></i>
       </div>
     </div>
     <!-- End popup -->
 */
 .btn-show-popup {
   cursor: pointer;
-  position: fixed;
-  left: 0px;
-  top: 18px;
-  display: block;
+  display: inline-block;
   text-align: center;
-  margin-right: 20px;
-  background-color: #fff;
-  width: 135px;
+  width: fit-content;
   padding: 10px;
   font-weight: bold;
-  color: #928440;
-  @include borderRadius(5px);
   z-index: 9999;
+  border: 1px solid $color-3498db;
+  background-color: $main-color;
+  color: $color-fff;
+  @include borderRadius(5px);
+@include transitionAll(all, 0.2s, linear);
+  @include hover{
+    border: 1px solid $main-color;
+    background-color: $color-fff;
+    color: $main-color;
+  @include borderRadius(2px);
+  }
 }
 
 .popup {
@@ -159,19 +144,15 @@
   //
   .inner {
     position: fixed;
-    background-color: map-get($colors, 1);
+    background-color: $color-fff;
     width: 50%;
-    min-height: 300px;
-    @include flexCenter;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
+    overflow: auto;
+    height: 300px;
+    padding: 45px;
+    @include positionCenter;
+    @include borderRadius(5px);
     .close {
-      position: absolute;
+      position: fixed;
       bottom: 10px;
       right: 10px;
       padding: 2px 8px;
@@ -1384,3 +1365,4 @@
     }
   }
 }
+

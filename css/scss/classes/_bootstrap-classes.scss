@@ -37,3 +37,23 @@
 // float-left and float-right
 // float-none
 
+.hide-xs {
+  @include xs-sm-media {
+    display: none !important;
+  }
+}
+.hide-sm {
+  @include sm-md-media {
+    display: none !important;
+  }
+}
+.hide-md {
+  @include md-lg-media {
+    display: none !important;
+  }
+}
+.hide-lg {
+  @include lg-media {
+    display: none !important;
+  }
+}

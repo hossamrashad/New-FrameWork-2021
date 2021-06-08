@@ -980,6 +980,132 @@
   --color-080: #008800;
 }
 
+/*
+* ********** Border Radius ***********
+
+* @include borderRadius(5px);
+* 
+* @include borderRadiusposition(5px, 5px, 5px, 5px);
+* 
+* @include bordercolor(#e8ae1a, #76cd9c, #a60b55, #333);
+* 
+* @include borderStyle(solid, dashed, double, none);
+* 
+* ************ transition ****************
+* 
+* @include transitionAll(all, 0.5s, linear);
+* 
+* @include transitions();
+* 
+* @include transitionTime(0.5s);
+* 
+* @include transition(0.5s);
+* 
+* @include transitionProperty(all);
+* 
+* ************ scale *************
+* 
+* @include scale(1.5, 1.5);
+* 
+* @include scaleX(1.5);
+* 
+* @include scaleY(1.5);
+* 
+* ************ rotate ***************
+* 
+* @include rotate(10deg);
+*
+* @include rotateY(10deg);
+*
+* @include rotateX(10deg);
+*
+* @include rotateZ(10deg);
+* 
+* *************** translate **************
+*
+* @include translate(10px, 10px);
+*
+* @include translateX(10px);
+*
+* @include translateY(10px);
+*
+* @include translateZ(10px);
+* 
+* *********** skew *********
+*
+* @include skew(0deg, 0deg);
+*
+* @include skewX(0deg, 0deg);
+*
+* @include skewY(0deg, 0deg);
+* 
+* *************** matrix ***********
+*
+* @include matrix( 1, 0, 0, 1, 0, 0 );
+* 
+* * $translateX, $translateY, $scaleX, $skewY, $skewX ,$scaleY
+* 
+* ******** Box shadow **************
+*
+* @include boxShadow(-1px, 0px, 10px, #000);
+* 
+* ************ hover ************
+* 
+* @include hover {};
+* 
+*  ************** ul *****************
+* 
+* @include reset-list;
+* 
+*  *** li ***
+* 
+* @include horizontal-list;
+* 
+* ************ media ************
+* 
+* @include xs-media{}
+* 
+* @include sm-media{}
+* 
+* @include sm-md-media{}
+* 
+* @include md-media{}
+* 
+* @include md-lg-media{}
+*
+* @include lg-media{}
+* 
+* 
+* ************* overlay ************
+* 
+* @include overlay;
+* 
+* 
+* ********** prefix ******************
+* 
+* @include prefix(box-shadow, 10px 10px 10px #ccc, webkit moz o ms);
+* 
+* ************ opacity ****************
+* 
+* @include opacity(0.5);
+* 
+* 
+* ************ flex center *********
+* 
+* @include flexCenter;
+*  
+*  ************ position Center ******************
+*  
+*  @include positionCenter;
+*  
+*  
+* *********** clear fix  for float ************* 
+*  
+*  @include clearfix;
+*  
+*  
+*  
+*/
 .col-my-left-1, .col-my-left-2, .col-my-left-3, .col-my-left-4, .col-my-left-5, .col-my-left-6, .col-my-left-7, .col-my-left-8, .col-my-left-9, .col-my-left-10, .col-my-left-11, .col-my-left-12 {
   float: left;
   padding: 10px;
@@ -1261,41 +1387,41 @@ a:focus {
 
 /*
  <!-- Start social one -->
-<div class="social-one">
-  <div class="social-main social-center">
-    <div class="social-box">
-      <div class="social-icon-box social-center">
-        <i class="fa fa-instagram fa-2x "></i>
-      </div>
-      <div class="social-inner-box social-center">
-        <p>instagram</p>
-      </div>
-    </div>
-    <div class="social-box">
-      <div class="social-icon-box social-center ib-t">
-        <i class="fa fa-twitter fa-2x "></i>
-      </div>
-      <div class="social-inner-box social-center"><p>twitter</p></div>
-    </div>
-    <div class="social-box">
-      <div class="social-icon-box social-center ib-f">
-        <i class="fa fa-facebook fa-2x "></i>
-      </div>
-      <div class="social-inner-box social-center">
-        <p>facebook</p>
-      </div>
-    </div>
-    <div class="social-box">
-      <div class="social-icon-box social-center ib-w">
-        <i class="fa fa-whatsapp fa-2x "></i>
-      </div>
-      <div class="social-inner-box social-center">
-        <p>whatsapp</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- End social one-->
+          <div class="social-one">
+            <div class="social-main social-center">
+              <div class="social-box">
+                <div class="social-icon-box social-center">
+                  <i class="fab fa-instagram fa-2x fa-fw"></i>
+                </div>
+                <div class="social-inner-box social-center">
+                  <p>instagram</p>
+                </div>
+              </div>
+              <div class="social-box">
+                <div class="social-icon-box social-center ib-t">
+                  <i class="fab fa-twitter fa-2x fa-fw"></i>
+                </div>
+                <div class="social-inner-box social-center"><p>twitter</p></div>
+              </div>
+              <div class="social-box">
+                <div class="social-icon-box social-center ib-f">
+                  <i class="fab fa-facebook fa-2x fa-fw"></i>
+                </div>
+                <div class="social-inner-box social-center">
+                  <p>facebook</p>
+                </div>
+              </div>
+              <div class="social-box">
+                <div class="social-icon-box social-center ib-w">
+                  <i class="fab fa-whatsapp fa-2x fa-fw"></i>
+                </div>
+                <div class="social-inner-box social-center">
+                  <p>whatsapp</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End social one-->
 */
 .social-one {
   margin-top: 50px;
@@ -2292,6 +2418,7 @@ class="css-parent-backward"
   padding: 10px 15px;
   overflow: hidden;
   transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
   -webkit-transform: translate(0%, 0%);
   -moz-transform: translate(0%, 0%);
   -ms-transform: translate(0%, 0%);
@@ -2301,6 +2428,9 @@ class="css-parent-backward"
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .css-parent-ching-color-left a::before {
@@ -2987,6 +3117,206 @@ class="css-parent-backward"
   -ms-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   top: 0;
+}
+
+/*
+<!-- start translateY -->
+                <div class="parent-social">
+                  <div class="child-social">
+                    <div class="button">find us</div>
+                    <a href="#"><i class="fa fa-facebook fa-2x fa-fw"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-2x fa-fw"></i></a>
+                    <a href="#"><i class="fa fa-google fa-2x fa-fw"></i></a>
+                    <a href="#"><i class="fa fa-linkedin fa-2x fa-fw"></i></a>
+                  </div>
+                </div>
+                <!-- end translateY -->
+
+*/
+.parent-social-three {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.parent-social-three .child-social {
+  width: 230px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border: 2px solid #333;
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.parent-social-three .child-social .button {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #333;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 1.5em;
+  font-family: cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  color: #fff;
+}
+
+.parent-social-three .child-social:hover > .button {
+  transform: translateY(120%);
+  -webkit-transform: translateY(120%);
+  -moz-transform: translateY(120%);
+  -ms-transform: translateY(120%);
+  -o-transform: translateY(120%);
+}
+
+.parent-social-three .child-social:hover > a {
+  transform: translateY(90%);
+  -webkit-transform: translateY(90%);
+  -moz-transform: translateY(90%);
+  -ms-transform: translateY(90%);
+  -o-transform: translateY(90%);
+}
+
+.parent-social-three .child-social a {
+  cursor: pointer;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.parent-social-three .child-social a:nth-child(2) {
+  top: -35px;
+  left: 0px;
+  background-color: #3b5998;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  padding: 10px;
+  text-align: center;
+}
+
+.parent-social-three .child-social a:nth-child(2):hover {
+  color: #3b5998;
+  background-color: #fff;
+  -o-box-shadow: -1px 0px 10px #3b5998;
+  -ms-box-shadow: -1px 0px 10px #3b5998;
+  -webkit-box-shadow: -1px 0px 10px #3b5998;
+          box-shadow: -1px 0px 10px #3b5998;
+}
+
+.parent-social-three .child-social a:nth-child(3) {
+  top: -35px;
+  left: 60px;
+  background-color: #1da1f2;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.parent-social-three .child-social a:nth-child(3):hover {
+  color: #1da1f2;
+  background-color: #fff;
+  -o-box-shadow: -1px 0px 10px #1da1f2;
+  -ms-box-shadow: -1px 0px 10px #1da1f2;
+  -webkit-box-shadow: -1px 0px 10px #1da1f2;
+          box-shadow: -1px 0px 10px #1da1f2;
+}
+
+.parent-social-three .child-social a:nth-child(4) {
+  top: -35px;
+  right: 57px;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+  background-color: #4285f4;
+}
+
+.parent-social-three .child-social a:nth-child(4):hover {
+  color: #4285f4;
+  background-color: #fff;
+  -o-box-shadow: -1px 0px 10px #4285f4;
+  -ms-box-shadow: -1px 0px 10px #4285f4;
+  -webkit-box-shadow: -1px 0px 10px #4285f4;
+          box-shadow: -1px 0px 10px #4285f4;
+}
+
+.parent-social-three .child-social a:nth-child(5) {
+  top: -35px;
+  right: 0px;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+  background-color: #caccce;
+}
+
+.parent-social-three .child-social a:nth-child(5):hover {
+  color: #caccce;
+  background-color: #fff;
+  -o-box-shadow: -1px 0px 10px #caccce;
+  -ms-box-shadow: -1px 0px 10px #caccce;
+  -webkit-box-shadow: -1px 0px 10px #caccce;
+          box-shadow: -1px 0px 10px #caccce;
 }
 
 /*
@@ -3806,6 +4136,30 @@ class="css-parent-backward"
   }
 }
 
+@media (min-width: 767px) and (max-width: 766px) {
+  .hide-xs {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hide-sm {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hide-md {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hide-lg {
+    display: none !important;
+  }
+}
+
 .jq-window-height {
   text-decoration: none;
 }
@@ -3882,11 +4236,12 @@ class="css-parent-backward"
   text-decoration: none;
 }
 
-.jq-timer {
+.jq-countTo {
   font-size: 26px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   color: #999;
+  display: block;
 }
 
 /*
@@ -3938,117 +4293,248 @@ class="css-parent-backward"
 
 /*
 <!-- Start mixitup -->
+    <section class="mixitup">
+      <div class="container">
         <div class="parent-mixitup">
           <div class="row">
             <div class="col-sm-12">
-              <div class="box-menu">
-                <ul>
-                  <li class="mixitup-control-active" data-filter="*">all</li>
-                  <li data-filter=".photo">photo</li>
-                  <li data-filter=".ui">photo</li>
-                  <li data-filter=".paint">painting</li>
-                </ul>
+              <div class="controls">
+                <button class="btn mixitup-btn-style active" data-filter="*">
+                  all
+                </button>
+                <button class="btn mixitup-btn-style" data-filter=".photo">
+                  photo
+                </button>
+                <button class="btn mixitup-btn-style" data-filter=".ui">
+                  ui
+                </button>
+                <button class="btn mixitup-btn-style" data-filter=".paint">
+                  painting
+                </button>
               </div>
             </div>
           </div>
-          <div class="row box-list">
-            <div class="col-md-3 col-sm-3 mix box-item photo paint">
-              <img
-                src="images/440x440/image-1.jpg"
-                alt=""
-                class="img-fluid img-thumbnail"
-              />
+          <div class="row portfolio-item">
+            <div class="col-md-4 col-sm-6 mix single-item photo ui">
+              <div class="img-erea">
+                <img
+                  src="images/440x440/image-1.jpg"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+              </div>
+              <div class="img-disc">
+                <h3 class="h2">rovan hossam</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur, voluptatum enim? Deserunt hic maiores id
+                </p>
+              </div>
             </div>
-            <div class="col-md-3 col-sm-6 mix box-item ui">
-              <img
-                src="images/440x440/image-2.jpg"
-                alt=""
-                class="img-fluid img-thumbnail"
-              />
+            <div class="col-md-4 col-sm-6 mix single-item photo paint">
+              <div class="img-erea">
+                <img
+                  src="images/440x440/image-8.jpg"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+              </div>
+              <div class="img-disc">
+                <h3 class="h2">rovan hossam</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur, voluptatum enim? Deserunt hic maiores id
+                </p>
+              </div>
             </div>
-            <div class="col-md-3 col-sm-6 mix box-item ui">
-              <img
-                src="images/440x440/image-3.jpg"
-                alt=""
-                class="img-fluid img-thumbnail"
-              />
+            <div class="col-md-4 col-sm-6 mix single-item ui paint">
+              <div class="img-erea">
+                <img
+                  src="images/440x440/image-2.jpg"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+              </div>
+              <div class="img-disc">
+                <h3 class="h2">rovan hossam</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur, voluptatum enim? Deserunt hic maiores id
+                </p>
+              </div>
             </div>
-            <div class="col-md-3 col-sm-6 mix box-item photo">
-              <img
-                src="images/440x440/image-4.jpg"
-                alt=""
-                class="img-fluid img-thumbnail"
-              />
+            <div class="col-md-4 col-sm-6 mix single-item photo ui">
+              <div class="img-erea">
+                <img
+                  src="images/440x440/image-3.jpg"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+              </div>
+              <div class="img-disc">
+                <h3 class="h2">rovan hossam</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur, voluptatum enim? Deserunt hic maiores id
+                </p>
+              </div>
             </div>
-            <div class="col-md-3 col-sm-6 mix box-item paint">
-              <img
-                src="images/440x440/image-5.jpg"
-                alt=""
-                class="img-fluid img-thumbnail"
-              />
+            <div class="col-md-4 col-sm-6 mix single-item photo paint">
+              <div class="img-erea">
+                <img
+                  src="images/440x440/image-4.jpg"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+              </div>
+              <div class="img-disc">
+                <h3 class="h2">rovan hossam</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur, voluptatum enim? Deserunt hic maiores id
+                </p>
+              </div>
             </div>
-            <div class="col-md-3 col-sm-6 mix box-item ui paint">
-              <img
-                src="images/440x440/image-6.jpg"
-                alt=""
-                class="img-fluid img-thumbnail"
-              />
-            </div>
-            <div class="col-md-3 col-sm-6 mix box-item ui">
-              <img
-                src="images/440x440/image-7.jpg"
-                alt=""
-                class="img-fluid img-thumbnail"
-              />
-            </div>
-            <div class="col-md-3 col-sm-6 mix box-item photo">
-              <img
-                src="images/440x440/image-8.jpg"
-                alt=""
-                class="img-fluid img-thumbnail"
-              />
+            <div class="col-md-4 col-sm-6 mix single-item photo paint">
+              <div class="img-erea">
+                <img
+                  src="images/440x440/image-5.jpg"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+              </div>
+              <div class="img-disc">
+                <h3 class="h2">rovan hossam</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur, voluptatum enim? Deserunt hic maiores id
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <!-- End mixitup -->
+      </div>
+    </section>
+    <!-- End mixitup -->
 */
-.parent-mixitup img {
+.mixitup {
+  padding: 60px 0px;
+  background-color: #f1f1f1;
+}
+
+.mixitup h3.h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.mixitup .parent-mixitup img {
   width: 100%;
 }
 
-.parent-mixitup .box-menu {
+.mixitup .parent-mixitup div.controls {
   text-align: center;
+  margin-bottom: 60px;
 }
 
-.parent-mixitup .box-menu ul li {
-  font-weight: bold;
+.mixitup .parent-mixitup div.controls button:focus {
+  outline: none;
+}
+
+.mixitup .parent-mixitup div.controls button.mixitup-btn-style {
+  background: #333;
+  border: 1px solid #333;
+  color: #fff;
+  font-size: 16px;
   text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 30px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+}
+
+.mixitup .parent-mixitup div.controls button:hover, .mixitup .parent-mixitup div.controls button.mixitup-control-active {
+  background: #fff;
+  border: 1px solid #333;
+  color: #333;
+}
+
+.mixitup .parent-mixitup div.portfolio-item div.single-item {
+  margin-bottom: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.mixitup .parent-mixitup div.portfolio-item div.single-item div.img-erea img {
+  width: 100%;
+}
+
+.mixitup .parent-mixitup div.portfolio-item div.single-item div.img-disc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
   cursor: pointer;
-  margin-bottom: 60px;
-  font-size: 18px;
-  padding: 10px 30px;
+  transform: scaleY(0);
+  -webkit-transform: scaleY(0);
+  -moz-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  -o-transform: scaleY(0);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  opacity: 0;
+  visibility: hidden;
   color: #fff;
 }
 
-.parent-mixitup .box-menu ul .mixitup-control-active {
-  background: #7b7b7b;
+.mixitup .parent-mixitup div.portfolio-item div.single-item div.img-disc h3.h2 {
+  color: #333;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 10px;
 }
 
-.parent-mixitup .box-item {
-  margin-bottom: 30px;
+.mixitup .parent-mixitup div.portfolio-item div.single-item div.img-disc p.lead {
+  color: #fff;
+  font-size: 16px;
+  padding: 0px 25px;
 }
 
-.parent-mixitup .box-item .box-item img {
-  height: 100%;
-  max-height: 300px;
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+.mixitup .parent-mixitup div.portfolio-item div.single-item:hover .img-disc {
+  transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+  -moz-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  -o-transform: scaleY(1);
+  opacity: 1;
+  visibility: visible;
 }
 
 .height100vh {
@@ -4070,6 +4556,10 @@ class="css-parent-backward"
   text-align: center;
   text-transform: capitalize;
   border: 2px solid #fafafa;
+}
+
+.owl-stage-outer {
+  direction: ltr !important;
 }
 
 @media (max-width: 767px) {
@@ -4154,43 +4644,126 @@ class="css-parent-backward"
   text-align: center;
 }
 
+.jq-nivo-slider {
+  position: relative;
+}
+
+.jq-nivo-slider .slider-wrapper .slider-content {
+  display: none;
+}
+
+.jq-nivo-slider .slider-wrapper .nivo-caption {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.jq-nivo-slider .slider-wrapper .slider-disc {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.jq-nivo-slider .slider-wrapper .slider-bg {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+}
+
+.jq-nivo-slider .slider-wrapper .slider-bg h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.jq-nivo-slider .slider-wrapper .slider-bg p {
+  font-size: 19px;
+  color: #ddd;
+}
+
+.jq-nivo-slider .slider-wrapper .nivo-directionNav a {
+  font-size: 15px;
+  color: #fff;
+  background: #333;
+  width: 30px;
+  height: 100px;
+  line-height: 100px;
+  margin-top: -50px;
+  text-align: center;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  left: -50px;
+  opacity: 0.5;
+}
+
+.jq-nivo-slider .slider-wrapper .nivo-directionNav a:hover {
+  background-color: #fff;
+  color: #333;
+  opacity: 1;
+}
+
+.jq-nivo-slider .slider-wrapper .nivo-controlNav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 9999999999;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+
+.jq-nivo-slider .slider-wrapper .nivo-controlNav a {
+  width: 25px;
+  height: 7px;
+  margin: 0px 5px;
+  background: #fff;
+  display: inline-block;
+  text-indent: -99999px;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+
+.jq-nivo-slider .slider-wrapper .nivo-controlNav a.nivo-control:hover,
+.jq-nivo-slider .slider-wrapper .nivo-controlNav a.nivo-control.active {
+  background-color: #333;
+}
+
+.jq-nivo-slider:hover .nivo-directionNav a {
+  opacity: 1;
+  left: 0;
+}
+
+.jq-nivo-slider:hover .nivo-directionNav .nivo-nextNav {
+  right: 0;
+  left: auto;
+}
+
 .box-lest:not(:last-of-type) {
   padding-right: 0;
-}
-
-@media (min-width: 767px) and (max-width: 766px) {
-  .hide-xs {
-    display: none !important;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .hide-sm {
-    display: none !important;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .hide-md {
-    display: none !important;
-  }
-}
-
-@media (min-width: 1200px) {
-  .hide-lg {
-    display: none !important;
-  }
 }
 
 /* for selection */
 ::-moz-selection {
   color: #fff;
-  background-color: #da0000;
+  background-color: #333;
 }
 
 ::selection {
   color: #fff;
-  background-color: #da0000;
+  background-color: #333;
 }
 
 /* for selection */
@@ -4208,10 +4781,6 @@ class="css-parent-backward"
 .css-hover-zoom-scale img:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
-}
-
-.owl-stage-outer {
-  direction: ltr !important;
 }
 
 /*
@@ -4288,33 +4857,49 @@ class="css-parent-backward"
 
 /*
 <!-- Start popup -->
-    <span class="btn-show-popup" data-popup=".sign-in">تسجيل الدخول</span>
-    <div class="popup sign-in">
+    <span class=" btn btn-show-popup " data-popup=".show-parent-popup">popup </span>
+    <div class="popup show-parent-popup">
       <div class="inner">
-        <button class="close">close</button>
+        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas reiciendis architecto veniam, voluptatem deserunt natus perferen sunt enim labore veritatis repellendus, exercitationem harum dolor sed deserunt, voluptas ipsa, et nisi culpa error facere?eum. recusandae. Cum, repudiandae!</p>
+        <i class="fas fa-window-close close"></i>
       </div>
     </div>
     <!-- End popup -->
 */
 .btn-show-popup {
   cursor: pointer;
-  position: fixed;
-  left: 0px;
-  top: 18px;
-  display: block;
+  display: inline-block;
   text-align: center;
-  margin-right: 20px;
-  background-color: #fff;
-  width: 135px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   padding: 10px;
   font-weight: bold;
-  color: #928440;
+  z-index: 9999;
+  border: 1px solid #3498db;
+  background-color: #333;
+  color: #fff;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-  z-index: 9999;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.btn-show-popup:not([disabled]):hover {
+  border: 1px solid #333;
+  background-color: #fff;
+  color: #333;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
 }
 
 .popup {
@@ -4330,28 +4915,28 @@ class="css-parent-backward"
 
 .popup .inner {
   position: fixed;
+  background-color: #fff;
   width: 50%;
-  min-height: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  left: 50%;
+  overflow: auto;
+  height: 300px;
+  padding: 45px;
+  position: absolute;
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .popup .inner .close {
-  position: absolute;
+  position: fixed;
   bottom: 10px;
   right: 10px;
   padding: 2px 8px;
@@ -5772,6 +6357,206 @@ class="css-parent-backward"
   top: 50%;
 }
 
+/*
+<div class="parent-box-icon-have-back-text">
+            <div class="card">
+              <div class="face face1">
+                <div class="content">
+                  <i class="fa fa-cog fa-fw fa-3x"></i>
+                  <h3>Services:</h3>
+                </div>
+              </div>
+              <div class="face face2">
+                <div class="content">
+                  <p>
+                    Services contain the business logic and data sources for the app. Apps talk to these services through an Application Programming Interface (API), which you can think of like the cord that plugged into the back of Neo’s head. When folks talk about “the cloud”, this is what they’re typically referring to. These services may be first-party (built by the app’s company), or third- party (using one or more services made by someone else).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+*/
+.parent-box-icon-have-back-text {
+  position: relative;
+}
+
+.parent-box-icon-have-back-text .card {
+  position: relative;
+  cursor: pointer;
+}
+
+.parent-box-icon-have-back-text .card:hover .face.face1 {
+  background-color: #333;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  min-height: 100px;
+}
+
+.parent-box-icon-have-back-text .card:hover .face.face2 {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+.parent-box-icon-have-back-text .card:hover .face.face1 .content {
+  opacity: 1;
+}
+
+.parent-box-icon-have-back-text .card .face {
+  width: 100%;
+  min-height: 400px;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  overflow: hidden;
+}
+
+.parent-box-icon-have-back-text .card .face.face1 {
+  position: relative;
+  background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  transform: translateY(200px);
+  -webkit-transform: translateY(200px);
+  -moz-transform: translateY(200px);
+  -ms-transform: translateY(200px);
+  -o-transform: translateY(200px);
+}
+
+.parent-box-icon-have-back-text .card .face.face1 .content {
+  text-align: center;
+  opacity: 0.2;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+}
+
+.parent-box-icon-have-back-text .card .face.face1 .content img {
+  max-width: 100px;
+}
+
+.parent-box-icon-have-back-text .card .face.face1 .content h3 {
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.parent-box-icon-have-back-text .card .face.face2 {
+  position: relative;
+  color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -o-box-shadow: 0 20px 50px #000;
+  -ms-box-shadow: 0 20px 50px #000;
+  -webkit-box-shadow: 0 20px 50px #000;
+          box-shadow: 0 20px 50px #000;
+  transform: translateY(-200px);
+  -webkit-transform: translateY(-200px);
+  -moz-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  -o-transform: translateY(-200px);
+  height: 400px;
+}
+
+/*
+<section class="parent-dynamic-tabs">
+          <div class="container">
+            <div class="dynamic-tabs">
+              <ul class="tabs-list">
+                <li class="active" data-content=".content-one">
+                  Mediciric Objectives
+                </li>
+                <li data-content=".content-tow">STATISTICS</li>
+              </ul>
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="content-list">
+                    <div class="content-one ">Objectives</div>
+                    <div class="content-tow ">STATISTICS</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+*/
+.parent-dynamic-tabs .dynamic-tabs ul.tabs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.parent-dynamic-tabs .dynamic-tabs ul.tabs-list li {
+  display: inline-block;
+  position: relative;
+  padding: 15px 30px;
+  background-color: #333;
+  top: 1px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  font-weight: bold;
+  color: #fff;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+}
+
+.parent-dynamic-tabs .dynamic-tabs ul.tabs-list li:hover {
+  color: #9c9c9c;
+}
+
+.parent-dynamic-tabs .dynamic-tabs ul.tabs-list li.active {
+  color: #9c9c9c;
+  border-bottom: 1px solid #333;
+  z-index: 2;
+}
+
+.parent-dynamic-tabs .dynamic-tabs .content-list {
+  background-color: #333;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+.parent-dynamic-tabs .dynamic-tabs .content-list > div {
+  padding: 20px;
+  min-height: 300px;
+  color: #fff;
+}
+
+.parent-dynamic-tabs .dynamic-tabs .content-list > div:not(:first-child) {
+  display: none;
+}
+
 .color-fff {
   color: #ffffff;
 }
@@ -5810,6 +6595,26 @@ class="css-parent-backward"
 
 .back-third {
   background-color: #3498db;
+}
+
+.border-main {
+  border: 1px solid #333;
+}
+
+.border-second {
+  border: 1px solid #000;
+}
+
+.border-third {
+  border: 1px solid #3498db;
+}
+
+header.header nav.navbar {
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
 }
 
 /*
@@ -5924,6 +6729,22 @@ class="css-parent-backward"
   -o-transform: rotateX(0deg) translateY(0px);
 }
 
+nav.navbar.css-nav-change-color {
+  background-color: #333 !important;
+  -o-box-shadow: -1px 0px 10px #000;
+  -ms-box-shadow: -1px 0px 10px #000;
+  -webkit-box-shadow: -1px 0px 10px #000;
+          box-shadow: -1px 0px 10px #000;
+}
+
+nav.navbar.css-nav-change-color .navbar-brand {
+  color: #fff;
+}
+
+nav.navbar.css-nav-change-color div.collapse.navbar-collapse ul.navbar-nav li.nav-item a.nav-link {
+  color: #fff;
+}
+
 .parent-overlay {
   background-color: #eee;
   padding: 10px;
@@ -5985,40 +6806,40 @@ class="css-parent-backward"
   }
 }
 
-.home-page-slider {
+.css-home-page-slider {
   border: 20px solid #333;
 }
 
-.home-page-slider img {
+.css-home-page-slider img {
   background-size: cover;
 }
 
-.home-page-slider #carouselExampleCaptions {
+.css-home-page-slider #carouselExampleCaptions {
   border: 20px solid #696060;
 }
 
-.home-page-slider #carouselExampleCaptions .carousel-indicators {
+.css-home-page-slider #carouselExampleCaptions .carousel-indicators {
   border: 3px solid #3498db;
 }
 
-.home-page-slider #carouselExampleCaptions .carousel-indicators li.active {
+.css-home-page-slider #carouselExampleCaptions .carousel-indicators li.active {
   background-color: #333;
 }
 
-.home-page-slider #carouselExampleCaptions .carousel-indicators li {
+.css-home-page-slider #carouselExampleCaptions .carousel-indicators li {
   background-color: aquamarine;
 }
 
-.home-page-slider #carouselExampleCaptions .carousel-inner .carousel-item.active img {
+.css-home-page-slider #carouselExampleCaptions .carousel-inner .carousel-item.active img {
   border: 5px solid #080;
 }
 
-.home-page-slider #carouselExampleCaptions .carousel-inner .carousel-item.active > div {
+.css-home-page-slider #carouselExampleCaptions .carousel-inner .carousel-item.active > div {
   background-color: rgba(14, 197, 253, 0.404);
   padding: 50px;
 }
 
-.home-page-slider #carouselExampleCaptions .carousel-inner .carousel-item > div {
+.css-home-page-slider #carouselExampleCaptions .carousel-inner .carousel-item > div {
   background-color: rgba(51, 51, 51, 0.801);
   padding: 50px;
   position: absolute;
@@ -6093,11 +6914,13 @@ class="css-parent-backward"
 
 @media (max-width: 767px) {
   body::before {
-    content: "xs";
+    content: "xs = 0px To 767px";
     position: fixed;
     bottom: 10px;
     left: 20px;
-    width: 50px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     height: 50px;
     color: #fff;
     background-color: #333;
@@ -6111,11 +6934,13 @@ class="css-parent-backward"
 
 @media (min-width: 768px) {
   body::before {
-    content: "sm";
+    content: "Sm = 768px To 991px";
     position: fixed;
     bottom: 20px;
     left: 20px;
-    width: 50px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     height: 50px;
     color: #fff;
     background-color: #333;
@@ -6129,11 +6954,13 @@ class="css-parent-backward"
 
 @media (min-width: 992px) {
   body::before {
-    content: "md";
+    content: "Md = 992px To 1199px";
     position: fixed;
     bottom: 20px;
     left: 20px;
-    width: 50px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     height: 50px;
     color: #fff;
     background-color: #333;
@@ -6147,11 +6974,13 @@ class="css-parent-backward"
 
 @media (min-width: 1200px) {
   body::before {
-    content: "lg";
+    content: "lg = 1200px to Top";
     position: fixed;
     bottom: 10px;
     left: 10px;
-    width: 50px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     height: 50px;
     color: #fff;
     background-color: #333;
@@ -6161,6 +6990,211 @@ class="css-parent-backward"
     border: 2px solid #fafafa;
     z-index: 2000;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media (min-width: 767px) and (max-width: 766px) {
+  .grid-xs-1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(100%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+}
+
+@media (min-width: 767px) and (max-width: 766px) {
+  .grid-xs-2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(48%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+  }
+}
+
+@media (min-width: 767px) and (max-width: 766px) {
+  .grid-xs-3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(31.33%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(31.33%, 1fr));
+  }
+}
+
+@media (min-width: 767px) and (max-width: 766px) {
+  .grid-xs-4 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(23%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .grid-sm-1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(100%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .grid-sm-2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(48%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .grid-sm-3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(31.33%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(31.33%, 1fr));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .grid-sm-4 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(23%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .grid-md-1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(100%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .grid-md-2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(48%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .grid-md-3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(31.33%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(31.33%, 1fr));
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .grid-md-4 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(23%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid-lg-1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(100%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid-lg-2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(48%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid-lg-3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(31.33%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(31.33%, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid-lg-4 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(23%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
+  }
+}
+
+.grid-b-1 {
+  row-gap: 1%;
+}
+
+.grid-b-2 {
+  row-gap: 2%;
+}
+
+.grid-b-3 {
+  row-gap: 3%;
+}
+
+.grid-b-4 {
+  row-gap: 4%;
+}
+
+.grid-b-5 {
+  row-gap: 5%;
+}
+
+.grid-b-6 {
+  row-gap: 6%;
+}
+
+.grid-b-7 {
+  row-gap: 7%;
+}
+
+.grid-b-8 {
+  row-gap: 8%;
+}
+
+.grid-b-9 {
+  row-gap: 9%;
+}
+
+.grid-b-10 {
+  row-gap: 10%;
+}
+
+.grid-l-1 {
+  -webkit-column-gap: 1%;
+          column-gap: 1%;
+}
+
+.grid-l-2 {
+  -webkit-column-gap: 2%;
+          column-gap: 2%;
 }
 
 /*

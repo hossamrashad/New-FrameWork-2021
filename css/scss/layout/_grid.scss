@@ -1,3 +1,155 @@
+// global
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   @include prefix(box-sizing, border-box, webkit moz o ms);
+}
+
+// grid xs
+.grid-xs-1 {
+  @include xs-sm-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+}
+.grid-xs-2 {
+  @include xs-sm-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+  }
+}
+.grid-xs-3 {
+  @include xs-sm-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(31.33%, 1fr));
+  }
+}
+.grid-xs-4 {
+  @include xs-sm-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
+  }
+}
+
+// grid sm
+
+.grid-sm-1 {
+  @include sm-md-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+}
+.grid-sm-2 {
+  @include sm-md-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+  }
+}
+.grid-sm-3 {
+  @include sm-md-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(31.33%, 1fr));
+  }
+}
+.grid-sm-4 {
+  @include sm-md-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
+  }
+}
+
+// grid md
+
+.grid-md-1 {
+  @include md-lg-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+}
+.grid-md-2 {
+  @include md-lg-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+  }
+}
+.grid-md-3 {
+  @include md-lg-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(31.33%, 1fr));
+  }
+}
+.grid-md-4 {
+  @include md-lg-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
+  }
+}
+
+// grid lg
+
+.grid-lg-1 {
+  @include lg-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+}
+.grid-lg-2 {
+  @include lg-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+  }
+}
+.grid-lg-3 {
+  @include lg-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(31.33%, 1fr));
+  }
+}
+.grid-lg-4 {
+  @include lg-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
+  }
+}
+// bottom
+.grid-b-1 {
+  row-gap: 1%;
+}
+.grid-b-2 {
+  row-gap: 2%;
+}
+.grid-b-3 {
+  row-gap: 3%;
+}
+.grid-b-4 {
+  row-gap: 4%;
+}
+.grid-b-5 {
+  row-gap: 5%;
+}
+.grid-b-6 {
+  row-gap: 6%;
+}
+.grid-b-7 {
+  row-gap: 7%;
+}
+.grid-b-8 {
+  row-gap: 8%;
+}
+.grid-b-9 {
+  row-gap: 9%;
+}
+.grid-b-10 {
+  row-gap: 10%;
+}
+// left right
+
+.grid-l-1 {
+  column-gap: 1%;
+}
+.grid-l-2 {
+  column-gap: 2%;
 }

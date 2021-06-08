@@ -45,41 +45,41 @@
 }
 /*
  <!-- Start social one -->
-<div class="social-one">
-  <div class="social-main social-center">
-    <div class="social-box">
-      <div class="social-icon-box social-center">
-        <i class="fa fa-instagram fa-2x "></i>
-      </div>
-      <div class="social-inner-box social-center">
-        <p>instagram</p>
-      </div>
-    </div>
-    <div class="social-box">
-      <div class="social-icon-box social-center ib-t">
-        <i class="fa fa-twitter fa-2x "></i>
-      </div>
-      <div class="social-inner-box social-center"><p>twitter</p></div>
-    </div>
-    <div class="social-box">
-      <div class="social-icon-box social-center ib-f">
-        <i class="fa fa-facebook fa-2x "></i>
-      </div>
-      <div class="social-inner-box social-center">
-        <p>facebook</p>
-      </div>
-    </div>
-    <div class="social-box">
-      <div class="social-icon-box social-center ib-w">
-        <i class="fa fa-whatsapp fa-2x "></i>
-      </div>
-      <div class="social-inner-box social-center">
-        <p>whatsapp</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- End social one-->
+          <div class="social-one">
+            <div class="social-main social-center">
+              <div class="social-box">
+                <div class="social-icon-box social-center">
+                  <i class="fab fa-instagram fa-2x fa-fw"></i>
+                </div>
+                <div class="social-inner-box social-center">
+                  <p>instagram</p>
+                </div>
+              </div>
+              <div class="social-box">
+                <div class="social-icon-box social-center ib-t">
+                  <i class="fab fa-twitter fa-2x fa-fw"></i>
+                </div>
+                <div class="social-inner-box social-center"><p>twitter</p></div>
+              </div>
+              <div class="social-box">
+                <div class="social-icon-box social-center ib-f">
+                  <i class="fab fa-facebook fa-2x fa-fw"></i>
+                </div>
+                <div class="social-inner-box social-center">
+                  <p>facebook</p>
+                </div>
+              </div>
+              <div class="social-box">
+                <div class="social-icon-box social-center ib-w">
+                  <i class="fab fa-whatsapp fa-2x fa-fw"></i>
+                </div>
+                <div class="social-inner-box social-center">
+                  <p>whatsapp</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End social one-->
 */
 // social media
 .social-one {
@@ -920,11 +920,9 @@ class="css-parent-backward"
     padding: 10px 15px;
     overflow: hidden;
     transform: translate(0%, 0%);
-    -webkit-transform: translate(0%, 0%);
-    -moz-transform: translate(0%, 0%);
-    -ms-transform: translate(0%, 0%);
-    -o-transform: translate(0%, 0%);
+    @include translate(0%, 0%);
     @include borderRadius(5px);
+    width: fit-content;
     &::before {
       content: "";
       position: absolute;
