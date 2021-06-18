@@ -1366,3 +1366,66 @@
   }
 }
 
+// form
+.box-form {
+  margin-top: 25px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  form {
+    div.input-group {
+      margin-bottom: 30px;
+      input,
+      textarea {
+        font-size: $page-font;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 90%;
+        border: 1px solid $third-color;
+        background-color: transparent;
+        color: #fff;
+        margin: auto;
+        @include borderRadius(5px);
+        @include transitionAll(all, 0.5s, linear);
+        &:focus {
+          outline: none;
+          border: 1px solid $main-color;
+        }
+      }
+      label {
+        color: #999;
+        font-size: $page-font;
+        position: absolute;
+        pointer-events: none;
+        right: 20px;
+        top: 10px;
+        @include transitionAll(all, 0.3s, linear);
+      }
+      input:focus ~ label,
+      input:valid ~ label {
+        top: -20px;
+        font-size: $page-font - 3;
+        color: $main-color;
+      }
+      textarea:focus ~ label {
+        top: -20px;
+        font-size: $page-font - 3;
+        color: $main-color;
+      }
+    }
+    a {
+      text-decoration: none;
+      background-color: $main-color;
+      color: #fff;
+      padding: 10px 35px;
+      margin-left: 40px;
+      @include borderRadius(5px);
+      text-transform: uppercase;
+      margin-top: 15px;
+      display: inline-block;
+      letter-spacing: 3px;
+      i {
+      }
+    }
+  }
+}

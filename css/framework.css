@@ -3319,6 +3319,97 @@ class="css-parent-backward"
           box-shadow: -1px 0px 10px #caccce;
 }
 
+.button-hover-four-back-up {
+  position: relative;
+}
+
+.button-hover-four-back-up .parent-btn {
+  min-width: 200px;
+  height: 60px;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.button-hover-four-back-up .parent-btn .btn-child {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 2px solid #333;
+  outline: auto;
+  text-align: center;
+}
+
+.button-hover-four-back-up .parent-btn .btn-child a {
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  cursor: pointer;
+  color: #333;
+  font-size: 1.4rem;
+  line-height: 60px;
+}
+
+.button-hover-four-back-up .parent-btn .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  background-color: #333;
+  z-index: -1;
+  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+
+.button-hover-four-back-up .parent-btn .bg:nth-child(3) {
+  left: 50px;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.button-hover-four-back-up .parent-btn .bg:nth-child(4) {
+  left: 100px;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.button-hover-four-back-up .parent-btn .bg:nth-child(5) {
+  left: 150px;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.button-hover-four-back-up .parent-btn:hover .bg {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+.button-hover-four-back-up .parent-btn:hover .btn-child a {
+  color: #fff;
+}
+
 /*
 
 <div id="preloader">
@@ -6555,6 +6646,89 @@ class="css-parent-backward"
 
 .parent-dynamic-tabs .dynamic-tabs .content-list > div:not(:first-child) {
   display: none;
+}
+
+.box-form {
+  margin-top: 25px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.box-form form div.input-group {
+  margin-bottom: 30px;
+}
+
+.box-form form div.input-group input,
+.box-form form div.input-group textarea {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 90%;
+  border: 1px solid #3498db;
+  background-color: transparent;
+  color: #fff;
+  margin: auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+}
+
+.box-form form div.input-group input:focus,
+.box-form form div.input-group textarea:focus {
+  outline: none;
+  border: 1px solid #333;
+}
+
+.box-form form div.input-group label {
+  color: #999;
+  font-size: 16px;
+  position: absolute;
+  pointer-events: none;
+  right: 20px;
+  top: 10px;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+.box-form form div.input-group input:focus ~ label,
+.box-form form div.input-group input:valid ~ label {
+  top: -20px;
+  font-size: 13px;
+  color: #333;
+}
+
+.box-form form div.input-group textarea:focus ~ label {
+  top: -20px;
+  font-size: 13px;
+  color: #333;
+}
+
+.box-form form a {
+  text-decoration: none;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 35px;
+  margin-left: 40px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  display: inline-block;
+  letter-spacing: 3px;
 }
 
 .color-fff {

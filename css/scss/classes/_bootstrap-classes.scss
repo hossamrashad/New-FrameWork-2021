@@ -37,6 +37,8 @@
 // float-left and float-right
 // float-none
 
+// flex                               ||
+// justify-content: center!important; || .justify-content-center
 .hide-xs {
   @include xs-sm-media {
     display: none !important;

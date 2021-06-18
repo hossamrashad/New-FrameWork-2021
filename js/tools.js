@@ -252,3 +252,16 @@ window.addEventListener("scroll", function () {
   var windowPosition = this.window.scrollY > windowH;
   nav.classList.toggle('css-nav-change-color', windowPosition);
 });
+
+/* input direction */
+$(function () {
+  "use strict";
+// add class to input
+  $(".auto-direction").on("keyup", function () {
+    if ($(this).val().charCodeAt(0) < 200) {
+      $(this).css("direction", "ltr");
+    } else {
+      $(this).css("direction", "rtl");
+    }
+  });
+});
